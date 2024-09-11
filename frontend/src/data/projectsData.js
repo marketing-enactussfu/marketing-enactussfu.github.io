@@ -1,0 +1,36 @@
+import beeking from '../icons/navbar/beeking.png';
+import second_savour from '../icons/navbar/second_savour.png'; 
+import himalayan_skyes from '../icons/navbar/himalayan_skyes.png'; 
+import aqua_analyzer from '../icons/navbar/aqua_analyzer.png'; 
+import community from '../icons/navbar/community.png';  
+import tubio_engergy from '../icons/navbar/tubio_engergy.png';  
+import entrepreneurship_challenges from '../icons/navbar/entrepreneurship_challenges.png';
+import kindred_knots from '../icons/navbar/kindred_knots.png';
+import count_on_me from '../icons/navbar/count_on_me.png';
+import bright_ideas from '../icons/navbar/bright_ideas.png';
+import changemaker_challenge from '../icons/navbar/changemaker_challenge.png';
+import banner_bags from '../icons/navbar/banner_bags.png';
+import media_minds from '../icons/navbar/media_minds.png';
+import coast_cards from '../icons/navbar/coast_cards.png';
+import refresh from '../icons/navbar/refresh.png';
+
+export const currentProjects = [
+    { name: "The beeking Company", description: "Scented Candies", icon: beeking },
+    { name: "Second Savour", description: "Delicious Candied Peels", icon: second_savour },
+    { name: "Himalayan Skyes", description: "Empowering Youth", icon: himalayan_skyes},
+    { name: "Aqua Analyzer", description: "Testing Water Qualities", icon: aqua_analyzer },
+    { name: "Community Grafts", description: "Social Media Platform", icon: community },
+    { name: "Tubio Engergy", description: "Sustainable Energy", icon: tubio_engergy },
+    { name: "Entrepreneurship Challenges", description: "Client Based Projects", icon: entrepreneurship_challenges }
+  ];
+  
+export const pastProjects = [
+    { name: "Kindred Knots", description: "Senior Program", icon: kindred_knots },
+    { name: "Bright Ideas", description: "Connecting Students", icon: bright_ideas },
+    { name: "Banner Bags", description: "Waste Management", icon: banner_bags },
+    { name: "Coast Cards", description: "Greeting Cards", icon: coast_cards },
+    { name: "Count on Me", description: "Finance Education", icon: count_on_me },
+    { name: "Changemaker Challenge", description: "Case Competition", icon: changemaker_challenge },
+    { name: "Media Minds", description: "Digital Literacy", icon: media_minds },
+    { name: "ReFresh", description: "Greeting Cards", icon: refresh }
+  ];
