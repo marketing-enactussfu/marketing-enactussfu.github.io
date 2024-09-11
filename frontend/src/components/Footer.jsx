@@ -12,8 +12,7 @@ function Navbar() {
           
             <div className = 'w-screen py-4 px-8'>
     
-                <div className = 'flex space-x-4 justify-between p-16 text-[#5C5C5C] items-start'>
-
+                <div className = 'flex flex-col space-x-4 justify-between p-16 text-[#5C5C5C] items-start md:flex-row'>
                     <img
                         className = 'absolute -translate-y-1/2 -translate-x-1/2 w-[67.12px] h-[72.28px]'
                         src={enactus_logo}
@@ -25,7 +24,7 @@ function Navbar() {
                         <p>Simon Fraser University</p>
                     </div>
 
-                    <div className = 'flex flex-row gap-9 text-[#5C5C5C] text-xs'>
+                    <div className = 'flex flex-col md:flex-row gap-9 text-[#5C5C5C] text-xs'>
                         <div className = 'flex flex-col gap-2'>
                             <div className = 'text-black text-sm font-semibold'>Organization</div>
                             <p>About Us</p>
