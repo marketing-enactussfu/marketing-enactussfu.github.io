@@ -6,9 +6,9 @@ import LinkdIn from '../icons/footer/LinkdIn.png';
 import Mail from '../icons/footer/Mail.png';
 
 function Navbar() {
-
+    
     return(
-        <div className = 'w-screen bg-[#ECECEC]'>
+        <footer className = 'w-screen bg-[#ECECEC]'>
           
             <div className = 'w-screen py-4 px-8'>
     
@@ -69,7 +69,7 @@ function Navbar() {
 
             </div>
 
-        </div>
+        </footer>
         
     )
 }
