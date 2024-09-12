@@ -46,6 +46,29 @@
   color: black;
 }
 
+
+.learn-more {
+  transition: color 0.3s ease-in-out;
+}
+
+.learn-more-button:hover .learn-more{
+  color: rgb(153 27 27);
+  text-decoration: underline;
+}
+
+.learn-more::after {
+  content: '>';
+  transition: content 0.3s ease-in-out;
+}
+
+.learn-more-button:hover .learn-more::after {
+  content: '->';
+  color: rgb(153, 27, 27);
+}
+
+
+
+  
 .relative:hover #dropdownDelay {
   opacity: 1;
   visibility: visible;

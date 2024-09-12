@@ -142,20 +142,19 @@ const Home = () =>{
                         {currentProjectsContent.map((project, index) => (
                             <div key={index} className="inline-block px-3">
                             <div
-                                className="w-80 h-full max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
+                                className=" learn-more-button w-80 h-full max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
                                 
                                 <img 
                                 src={currentProjectsContentImages[project.title.replace(/\s+/g, '_').toLowerCase() + '.png']} 
                                 alt={project.title} 
                                 className="w-full object-cover h-72 p-1 rounded-lg" 
                                 />
-                                
                                 <div className="p-4 flex flex-col flex-grow">
                                 <div className="font-semibold text-[18px] mb-2">{project.title}</div>
                                 <div className="text-gray-700 text-base text-[16px] mb-4 flex-grow">{project.description}</div>
-                                <a href="#" className="text-red-500 font-semibold inline-block text-[12px] mt-auto">
-                                    Learn More &gt;
-                                </a>
+                                <a href="#" 
+                                // className="learn-more text-red-500 font-semibold inline-block text-[12px] mt-auto"
+                                className="learn-more text-red-500 font-semibold inline-block text-[12px] mt-auto"> Learn More</a>
                                 </div>
                             </div>
                             </div>
