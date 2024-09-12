@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.project-description {
+  transition: color 0.3s ease-in-out;
+}
+
+
+.project-button:hover .project-description {
+  color: black;
+}
+
+.relative:hover #dropdownDelay {
+  opacity: 1;
+  visibility: visible;
+  /* transform: scale(1); */
+}

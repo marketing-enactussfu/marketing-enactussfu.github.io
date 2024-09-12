@@ -2,11 +2,10 @@
 export function importAll(r) {
   let images = {};
   
-  // Sort the keys in order (numerical or alphabetical)
-  r.keys().sort().forEach((item, index) => {
-    images[item.replace('./', '')] = r(item);
-  });
-  
+    r.keys().forEach((item, index) => {
+      images[item.replace('./', '')] = r(item);
+    });
+    
   return images;
 }
 
