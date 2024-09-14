@@ -17,7 +17,7 @@ const WhatWeDo = () => {
             formElement.scrollIntoView({ behavior: 'smooth' });
         }
     };
-
+    
     const mainpage = (
         <main className="mt-4">
             <div className="flex flex-col gap-20 pt-12">

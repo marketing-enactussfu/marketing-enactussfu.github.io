@@ -4,8 +4,8 @@ import Footer from './Footer';
 
 
 
+
 const PageTemplate = ({component}) =>{
-    
     return(
         <div>
             <Navbar />
@@ -19,7 +19,6 @@ const PageTemplate = ({component}) =>{
             
         </div>
     )
-    
 }
 
 export default PageTemplate;
