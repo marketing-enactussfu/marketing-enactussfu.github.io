@@ -6,6 +6,8 @@ import Sponsorship from './Sponsorship';
 import WhatWeDo from './about/WhatWeDo';
 import OurTeam from './about/OurTeam';
 import CoastCards from './pastProject/CoastCards';
+import Competitions from './Competitions';  
+
 
 export default function App() {
   return (
@@ -18,7 +20,7 @@ export default function App() {
         <Route path='/projects/past-projects/coast-cards' element={<CoastCards/>} />
         <Route path="/competitions" element={<Competitions/>} />
 
-        
+      
       </Routes>
     </Router>
   );
