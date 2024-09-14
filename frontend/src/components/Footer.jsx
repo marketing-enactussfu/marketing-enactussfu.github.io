@@ -12,7 +12,7 @@ function Navbar() {
           
             <div className = 'w-screen py-4 px-8'>
     
-                <div className = 'flex flex-col space-x-4 justify-between p-16 text-[#5C5C5C] items-start md:flex-row'>
+                <div className = 'flex flex-col space-x-4 justify-between px-16 py-16 text-[#5C5C5C] items-start md:flex-row'>
                     <img
                         className = 'absolute -translate-y-1/2 -translate-x-1/2 w-[67.12px] h-[72.28px]'
                         src={enactus_logo}
@@ -24,7 +24,7 @@ function Navbar() {
                         <p>Simon Fraser University</p>
                     </div>
 
-                    <div className = 'flex flex-col md:flex-row gap-9 text-[#5C5C5C] text-xs'>
+                    <div className = 'flex flex-col md:flex-row gap-9 text-[#5C5C5C] text-xs mt-3'>
                         <div className = 'flex flex-col gap-2'>
                             <div className = 'text-black text-sm font-semibold'>Organization</div>
                             <p>About Us</p>
@@ -55,7 +55,7 @@ function Navbar() {
 
                     </div>
                 </div>
-    
+
                 <div className = 'flex mx-12 justify-between text-xs items-end'>
                             <div className = 'ms-6'>
                             © 2024 Enactus SFU | Land Acknowledgement | Privacy Policy

@@ -9,9 +9,6 @@ import collective_growth from './images/home/ourgoals/collective_growth.png';
 import header from './images/home/header.png';
 
 
-
-
-
 const ourGoalsContent = {
     title: 'We build projects that create a positive impact on our community.',
     text: "What others see as challenges, we see as opportunities to innovate. With an active member base across multiple concentrations and faculties, Enactus SFU continues to expand sustainable projects yearly, empowering students to develop entrepreneurial skills and become future leaders."
@@ -75,7 +72,7 @@ const Home = () =>{
                     </div>
                 </div>
             </div>
-
+            
             <div className = 'space-y-5'>
                  {/*Our Goals*/}
             <div className='container p-10 w-screen'>
