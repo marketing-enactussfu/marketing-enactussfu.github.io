@@ -22,7 +22,6 @@ const Sponsorship = () =>{
             <div className = 'flex flex-col gap-20 pt-12'>
                 <div className = 'flex flex-col items-center gap-10'>
                     <div className='text-md text-[#D00200] font-semibold cursor-pointer'
-                         onClick={scrollToForm}
                     >Sponsorship</div>
                     <div className = 'text-4xl font-semibold text-center'>Thank you to all our partners!</div>
                     <div className = 'flex flex-col gap-7 md:flex-row'>
