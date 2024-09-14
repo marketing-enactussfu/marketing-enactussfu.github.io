@@ -16,6 +16,8 @@ export default function App() {
         <Route path="/about/what-we-do" element={<WhatWeDo/>} />
         <Route path="/about/our-team" element={<OurTeam/>} />
         <Route path='/projects/past-projects/coast-cards' element={<CoastCards/>} />
+        <Route path="/competitions" element={<Competitions/>} />
+
         
       </Routes>
     </Router>
