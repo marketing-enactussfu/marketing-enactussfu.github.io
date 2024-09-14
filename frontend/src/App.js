@@ -5,6 +5,7 @@ import Home from './Home';
 import Sponsorship from './Sponsorship';
 import WhatWeDo from './about/WhatWeDo';
 import OurTeam from './about/OurTeam';
+import CoastCards from './pastProject/CoastCards';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/sponsorship" element={<Sponsorship/>} />
         <Route path="/about/what-we-do" element={<WhatWeDo/>} />
         <Route path="/about/our-team" element={<OurTeam/>} />
+        <Route path='/projects/past-projects/coast-cards' element={<CoastCards/>} />
         
       </Routes>
     </Router>
