@@ -76,7 +76,7 @@
 }
 
 
-.sponsor-button {
+.session-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,20 +92,19 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-.sponsor-button:active {
+.session-button:active {
   background-color: white;
   color: #D00200;
   outline: 2px solid #D00200;
   
 }
 
-.sponsor-button-icon {
+.session-button-icon {
   margin-left: 8px; 
   height: 20px;
   width: 20px;
   stroke: currentColor;
 }
-
 
 
 .sponsor-package-button {

@@ -83,7 +83,7 @@ const PartnerForm = () => {
         </div>
 
         <button
-          className="sponsor-button"
+          className="session-button"
         >
           Submit
         </button>

@@ -25,7 +25,7 @@ const Sponsorship = () =>{
                     >Sponsorship</div>
                     <div className = 'text-4xl font-semibold text-center'>Thank you to all our partners!</div>
                     <div className = 'flex flex-col gap-7 md:flex-row'>
-                        <button onClick={scrollToForm} className="sponsor-button">
+                        <button onClick={scrollToForm} className="session-button">
                             Become a Sponsor
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,6 @@
 import React from 'react';
 import PageTemplate from '../components/PageTemplate';
-import { importAll } from './utilities/importImages'; 
+import { importAll } from '../utilities/importImages'; 
 
 
 const OurTeam = () =>{
