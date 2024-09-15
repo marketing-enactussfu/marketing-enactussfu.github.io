@@ -19,31 +19,35 @@ const CoastCard =() => {
     ];
 
     const mainpage = (
-        <main className="mt-40">
+        <main>
             <div className = 'flex flex-col gap-20'>
-                <div className = 'mx-40'>
+                <div className = 'mx-20 md:mx-40'>
                     <div className="text-md text-[#D00200] font-semibold cursor-pointer">Enactus 2014-2016</div>
                     <div className="text-3xl font-bold mb-4">Coast Cards</div>
                     <img src= {generalImages['general_1.png']}></img>
                 </div>
 
-                <div className = 'mx-40'>
-                    <img src= {generalImages['general_2.png']}></img>
+                <div className = 'mx-20 md:mx-40 flex flex-col justify-between gap-40 items-center md:flex-row xl:flex-row'>
+                    <img src= {generalImages['general_2.png']} className = 'rounded-xl w-full md:w-2/5'></img>
+                    <div className = 'space-y-10'>
+                        <div className="text-md text-[#D00200] font-semibold cursor-pointer">About Us</div>
+                        <div>In 2016, our project founder witnessed the overwhelming amount of coasters being thrown out every night by local restaurants. We created Coast Cards- a project within Enactus SFU that sells eco-friendly greeting cards made from upcycling used restaurant coasters.</div>
+                        <button className = 'facebook-button'>Our Facebook</button>
+                    </div>
                 </div>
-
-                <div className = 'mx-40 space-y-5'>
-                        <div className='me-60 space-y-5'>
+                
+                <div className = 'mx-20 md:mx-40 space-y-5'>
+                        <div className='me-20 space-y-5 md:me-60'>
                             <div className="text-md text-[#D00200] font-semibold cursor-pointer">Our Process</div>
                             <div className='text-3xl bold-bold'>The coasters are blended together with scrap paper and organic material to create our beautiful handmade greeting cards</div>
                         </div>
-                       
+
                         <div className="flex flex-col bg-white m-auto p-auto">
                             <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
                                 <div className="flex flex-nowrap ml-0 gap-10">
                                 {processes.map((process, index) => (
                                     <div key={index} className="inline-block px-3">
                                     <div
-                                    // shadow-md 
                                     className=" learn-more-button w-80 h-full max-w-xs overflow-hidden rounded-lg bg-white flex flex-col gap-5 justify-between border">
 
                                         <img 
@@ -61,19 +65,17 @@ const CoastCard =() => {
                                 </div>
                             </div>
                         </div>
-                        
-               
-                    
                 </div>
-                <div className = 'bg-[#FBFBFB] py-36'>
-                    <div className = 'mx-40'>
+
+                <div className = 'bg-[#FBFBFB] py-36 w-screen'>
+                    <div className = 'mx-20 md:mx-40'>
                         <div className = 'text-2xl font-semibold text-center'>
                             Every candle you purchase is a step towards environmental conservation. Experience the magic of candlelight while being a part of something greater – a movement that believes in the power of small actions to create significant impact.
                         </div>
                     </div> 
                 </div>
-
-                <div className = 'mx-40'>
+         
+                <div className = 'mx-20 md:mx-40'>
                     <div className = 'flex flex-col items-center gap-5'>
                         <div className="text-md text-[#D00200] font-semibold cursor-pointer">Our Impact</div>
                         <div className = 'flex flex-row gap-20 py-20'>
@@ -92,8 +94,8 @@ const CoastCard =() => {
 
 
                 </div>
-
             </div>
+
    
 
         </main>

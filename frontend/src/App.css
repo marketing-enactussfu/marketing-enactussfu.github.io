@@ -99,6 +99,31 @@
   
 }
 
+.facebook-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#181818;
+ 
+  color: white; 
+  padding: 10px 20px; 
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border: none; 
+  outline: none; 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.facebook-button:active {
+  background-color: white;
+  color: #181818;
+  outline: 2px solid #181818;
+  
+}
+
+
 .session-button-icon {
   margin-left: 8px; 
   height: 20px;

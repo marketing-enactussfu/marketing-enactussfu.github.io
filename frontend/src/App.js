@@ -7,6 +7,7 @@ import WhatWeDo from './about/WhatWeDo';
 import OurTeam from './about/OurTeam';
 import CoastCards from './pastProject/CoastCards';
 import Competitions from './Competitions';  
+import CountOnMe from './pastProject/CountOnMe';
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/about/our-team" element={<OurTeam/>} />
         <Route path='/projects/past-projects/coast-cards' element={<CoastCards/>} />
         <Route path="/competitions" element={<Competitions/>} />
+        <Route path='/projects/past-projects/count-on-me' element={<CountOnMe/>} />
 
       
       </Routes>
