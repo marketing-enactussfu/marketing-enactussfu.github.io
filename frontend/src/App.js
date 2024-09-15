@@ -9,6 +9,8 @@ import CoastCards from './pastProject/CoastCards';
 import Competitions from './Competitions';  
 import CountOnMe from './pastProject/CountOnMe';
 import ChangemakerChallenge from './pastProject/ChangemakerChallenge';
+import BrightIdeas from './pastProject/BrightIdeas';
+import BannerBag from './pastProject/BannerBag';
 
 
 export default function App() {
@@ -23,6 +25,8 @@ export default function App() {
         <Route path="/competitions" element={<Competitions/>} />
         <Route path='/projects/past-projects/count-on-me' element={<CountOnMe/>} />
         <Route path='/projects/past-projects/changemaker-challenge' element={<ChangemakerChallenge/>} />
+        <Route path='/projects/past-projects/bright-ideas' element={<BrightIdeas/>} />
+        <Route path='/projects/past-projects/banner-bag' element={<BannerBag/>} />
 
       
       </Routes>

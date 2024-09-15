@@ -108,7 +108,7 @@ const WhatWeDo = () => {
                             </div>
                         )
                 })}
-
+                
                 {/* Histroy */}
                 <div className='bg-[#FBFBFB]' id = 'history'>
                     <div className='mx-20 md:mx-40 pt-10 flex flex-col gap-10 text-[#181818] text-md'>
