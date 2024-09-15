@@ -33,6 +33,7 @@ const  ChangemakerChallenge =() => {
                                     <div key={index} className="inline-block px-3">
                                     <div
                                     className=" learn-more-button w-80 h-full max-w-xs overflow-hidden rounded-lg bg-white flex flex-col gap-5 justify-between border">
+
                                         <img 
                                         src={goalImages['goal_'+ (index+1) + '.png']} 
                                         alt={goal} 
