@@ -11,6 +11,7 @@ import CountOnMe from './pastProject/CountonMe';
 import ChangemakerChallenge from './pastProject/ChangemakerChallenge';
 import BrightIdeas from './pastProject/BrightIdeas';
 import BannerBag from './pastProject/BannerBag';
+import Careers from './Careers';
 
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
         <Route path='/projects/past-projects/changemaker-challenge' element={<ChangemakerChallenge/>} />
         <Route path='/projects/past-projects/bright-ideas' element={<BrightIdeas/>} />
         <Route path='/projects/past-projects/banner-bag' element={<BannerBag/>} />
+        <Route path="/Careers" element={<Careers/>} />
 
       
       </Routes>
