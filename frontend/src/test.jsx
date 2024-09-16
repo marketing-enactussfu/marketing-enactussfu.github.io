@@ -91,20 +91,7 @@ const Careers = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full h-[459px] px-80 py-[120px] bg-[#fbfbfb] flex-col justify-start items-center gap-12 inline-flex">
-                <div className="w-[576px] h-[97px] flex-col justify-start items-start gap-10 flex">
-                    <div className="self-stretch text-center text-[#181818] text-[32px] font-semibold font-['Inter']">Get Updates</div>
-                        <div className="self-stretch text-center text-[#5c5c5c] text-base font-normal font-['Inter'] leading-snug">Sign up with your email address to receive the latest news and updates from Enactus SFU!</div>
-                    </div>
-                    <div className="w-[576px] pl-8 pr-5 py-4 bg-white rounded-full border border-[#d7d7d7] justify-between items-center inline-flex">
-                <div className="text-[#9e9e9e] text-base font-normal font-['Inter'] leading-snug">Email Address</div>
-            <div className="px-5 py-4 bg-[#d00200] rounded-full justify-center items-center gap-2.5 flex">
-        <div className="justify-start items-center gap-2 flex">
-        <div className="text-white text-sm font-semibold font-['Inter']">Subscribe</div>
-      </div>
-    </div>
-  </div>
-</div>
+            
         </div>
     );
 
