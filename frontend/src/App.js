@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import Sponsorship from './Sponsorship';
-import WhatWeDo from './about/WhatWeDo';
+import WhatWeDo from './about/whatWeDo';
 import OurTeam from './about/OurTeam';
 import CoastCards from './pastProject/CoastCards';
 import Competitions from './Competitions';  
-import CountOnMe from './pastProject/CountOnMe';
+import CountOnMe from './pastProject/CountonMe';
 import ChangemakerChallenge from './pastProject/ChangemakerChallenge';
 import BrightIdeas from './pastProject/BrightIdeas';
 import BannerBag from './pastProject/BannerBag';
@@ -33,3 +33,4 @@ export default function App() {
     </Router>
   );
 }
+

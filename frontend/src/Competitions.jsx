@@ -17,7 +17,7 @@ import AwardCard15 from './images/home/AwardCard/AwardCard15.png';
 import AwardCard16 from './images/home/AwardCard/AwardCard16.png';
 import AwardCard17 from './images/home/AwardCard/AwardCard17.png';
 import PageTemplate from './components/PageTemplate';
- //102399712593
+ //102399712593 :)
 const awardsData = [
     { year: 2024, images: [AwardCard1, AwardCard2, AwardCard3] },
     { year: 2023, images: [AwardCard4, AwardCard5, AwardCard17] },
