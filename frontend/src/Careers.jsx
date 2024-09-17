@@ -8,7 +8,7 @@ import Target from './images/Careers/Target.png';
 import Questionmark from './images/Careers/Questionmark.png';
 import Heart from './images/Careers/Heart.png';
 import MagnifyingGlass from './images/Careers/MagnifyingGlass.png';
-import GroupPhoto2 from './images/Careers/GroupPhoto2.png'; // Add path to the new image
+import GroupPhoto2 from './images/Careers/GroupPhoto2.png'; 
 
 const Careers = () => {
     const careerspage = (
@@ -114,3 +114,4 @@ const Careers = () => {
 };
 
 export default Careers;
+
