@@ -10,10 +10,12 @@ import Competitions from './Competitions';
 import CountOnMe from './pastProject/CountOnMe';
 import ChangemakerChallenge from './pastProject/ChangemakerChallenge';
 import BrightIdeas from './pastProject/BrightIdeas';
+import Careers from './Careers';//:D
 import BannerBags from './pastProject/BannerBags';
 import MediaMind from './pastProject/MediaMind';
 import ReFresh from './pastProject/ReFresh';
 import KindredKnots from './pastProject/KindredKnots';
+
 
 export default function App() {
   return (
@@ -28,6 +30,9 @@ export default function App() {
         <Route path='/projects/past-projects/count-on-me' element={<CountOnMe/>} />
         <Route path='/projects/past-projects/changemaker-challenge' element={<ChangemakerChallenge/>} />
         <Route path='/projects/past-projects/bright-ideas' element={<BrightIdeas/>} />
+
+        <Route path="/Careers" element={<Careers/>} />
+
         <Route path='/projects/past-projects/banner-bags' element={<BannerBags/>} />
         <Route path='/projects/past-projects/media-mind' element={<MediaMind/>} />
         <Route path='/projects/past-projects/refresh' element={<ReFresh/>} />
