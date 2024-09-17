@@ -31,7 +31,7 @@ export default function App() {
         <Route path='/projects/past-projects/changemaker-challenge' element={<ChangemakerChallenge/>} />
         <Route path='/projects/past-projects/bright-ideas' element={<BrightIdeas/>} />
 
-        <Route path="/Careers" element={<Careers/>} />
+        <Route path="/careers" element={<Careers/>} />
 
         <Route path='/projects/past-projects/banner-bags' element={<BannerBags/>} />
         <Route path='/projects/past-projects/media-mind' element={<MediaMind/>} />
