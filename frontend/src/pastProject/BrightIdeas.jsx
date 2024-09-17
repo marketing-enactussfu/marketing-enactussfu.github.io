@@ -11,14 +11,14 @@ const BrightIdeas =() => {
  
     
     const mainpage =(
-        <main>
+        <main className = 'mt-4'>
             <div className = 'flex flex-col gap-40'>
-                <PastProjectIntro timeRange={'2014-2016'} title ={'Count On me'}  hasButton = {true} buttonText={'Our Instagram'} aboutUsText={aboutUsText} image = {generalImages}/>
+                <PastProjectIntro timeRange={'2014-2016'} title ={'Bright Ideas'}  hasButton = {true} buttonText={'Our Instagram'} aboutUsText={aboutUsText} image = {generalImages}/>
 
                 <div className = 'bg-[#FBFBFB] py-36 w-screen'>
 
                 <div className = 'mx-20 md:mx-40'>
-                        <div className = 'text-2xl font-semibold text-center mx-60'>
+                        <div className = 'text-2xl font-semibold text-center md:mx-40 mx-20'>
                             Bright Ideas is designed to instill confidence in students to enact change in their communities.
                         </div>
                     </div> 

@@ -15,7 +15,7 @@ const  ChangemakerChallenge =() => {
       ];
     const goals = ['Zero Hunger', 'Clean Water and Sanitation', 'Sustainable Cities']
     const mainpage =(
-        <main>
+        <main className = 'mt-4'>
             <div className = 'flex flex-col gap-40'>
                 <PastProjectIntro timeRange={'2014-2016'} title ={'Changemaker Challenge'}  hasButton = {true} buttonText={'Our Facebook'} aboutUsText={aboutUsText} image = {generalImages}/>
 
