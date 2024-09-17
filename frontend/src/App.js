@@ -32,8 +32,6 @@ export default function App() {
         <Route path='/projects/past-projects/media-mind' element={<MediaMind/>} />
         <Route path='/projects/past-projects/refresh' element={<ReFresh/>} />
         <Route path='/projects/past-projects/kindred-knots' element={<KindredKnots/>} />
-
-      
       </Routes>
     </Router>
   );
