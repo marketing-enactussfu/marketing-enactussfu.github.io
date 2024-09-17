@@ -69,8 +69,8 @@ const OurTeam = () =>{
             <div className = 'text-4xl font-semibold text-center'>Our Leadership Team</div>
 
                 <div className = 'bg-[#FBFBFB]'>
-                <div className = 'flex flex-col items-start gap-4 mx-40'>
-                    <div className = 'text-3xl font-semibold text-center'>Core Operations</div>
+                <div className = 'flex flex-col items-start gap-4 md:mx-40 mx-20'>
+                    <div className = 'text-2xl md:text-3xl font-semibold text-center'>Core Operations</div>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         {coreOperations.map((member, index) => {
                             const firstName = member.name.split(' ')[0].toLowerCase();
@@ -92,8 +92,8 @@ const OurTeam = () =>{
                 </div>
 
 
-                <div className = 'flex flex-col items-start gap-4 mx-40 my-10'>
-                    <div className = 'text-3xl font-semibold text-center'>Project Managers</div>
+                <div className = 'flex flex-col items-start gap-4 md:mx-40 mx-20 my-10'>
+                    <div className = 'text-2xl md:text-3xl font-semibold text-center'>Project Managers</div>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         {projectManagers.map((member, index) => {
                             const firstName = member.name.split(' ')[0].toLowerCase();

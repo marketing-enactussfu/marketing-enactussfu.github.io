@@ -69,7 +69,7 @@ const Home = () =>{
                         </p>
                         {/* <button className="bg-red-600 text-white py-3 px-6 rounded-full hover:bg-red-600 transition"> */}
                         <button className="session-button md:"
-                                onClick={() => navigate('/careder')}>
+                                onClick={() => navigate('/careers')}>
                             Join Our Team
                         </button>
                         </div>
@@ -117,7 +117,8 @@ const Home = () =>{
                             <span className="text-[#D00200]">187,000+ hours</span> to improve the lives of over{" "}
                             <span className="text-[#D00200]">15,000+ individuals.</span>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mt-6">
+                        {/* <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mt-6"> */}
+                        <div className = 'flex flex-col md:flex-row justify-between gap-8 mt-6'>
                             {highLightsContent.map((session, index) => (
                             <div key={index}>
                                 <div className="text-[32px] font-bold">{session.title}</div>
