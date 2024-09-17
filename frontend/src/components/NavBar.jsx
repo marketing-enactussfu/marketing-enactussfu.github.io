@@ -4,20 +4,21 @@ import enactus_logo from '../icons/enactus_logo.png';
 import about from '../icons/navbar/about.png';
 import enactus_logo_grey from '../icons/navbar/enactus_logo_grey.png';
 import { currentProjects, pastProjects } from '../data/projectsData';
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
-
+  const navigate = useNavigate();
   return (
-    <nav className="bg-white shadow-md py-4 fixed top-0 left-0 right-0 z-50">
-      <div className="container mx-auto flex justify-between items-center text-sm text-black font-semibold">
-        <div>
+    <nav className="bg-white shadow-md py-4 fixed top-0 w-screen z-50">
+      <div className="mx-20 md:mx-40 flex justify-between items-center text-sm text-black font-semibold">
+        <button onClick = {() => navigate('/')}>
+
           <img
             src={enactus_logo}
             alt="Logo"
             className="h-8"
-            href="/"
           />
-        </div>
+        </button>
 
         <div className="flex space-x-8 text-gray-600 items-center">
           {/* About Dropdown */}
@@ -40,7 +41,6 @@ function Navbar() {
                 <a
                   href="#"
                   className="bg-white text-sm block px-4 py-3 mt-1 mx-1 text-gray-600 hover:bg-gray-100 flex items-center gap-2"
-
                 >
                   <img
                     src={enactus_logo_grey}
@@ -77,34 +77,36 @@ function Navbar() {
             <div 
             id="dropdownDelay"
             aria-labelledby="dropdownDelayButton"
-            // className="opacity-0 invisible absolute bg-gray-100 z-[1000] left-1/2 -translate-x-1/2 mt-4 container bg-white shadow-lg rounded-lg border border-gray-200 w-max text-xs group-hover:opacity-100 group-hover:visible transition-opacity duration-500 ease-in-out">
             className="mt-3 z-10 z-[1000] left-1/2 -translate-x-1/2 opacity-0 border border-gray-200 invisible absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 transition-all duration-500 ease-out w-max transform scale-95">
-              <ProjectGrid title="Current Projects" projects={currentProjects} />
-              <ProjectGrid title="Past Projects" projects={pastProjects} />
+              <ProjectGrid title="Current Projects" projects={currentProjects} type = 'current-projects'/>
+              <ProjectGrid title="Past Projects" projects={pastProjects} type = 'past-projects'/>
             </div>
           </div>
 
           <div>
-            <a href="#" className="hover:text-gray-900">
+            <a href="/events" className="hover:text-red-500 hover:underline">
               Events
             </a>
           </div>
 
           <div>
-            <a href="#" className="hover:text-gray-900">
+            <a href="/sponsorship" className="hover:text-red-500 hover:underline">
               Sponsorships
             </a>
           </div>
 
           <div>
-            <a href="#" className="hover:text-gray-900">
+            <a href="/competitions" className="hover:text-red-500 hover:underline">
               Competitions
             </a>
           </div>
 
           {/* Join Our Team Button */}
           <div>
-            <button className="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700">
+            <button 
+            className="session-button"
+            onClick={() => navigate('/career')}
+            >
               Join Our Team
             </button>
           </div>

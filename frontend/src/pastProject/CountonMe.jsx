@@ -14,9 +14,9 @@ const CountOnMe =() => {
       ];
     
     const mainpage =(
-        <main>
+        <main className = 'mt-4'>
             <div className = 'flex flex-col gap-40'>
-                <PastProjectIntro timeRange={'2014-2016'} title ={'Count On me'}  hasButton = {true} buttonText={'Our Facebook'} aboutUsText={aboutUsText} image = {generalImages}/>
+                <PastProjectIntro timeRange={'2014-2016'} title ={'Count On Me'}  hasButton = {true} buttonText={'Our Facebook'} aboutUsText={aboutUsText} image = {generalImages}/>
 
                 <div className='bg-[#FBFBFB] py-36 w-screen'>
                     <div className='mx-20 md:mx-40 flex flex-col gap-20'>

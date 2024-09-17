@@ -4,7 +4,7 @@ import { importAll } from '../utilities/importImages';
 import { history } from '../data/history';
 import { PastProjectIntro } from '../components/PastProjectIntro';
 
-const BannerBag =() => {
+const BannerBags =() => {
     const generalImages = importAll(require.context('../images/pastProject/bannerBag/general', false, /\.(png|jpe?g|svg)$/));
     const bottonLineImages = importAll(require.context('../images/pastProject/bannerBag/bottonLine', false, /\.(png|jpe?g|svg)$/));
     const aboutUsText = "Many students are unaware of the amount of waste that we throw away, and this ultimately goes into the landfills. By educating high school students about environmental sustainability, they can make greener decisions and help their communities to become more sustainable for present and future generations. Banner Bags works to achieve this by developing an education curriculum targeted at high school students to highlight the management of waste through the upcycling of banners that students can constantly reuse.";
@@ -41,7 +41,7 @@ const BannerBag =() => {
 
     
     const mainpage =(
-        <main>
+        <main className = 'mt-4'>
             <div className = 'flex flex-col gap-40'>
                 <PastProjectIntro timeRange={'2014-2016'} title ={'Banner Bag'}  hasButton = {false} buttonText={''} aboutUsText={aboutUsText} image = {generalImages}/>
 
@@ -49,7 +49,7 @@ const BannerBag =() => {
 
                     <div className = 'mx-20 md:mx-40 flex flex-col gap-10 items-center'>
                             <div className="text-md text-[#D00200] font-semibold cursor-pointer">Mission</div>
-                            <div className = 'text-2xl font-semibold text-center mx-40'>
+                            <div className = 'text-2xl font-semibold text-center md:mx-40 mx-10'>
                             Banner Bags works to develop an education curriculum targeted at high school students to highlight the management of waste through the upcycling of banners that students can constantly reuse.
                             </div>
                     </div> 
@@ -135,4 +135,4 @@ const BannerBag =() => {
     );
 }
 
-export default BannerBag;
+export default BannerBags;

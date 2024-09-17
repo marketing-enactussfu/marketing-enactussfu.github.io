@@ -19,7 +19,7 @@ const CoastCard =() => {
     ];
 
     const mainpage = (
-        <main>
+        <main className = 'mt-4'>
             <div className = 'flex flex-col gap-20'>
                 <div className = 'mx-20 md:mx-40'>
                     <div className="text-md text-[#D00200] font-semibold cursor-pointer">Enactus 2014-2016</div>
