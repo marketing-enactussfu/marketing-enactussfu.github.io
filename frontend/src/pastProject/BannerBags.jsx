@@ -49,7 +49,7 @@ const BannerBags =() => {
 
                     <div className = 'mx-20 md:mx-40 flex flex-col gap-10 items-center'>
                             <div className="text-md text-[#D00200] font-semibold cursor-pointer">Mission</div>
-                            <div className = 'text-2xl font-semibold text-center md:mx-40 mx-10'>
+                            <div className = 'text-2xl font-medium text-center md:mx-40 mx-10'>
                             Banner Bags works to develop an education curriculum targeted at high school students to highlight the management of waste through the upcycling of banners that students can constantly reuse.
                             </div>
                     </div> 
