@@ -20,14 +20,14 @@ const WhatWeDo = () => {
 
     const mainpage = (
         <main className="mt-4">
-            <div className="flex flex-col gap-20 pt-12">
-                <div className="flex flex-col gap-10 items-center mx-20 md:mx-40 text-center">
-                    <div className="text-md text-[#D00200] font-semibold cursor-pointer">About Us</div>
-                    <div className="text-4xl font-semibold">
+            <div className="flex flex-col gap-10 sm:gap-20 pt-12">
+                <div className="flex flex-col gap-10 items-center md:mx-28 lg:mx-40 sm:mx-16 mx-10 text-center">
+                    <div className="md:text-md sm:text-sm text-xs text-[#D00200] font-semibold cursor-pointer">About Us</div>
+                    <div className="text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold">
                         A story about Enactus SFU and the work that we do
                     </div>
-                    <div className="text-[#5C5C5C] text-md">{text}</div>
-                    <button className="session-button" onClick={scrollToHistory}>
+                    <div className="text-[#5C5C5C] sm:text-md text-base">{text}</div>
+                    <button className="session-button sm:text-sm text-xs" onClick={scrollToHistory}>
                         Our History
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -46,37 +46,35 @@ const WhatWeDo = () => {
                     </button>
                 </div>
 
-                <div className="flex justify-center items-center mx-20 md:mx-40">
+                <div className="flex justify-center items-center md:mx-28 lg:mx-40 sm:mx-16 mx-10">
                     <img src={aboutImages['about_1.png']} alt="about" className = 'w-full'></img>
                 </div>
-
-                <div className="mx-20 md:mx-40 text-center">
-                    <div className="text-2xl font-bold mb-4">What are Enactus Projects?</div>
-                    <div className="text-[#181818]">
+                <div className="md:mx-28 lg:mx-40 sm:mx-16 mx-10 text-start space-y-4 sm:space-y-8">
+                    <div className="text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold mb-4">What are Enactus Projects?</div>
+                    <div className="text-[#181818] sm:text-md text-base">
                         Teams develop innovative programs that address social, environmental, and economic needs in the community in an attempt to improve the livelihoods of others. Currently, Enactus is made up of <span className="font-bold">66,500 students in 1,600 teams across 36 countries around the world.</span>
                     </div>
                 </div>
 
-                <div className="flex justify-center items-center mx-20 md:mx-40">
+                <div className="flex justify-center items-center md:mx-28 lg:mx-40 sm:mx-16 mx-10">
                     <img src={aboutImages['about_2.png']} alt="about" className = 'w-full'/>
                 </div>
 
-                <div className="mx-20 md:mx-40 text-center">
-                    <div className="text-2xl font-bold mb-4">Enactus SFU's Impact</div>
-                    <div className="text-[#181818]">
+                <div className="md:mx-28 lg:mx-40 sm:mx-16 mx-10 text-start space-y-4 space-y-8">
+                    <div className="text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold mb-4">Enactus SFU's Impact</div>
+                    <div className="text-[#181818] sm:text-md text-base">
                         At Enactus SFU, we seek issues within our community and see them as opportunities to innovate. With an active member base across multiple concentrations and faculties, Enactus SFU continues to grow and expand its sustainable projects into the community each year. We help students develop new skills and empower them to take initiative and become the future leaders that our communities need.
-                        <br />
                         Over the past 5 years, the team at Enactus SFU has dedicated over <span className="font-bold">73,000 hours</span> to improve the lives of over <span className="font-bold">6,600 individuals.</span>
                     </div>
                 </div>
 
-                <div className="flex justify-center items-center mx-20 md:mx-40">
+                <div className="md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex justify-center items-center">
                     <img src={aboutImages['about_3.png']} alt="about" className = 'w-full' />
                 </div>
 
-                <div className ='mx-20 md:mx-40 justify-center flex flex-col gap-4'>
-                    <div className="text-3xl font-bold mb-4">OUR TARGET SDG GOALS</div>
-                    <div className = 'text-[#181818] text-md'>Enactus SFU is expecting to execute projects for Sustainable Development Goals  #1, 3, 4, 6, 10, 12, 13, 14, 15 in the 2023/2024 academic year.</div>
+                <div className ='md:mx-28 lg:mx-40 sm:mx-16 mx-10 justify-center flex flex-col gap-4 sm:gap-5'>
+                    <div className="text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold mb-4">OUR TARGET SDG GOALS</div>
+                    <div className = 'text-[#181818] sm:text-md text-base'>Enactus SFU is expecting to execute projects for Sustainable Development Goals  #1, 3, 4, 6, 10, 12, 13, 14, 15 in the 2023/2024 academic year.</div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center">
                         {Object.keys(goalsImages)
                             .sort((a, b) => {
@@ -87,7 +85,7 @@ const WhatWeDo = () => {
                             .map((key, index) => (
                                 key !== 'goal_9.png' && (
                                     <div key={index} className="p-1 flex justify-center">
-                                        <img src={goalsImages[key]} alt="goal" className="rounded w-full" />
+                                        <img src={goalsImages[key]} alt="goal" className="rounded-xl w-full" />
                                     </div>
                                 )
                             ))
@@ -102,18 +100,18 @@ const WhatWeDo = () => {
                 {/* Mission and Vison */}
                 {Object.keys(sections).map((key, index) =>{
                         return(
-                            <div key={index} className = 'flex flex-col gap-4 items-start mx-20 md:mx-40'>
-                                <div className = 'text-2xl font-bold'>{sections[key].title}</div>
-                                <div className = 'text-[#181818] text-md'>{sections[key].description}</div>
+                            <div key={index} className = 'flex flex-col gap-4 items-start md:mx-28 lg:mx-40 sm:mx-16 mx-10 sm:space-y-6 space-y-4'>
+                                <div className = 'text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold'>{sections[key].title}</div>
+                                <div className = 'text-[#181818] sm:text-md text-base me-10 sm:me-20 md:me-40 lg:me-48'>{sections[key].description}</div>
                             </div>
                         )
                 })}
                 
                 {/* Histroy */}
                 <div className='bg-[#FBFBFB]' id = 'history'>
-                    <div className='mx-20 md:mx-40 pt-10 flex flex-col gap-10 text-[#181818] text-md'>
+                    <div className='md:mx-28 lg:mx-40 sm:mx-16 mx-10 pt-10 flex flex-col gap-10 text-[#181818] sm:text-md text-base'>
                         <div className="text-md text-[#D00200] font-semibold cursor-pointer">Our History</div>
-                        <div className="text-4xl font-semibold">
+                        <div className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-start">
                             Explore our timeline to discover the pivotal moments and transformative events that have shaped our organization.
                         </div>
 
@@ -122,25 +120,25 @@ const WhatWeDo = () => {
                             {history.map((yearData, index) => (
                                 <div key={index} className = 'flex flex-col gap-9 border-b-2 py-2'>
                                
-                                    <div className="text-2xl font-bold text-red-600">{yearData.year}</div>
+                                    <div className="text-xl sm:text-2xl font-bold text-red-600">{yearData.year}</div>
                                   
-                                    <div className="grid grid-cols-3">
-                                        <p className="font-semibold col-start-1 col-span-1">President:</p>
-                                        <p className="col-start-2 col-span-2">{yearData.president}</p>
+                                    <div className="grid min-[496px]:grid-cols-1 sm:grid-cols-3 space-y-2">
+                                        <p className="font-semibold sm:col-start-1 sm:col-span-1">President</p>
+                                        <p className="sm:col-start-2 sm:col-span-2">{yearData.president}</p>
                                     </div>
                         
-                                    <div className="grid grid-cols-3">
-                                        <h3 className="font-semibold col-start-1 col-span-1">Vice-Presidents</h3>
-                                        <ul className="col-start-2 col-span-2">
+                                    <div className="grid min-[496px]:grid-cols-1 sm:grid-cols-3 space-y-2">
+                                        <h3 className="font-semibold sm:col-start-1 sm:col-span-1">Vice-Presidents</h3>
+                                        <ul className="sm:col-start-2 sm:col-span-2 sm:space-y-1 space-y-2">
                                             {yearData['vice_presidents'] && Object.entries(yearData['vice_presidents']).map(([role, name], idx) => (
                                             <li key={idx}>{role.replace(/_/g, ' ')}: {name}</li>
                                             ))}
                                         </ul>
                                     </div>
    
-                                    <div className="grid grid-cols-3">
-                                        <h3 className="font-semibold col-start-1 col-span-1">Projects</h3>
-                                        <ul className="col-start-2 col-span-2">
+                                    <div className="grid min-[496px]:grid-cols-1 sm:grid-cols-3 space-y-2">
+                                        <h3 className="font-semibold sm:col-start-1 sm:col-span-1">Projects</h3>
+                                        <ul className="sm:col-start-2 sm:col-span-2 sm:space-y-1 space-y-2">
                                             {yearData.projects && yearData.projects.map((project, idx) => (
                                             <li key={idx}>{project}</li>
                                             ))}
@@ -148,9 +146,9 @@ const WhatWeDo = () => {
                                     </div>
 
                                     {yearData.regional_wins && (
-                                          <div className="grid grid-cols-3">
-                                          <h3 className="font-semibold col-start-1 col-span-1">Regional Wins</h3>
-                                          <ul className="col-start-2 col-span-2">
+                                          <div className="grid min-[496px]:grid-cols-1 sm:grid-cols-3 space-y-2">
+                                          <h3 className="font-semibold sm:col-start-1 sm:col-span-1">Regional Wins</h3>
+                                          <ul className="sm:col-start-2 sm:col-span-2 sm:space-y-1 space-y-2">
                                               {yearData.regional_wins && yearData.regional_wins.map((win, idx) => (
                                               <li key={idx}>{win}</li>
                                               ))}
@@ -163,9 +161,9 @@ const WhatWeDo = () => {
                     </div>
                 </div>
 
-                <div className='flex items-center mx-20 md:mx-40 justify-center my-10'>
+                <div className='flex items-center md:mx-28 lg:mx-40 sm:mx-16 mx-10 justify-center my-10'>
                     {/* should adjust the icon */}
-                    <button className="session-button" onClick={scrollToHistory}>
+                    <button className="session-button sm:text-sm text-xs" onClick={scrollToHistory}>
                             Back To Top
                             <svg
                             xmlns="http://www.w3.org/2000/svg"

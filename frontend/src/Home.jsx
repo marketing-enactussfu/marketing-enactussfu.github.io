@@ -58,17 +58,17 @@ const Home = () =>{
                     <img 
                         src={header}
                         alt="Enactus Team" 
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className="absolute inset-0 w-screen h-screen object-cover"
                     />
                     <div className="absolute inset-0 bg-black opacity-60"></div>
-                    <div className="ms-4 relative z-10 container mx-auto h-full flex items-center px-10">
+                    <div className="lg:mx-40 md:mx-28 sm:mx-16 mx-10 relative z-10 h-full flex items-center">
                         <div className="text-white space-y-4 max-w-lg w-[300px]">
-                        <h1 className="text-4xl font-bold">At Enactus SFU, we dare to do.</h1>
-                        <p className="text-xl">
+                        <h1 className="text-3xl sm:text-4xl font-bold">At Enactus SFU, we dare to do.</h1>
+                        <p className="text-base sm:text-xl">
                             Ignite your integrity, passion, and learn from each other in a spirit of innovation and collaboration.
                         </p>
                         {/* <button className="bg-red-600 text-white py-3 px-6 rounded-full hover:bg-red-600 transition"> */}
-                        <button className="session-button md:"
+                        <button className="session-button text-sm sm:text-base"
                                 onClick={() => navigate('/careers')}>
                             Join Our Team
                         </button>
@@ -77,15 +77,15 @@ const Home = () =>{
                 </div>
                 
                 {/*Our Goals*/}
-                <div className='mx-20 md:mx-40'>
+                <div className='lg:mx-40 md:mx-28 sm:mx-16 mx-10 space-y-10'>
                     {/* Our Goals Section */}
-                    <div className='text-sm text-[#D00200] font-semibold'>Our Goals</div>
-                    <div className='flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0 justify-between'>
-                        <div className='flex flex-col items-start gap-4 w-full md:w-1/2'>
-                        <div className='font-bold text-2xl md:text-3xl'>{ourGoalsContent.title}</div>
-                        <div className='text-[#5C5C5C]'>{ourGoalsContent.text}</div>
+                    <div className='md:text-md sm:text-sm text-xs text-[#D00200] font-semibold'>Our Goals</div>
+                    <div className='flex flex-col custom-lg:flex-row justify-between space-x-0 custom-lg:gap-20 gap-10  md:space-y-0 justify-between items-start'>
+                        <div className='flex flex-col items-start gap-4 w-full custom-lg:w-3/5'>
+                        <div className='font-bold text-2xl custom-lg:text-3xl'>{ourGoalsContent.title}</div>
+                        <div className='text-[#5C5C5C] sm:text-md text-base'>{ourGoalsContent.text}</div>
                         <button 
-                        className='session-button'
+                        className='session-button sm:text-md text-xs'
                         onClick={() => navigate('/about/what-we-do')}
                         >Learn More</button>
                         </div>
@@ -93,16 +93,16 @@ const Home = () =>{
                         <img 
                         src={ourGoal} 
                         alt="our_goals" 
-                        className='object-contain'
+                        className='object-contain w-full custom-lg:w-2/5'
                         />
                     </div>
                     {/* Goals Display */}
-                    <div className='grid grid-cols-3 gap-10 mt-8'>
+                    <div className='grid custom-lg:grid-cols-3 grid-cols-1 gap-10 mt-8'>
                         {ourGoalsSession.map((session, index) => (
                         <div key={index} className="flex flex-col items-start gap-2">
                             <img src={session.icon} alt={session.title}/>
-                            <div className='text-sm font-bold'>{session.title}</div>
-                            <div className='text-sm text-gray-600'>{session.description}</div>
+                            <div className='text-xs sm:text-sm font-bold'>{session.title}</div>
+                            <div className='text-xs sm:text-sm text-gray-600'>{session.description}</div>
                         </div>
                         ))}
                     </div>
@@ -110,9 +110,9 @@ const Home = () =>{
 
                 {/*Highlights*/}
                 <div className="py-10 bg-[#FBFBFB] w-screen">
-                    <div className = 'mx-20 md:mx-40'>
-                        <div className="text-sm text-[#D00200] font-semibold">Highlights</div>
-                        <div className="text-[32px] font-semibold">
+                    <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10 space-y-10'>
+                        <div className="md:text-md sm:text-sm text-xs text-[#D00200] font-semibold">Highlights</div>
+                        <div className="text-[28px] sm:text-[32px] font-semibold">
                             Over the past 5 years, Enactus SFU has dedicated over{" "}
                             <span className="text-[#D00200]">187,000+ hours</span> to improve the lives of over{" "}
                             <span className="text-[#D00200]">15,000+ individuals.</span>
@@ -121,8 +121,8 @@ const Home = () =>{
                         <div className = 'flex flex-col md:flex-row justify-between gap-8 mt-6'>
                             {highLightsContent.map((session, index) => (
                             <div key={index}>
-                                <div className="text-[32px] font-bold">{session.title}</div>
-                                <div className="text-sm text-gray-600">{session.description}</div>
+                                <div className="text-[28px] sm:text-[32px] font-bold">{session.title}</div>
+                                <div className="text-[15px] sm:text-sm text-gray-600">{session.description}</div>
                             </div>
                             ))}
                         </div>
@@ -132,34 +132,33 @@ const Home = () =>{
             
 
                 {/* What We Do */}
-                <div className = 'mx-20 md:mx-40'>
-                    <div className="p-10">
-                        <div className="text-sm text-[#D00200] font-semibold">Where We Do</div>
-                        <div className="flex flex-row justify-between gap-20">
-                            <div className="font-bold text-3xl">{whatWeDoContent.title}</div>
-                            <div className="text-[#5C5C5C]">{whatWeDoContent.text}</div>
+                <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10'>
+                    <div className="py-10 space-y-10">
+                        <div className="md:text-md sm:text-sm text-xs text-[#D00200] font-semibold">What We Do</div>
+                        <div className="flex flex-col whatWeDo-md:flex-row justify-between whatWeDo-md:gap-20 gap-5">
+                            <div className="font-bold text-2xl md:text-3xl whatWeDo-md:w-2/5 w-full">{whatWeDoContent.title}</div>
+                            <div className="text-[#5C5C5C] md:text-md text-base whatWeDo-md:w-3/5 w-full">{whatWeDoContent.text}</div>
                         </div>
-
                     </div>
 
-                    <div className="flex flex-col bg-white m-auto p-auto ms-5">
+                    <div className="flex flex-col bg-white">
                         <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
                             <div className="flex flex-nowrap ml-0">
                             {currentProjectsContent.map((project, index) => (
                                 <div key={index} className="inline-block px-3">
                                 <div
-                                    className=" learn-more-button w-80 h-full max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
+                                    className=" learn-more-button w-60 sm:w-80 h-full max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
                                     <img 
                                     src={currentProjectsContentImages[project.title.replace(/\s+/g, '_').toLowerCase() + '.png']} 
                                     alt={project.title} 
-                                    className="w-full object-cover h-72 p-1 rounded-lg" 
+                                    className="w-auto object-cover h-72 p-1 rounded-lg" 
                                     />
                                     <div className="p-4 flex flex-col flex-grow">
-                                    <div className="font-semibold text-[18px] mb-2">{project.title}</div>
-                                    <div className="text-gray-700 text-base text-[16px] mb-4 flex-grow">{project.description}</div>
+                                    <div className="font-semibold text-[12px] sm:text-[18px] mb-2">{project.title}</div>
+                                    <div className="text-[#5C5C5C] text-[11px] sm:text-[16px] mb-4 flex-grow">{project.description}</div>
                                     <a href="/about/what-we-do" 
                                     // className="learn-more text-red-500 font-semibold inline-block text-[12px] mt-auto"
-                                    className="learn-more text-red-500 font-semibold inline-block text-[12px] mt-auto"> Learn More</a>
+                                    className="learn-more text-red-500 font-semibold inline-block text-[11px] sm:text-[12px] mt-auto"> Learn More</a>
                                     </div>
                                 </div>
                                 </div>
@@ -170,29 +169,28 @@ const Home = () =>{
                 </div>
             
 
-                <div className='mx-20 md:mx-40'>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center p-10">
+                <div className='md:mx-28 lg:mx-40 sm:mx-16 mx-10 space-y-10'>
+                    <div className="grid grid-cols-1 home-competitions-md:grid-cols-2 home-competitions-md:gap-20 items-center gap-16">
                         <div className = 'space-y-4'>
-                            <div className = 'text-sm text-[#D00200] font-semibold'>Enactus Canada Competitions</div>
-                            <div className = 'font-bold text-3xl'>{competitionsContent['title']}</div>
-                            <div className = 'text-[#5C5C5C]'>{competitionsContent['text']}</div>
-
+                        <div className="md:text-md sm:text-sm text-xs text-[#D00200] font-semibold">Enactus Canada Competitions</div>
+                        <div className='font-semibold text-2xl md:text-3xl'>{competitionsContent['title']}</div>
+                        <div className='text-[#5C5C5C] sm:text-md text-base'>{competitionsContent['text']}</div>
+        
                             <div className = 'flex flex-row gap-3'>
                                 <button className = 'bg-[#D00200] text-sm text-white rounded-full px-3 py-2 font-semibold hover:bg-red-800' onClick={() => navigate('/careers')}>Join Us</button>
                                 <button className = 'bg-[#868686] text-sm text-white rounded-full px-3 py-2 font-semibold hover:bg-gray-500' onClick={() => navigate('/competitions')}>Learn More</button>
                             </div>
                         </div>
-                        <img src = {competitions} alt = 'competitions' className = 'object-cover rounded-xl'></img>
+                        <img src = {competitions} alt = 'competitions' className = 'w-full rounded-xl'></img>
                     </div>
 
                 </div>
                
                 {/* brands */}
-                <div className = 'flex flex-col gap-10 md:mx-40 mx-20'>
+                <div className = 'gap-10 lg:mx-40 md:mx-28 sm:mx-16'>
                 {/* For smaller screens (combine both into a single div) */}
                 <div className=" flex flex-col gap-10 items-center justify-center">
-
-                    <div className='md:hidden flex flex-wrap items-center justify-center'>
+                    <div className='home-competitions-md:hidden grid md:grid-cols-4 sm:grid-cols-3 home-brand-sm:grid-cols-2 grid-cols-1 items-center justify-center'>
                             {Object.keys(brandImages)
                                 .sort((a, b) => {
                                     const numA = parseInt(a.match(/\d+/)[0], 10);
@@ -200,13 +198,13 @@ const Home = () =>{
                                     return numA - numB;
                                 })
                                 .map((key, index) => (
-                                    <div key={key} className="w-1/2 md:w-1/4 flex justify-center p-2"> 
+                                    <div key={key} className="flex justify-center p-4 w-full"> 
                                         <img src={brandImages[key]} alt={key}/>
                                     </div>
                             ))}
                     </div>
 
-                    <div className="hidden md:flex md:flex-row gap-10 items-center justify-center">
+                    <div className="hidden home-competitions-md:flex home-competitions-md:flex-row gap-10 items-center justify-center">
                         {/* First 6 images */}
                         {['brand_1.png', 'brand_2.png', 'brand_3.png', 'brand_4.png', 'brand_5.png', 'brand_6.png'].map((image, index) => (
                             <div key={index} className="justify-center">
@@ -215,7 +213,7 @@ const Home = () =>{
                         ))}
                         </div>
 
-                    <div className="hidden md:flex md:flex-row gap-10 items-center justify-center mx-10 md:mx-20">
+                    <div className="hidden home-competitions-md:flex home-competitions-md:flex-row gap-10 items-center justify-center mx-10 home-competitions-md:mx-20">
                         {/* Next 6 images */}
                         {['brand_7.png', 'brand_8.png', 'brand_9.png', 'brand_10.png', 'brand_11.png', 'brand_12.png'].map((image, index) => (
                             <div key={index} className="justify-center">
@@ -228,25 +226,33 @@ const Home = () =>{
 
                 {/* Get Updates */}
                 <div className='py-10 bg-[#FBFBFB] w-screen'>
-                    <div className="flex justify-center flex-col items-center py-6 gap-7 mx-20 md:mx-40">
-                        <div className = 'text-3xl font-bold'>Get Updates</div>
-                        <div className = 'text-[#5C5C5C]'>Sign up with your email address to receive the latest news and updates from Enactus SFU!</div>
-                        <form className="flex items-center rounded-full border border-gray-300 px-4 py-2 w-full max-w-lg">
+                    <div className="flex justify-center flex-col items-center py-6 gap-7 lg:mx-40 md:mx-28 sm:mx-16">
+                        <div className='font-semibold text-2xl md:text-3xl'>Get Updates</div>
+                        <div className='text-base sm:text-md text-[#5C5C5C] text-center justify-center home-subscribe-sm:w-2/5 sm:w-3/5 w-4/5'>
+                        Sign up with your email address to receive the latest news and updates from Enactus SFU!
+                        </div>
+      
+                        <form className="flex flex-row items-center justify-between rounded-full border border-gray-300 px-4 py-2 w-2/5 sm:w-3/5 w-4/5 max-w-lg">
                             <input
                             type="email"
                             placeholder="Email Address"
-                            className="flex-grow outline-none px-4 py-2 text-gray-600 placeholder-gray-400 rounded-full"
+                            className="flex-grow outline-none px-4 py-2 text-gray-600 placeholder-gray-400 placeholder-text-xs sm:placeholder-text-sm home-subscribe-sm:w-full w-2/5 rounded-full"
                             />
                             <button
                             type="submit"
-                            className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition"
+                            className="hidden home-subscribe-sm:flex bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition"
                             >
                             Subscribe
                             </button>
                         </form>
+                            <button
+                            type="submit"
+                            className="home-subscribe-sm:hidden bg-red-600 text-white px-3 py-2 rounded-full hover:bg-red-700 transition"
+                            >
+                            Subscribe
+                            </button>
                     </div>
-                </div>
-             
+                    </div>
 
             </div>
             

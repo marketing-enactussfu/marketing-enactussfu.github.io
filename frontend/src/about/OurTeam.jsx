@@ -15,121 +15,77 @@ const coreOperations = [
     {name: "Stephanie Ma",description: "Co-Director of Design"},
     {name: "Van Mai",description: "Co-Director of Design"},
     {name: "Brianna Mei",description: "Director of Media"},
+    {name: "Mandy Qian",description: "Director of Web Development"},
     {name: "Andrew Learmonth",description: "Director of Finance"},
     {name: "Cameron Miranda",description: "Director of Internal Strategy"}
   ];
-
+  
 
   const projectManagers = [
-    {
-      name: "Christine Hui",
-      description: "Project Manager of BeeKind Co."
-    },
-    {
-      name: "Bhumika Kalra",
-      description: "Co-Project Manager of Himalayan SKYES"
-    },
-    {
-      name: "Ethan Chan",
-      description: "Co-Project Manager of Himalayan SKYES"
-    },
-    {
-      name: "Lin Lin",
-      description: "Co-Project Manager of Turbio Energy"
-    },
-    {
-      name: "Justin Cheung",
-      description: "Co-Project Manager of Second Savour"
-    },
-    {
-      name: "Rami Alhanna",
-      description: "Co-Project Manager of Community Grafts"
-    },
-    {
-      name: "Savar Gupta",
-      description: "Co-Project Manager of Community Grafts"
-    },
-    {
-      name: "Claudia Arana Leon",
-      description: "Co-Project Manager of Aqua Analyzer"
-    }
+    {name: "Christine Hui",description: "Project Manager of BeeKind Co."},
+    {name: "Bhumika Kalra",description: "Co-Project Manager of Himalayan SKYES"},
+    {name: "Ethan Chan",description: "Co-Project Manager of Himalayan SKYES"},
+    {name: "Lin Lin",description: "Co-Project Manager of Turbio Energy"},
+    {name: "Justin Cheung",description: "Co-Project Manager of Second Savour"},
+    {name: "Rami Alhanna",description: "Co-Project Manager of Community Grafts"},
+    {name: "Savar Gupta", description: "Co-Project Manager of Community Grafts"},
+    {name: "Claudia Arana Leon",description: "Co-Project Manager of Aqua Analyzer"},
+    {name: 'Danny Dong', description: 'Project Manager of Catalyst'}
   ];
-  
 
 
 const OurTeam = () =>{
-   //coreOperations
 
+   //coreOperations
    const coreOperationsImage = importAll(require.context('../images/about/coreOperations', false, /\.(png|jpe?g|svg)$/));
     const projectManagersImage = importAll(require.context('../images/about/projectManagers', false, /\.(png|jpe?g|svg)$/));
     const mainpage = (
         <main className = 'mt-4'>
 
             <div className = 'flex flex-col gap-20'>
-            <div className = 'text-4xl font-semibold text-center'>Our Leadership Team</div>
+            <div className = 'text-2xl sm:text-3xl md:text-4xl font-semibold text-center'>Our Leadership Team</div>
 
                 <div className = 'bg-[#FBFBFB]'>
-                <div className = 'flex flex-col items-start gap-4 md:mx-40 mx-20'>
-                    <div className = 'text-2xl md:text-3xl font-semibold text-center'>Core Operations</div>
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                        {coreOperations.map((member, index) => {
-                            const firstName = member.name.split(' ')[0].toLowerCase();
-                            const imageKey = Object.keys(coreOperationsImage).find(key =>
-                                key.toLowerCase().includes(firstName)
-                            );
-
-                            return (
-                                <div key={index} className="flex flex-col items-center">
-                                    <img src={coreOperationsImage[imageKey]} alt="core" className="rounded" />
-                                    <div className="mt-2 font-semibold">{member.name}</div>
-                                    <div className="text-sm text-gray-500">{member.description}</div>
-                                </div>
-                            );
-                        })}
-                    </div>
-
+                
+                <div className = 'flex flex-col items-center sm:items-start gap-4 md:mx-28 lg:mx-40  sm:mx-16 mx-10'>
+                    <div className = 'text-xl sm:text-2xl md:text-3xl font-semibold text-start'>Core Operations</div>
+                      <div className="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 flex flex-col sm:items-start items-center">
+                          {coreOperations.map((member, index) => {
+                              const firstName = member.name.split(' ')[0].toLowerCase();
+                              const imageKey = Object.keys(coreOperationsImage).find(key =>
+                                  key.toLowerCase().includes(firstName)
+                              );
+                              return (
+                                  <div key={index} className="flex flex-col items-center">
+                                      <img src={coreOperationsImage[imageKey]} alt="core" className="rounded-md" />
+                                      <div className="mt-2 font-semibold text-center sm:text-xs">{member.name}</div>
+                                      <div className="text-sm text-[#181818] text-center sm:text-xs">{member.description}</div>
+                                  </div>
+                              );
+                          })}
+                      </div>
                 </div>
                 </div>
 
-
-                <div className = 'flex flex-col items-start gap-4 md:mx-40 mx-20 my-10'>
+                <div className = 'flex flex-col items-center sm:items-start gap-4 md:mx-40 sm:mx-20 mx-10 my-10'>
                     <div className = 'text-2xl md:text-3xl font-semibold text-center'>Project Managers</div>
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div className="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 flex flex-col sm:items-start items-center">
                         {projectManagers.map((member, index) => {
                             const firstName = member.name.split(' ')[0].toLowerCase();
                             const imageKey = Object.keys(projectManagersImage).find(key =>
                                 key.toLowerCase().includes(firstName)
                             );
-
                             return (
                                 <div key={index} className="flex flex-col items-center">
-                                    <img src={projectManagersImage[imageKey]} alt="project manager" className="rounded" />
-                                    <div className="mt-2 font-semibold">{member.name}</div>
-                                    <div className="text-sm text-gray-500">{member.description}</div>
+                                    <img src={projectManagersImage[imageKey]} alt="project manager" className="rounded-md" />
+                                    <div className="mt-2 font-semibold text-center sm:text-xs">{member.name}</div>
+                                    <div className="text-sm text-[#181818] text-center sm:text-xs">{member.description}</div>
                                 </div>
                             );
                         })}
                     </div>
-                </div> 
-                
-
-
+                </div>     
             </div>
- 
-            
-
-    
-
-         
-
-
-
-               
-
-
-            
-
-
         </main>
     )
 
