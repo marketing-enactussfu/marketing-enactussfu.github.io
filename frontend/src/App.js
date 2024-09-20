@@ -16,6 +16,11 @@ import MediaMind from './pastProject/MediaMind';
 import ReFresh from './pastProject/ReFresh';
 import KindredKnots from './pastProject/KindredKnots';
 import SecondSavour from './CurrentProjects/SecondSavour';
+import SKYES from './CurrentProjects/SKYES';
+import AA from './CurrentProjects/AA';
+import CommunityGrafts from './CurrentProjects/CommunityGrafts';
+import EntrepreneurshipChallenges from './CurrentProjects/EntrepreneurshipChallenges';
+import TurbioEnergy from './CurrentProjects/TurbioEnergy';
 
 
 export default function App() {
@@ -37,6 +42,12 @@ export default function App() {
         <Route path='/projects/past-projects/media-mind' element={<MediaMind/>} />
         <Route path='/projects/past-projects/refresh' element={<ReFresh/>} />
         <Route path='/projects/past-projects/kindred-knots' element={<KindredKnots/>} />
+        <Route path='/projects/current-projects/skyes' element={<SKYES/>} />
+        <Route path='/projects/current-projects/community-grafts' element={<CommunityGrafts/>} />
+        <Route path='/projects/current-projects/entrepreneurship-challenges' element={<EntrepreneurshipChallenges/>} />
+        <Route path='/projects/current-projects/turbio-energy' element={<TurbioEnergy/>} />
+        <Route path='/projects/current-projects/aa' element={<AA/>} />
+
       </Routes>
     </Router>
   );
