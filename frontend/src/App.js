@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import Sponsorship from './Sponsorship';
-import WhatWeDo from './about/WhatWeDo';
+import WhatWeDo from './about/whatWeDo';
 import OurTeam from './about/OurTeam';
 import CoastCards from './pastProject/CoastCards';
 import Competitions from './Competitions';  
-import CountOnMe from './pastProject/CountOnMe';
+import CountOnMe from './pastProject/CountonMe';
 import ChangemakerChallenge from './pastProject/ChangemakerChallenge';
 import BrightIdeas from './pastProject/BrightIdeas';
 import Careers from './Careers';//:D
@@ -15,6 +15,7 @@ import BannerBags from './pastProject/BannerBags';
 import MediaMind from './pastProject/MediaMind';
 import ReFresh from './pastProject/ReFresh';
 import KindredKnots from './pastProject/KindredKnots';
+import SecondSavour from './CurrentProjects/SecondSavour';
 
 
 export default function App() {
@@ -30,7 +31,7 @@ export default function App() {
         <Route path='/projects/past-projects/count-on-me' element={<CountOnMe/>} />
         <Route path='/projects/past-projects/changemaker-challenge' element={<ChangemakerChallenge/>} />
         <Route path='/projects/past-projects/bright-ideas' element={<BrightIdeas/>} />
-
+        <Route path='/projects/current-projects/second-savour' element={<SecondSavour/>} />
         <Route path="/careers" element={<Careers/>} />
         <Route path='/projects/past-projects/banner-bags' element={<BannerBags/>} />
         <Route path='/projects/past-projects/media-mind' element={<MediaMind/>} />
