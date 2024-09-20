@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       screens: {
         'tiny': '10px',
-        'custom-lg': '900px',
+        'custom-lg': '1166px',
         'whatWeDo-sm': '583px',
         'whatWeDo-md': '842px',
         'home-competitions-md': '1153px',

@@ -8,6 +8,8 @@ import member_engagement from './images/home/ourgoals/member_engagement.png';
 import collective_growth from './images/home/ourgoals/collective_growth.png';
 import header from './images/home/header.png';
 import { useNavigate } from 'react-router-dom';
+import header_layer from   './images/home/header_layer.png';
+import GetUpdate from './components/GetUpdate';
 
 
 const ourGoalsContent = {
@@ -58,9 +60,14 @@ const Home = () =>{
                     <img 
                         src={header}
                         alt="Enactus Team" 
-                        className="absolute inset-0 w-screen h-screen object-cover"
+                        className="absolute inset-0 w-screen h-screen object-cover z-0"
                     />
-                    <div className="absolute inset-0 bg-black opacity-60"></div>
+                    <img src = {header_layer}
+                        alt="Enactus Team layer" 
+                        className="absolute inset-0 w-screen h-screen object-cover z-10 opacity-100"
+                    ></img>
+
+                    <div className="absolute inset-0 bg-black  opacity-10 z-20"></div>
                     <div className="lg:mx-40 md:mx-28 sm:mx-16 mx-10 relative z-10 h-full flex items-center">
                         <div className="text-white space-y-4 max-w-lg w-[300px]">
                         <h1 className="text-3xl sm:text-4xl font-bold">At Enactus SFU, we dare to do.</h1>
@@ -79,15 +86,15 @@ const Home = () =>{
                 {/*Our Goals*/}
                 <div className='lg:mx-40 md:mx-28 sm:mx-16 mx-10 space-y-10'>
                     {/* Our Goals Section */}
-                    <div className='md:text-md sm:text-sm text-xs text-[#D00200] font-semibold'>Our Goals</div>
-                    <div className='flex flex-col custom-lg:flex-row justify-between space-x-0 custom-lg:gap-20 gap-10  md:space-y-0 justify-between items-start'>
-                        <div className='flex flex-col items-start gap-4 w-full custom-lg:w-3/5'>
-                        <div className='font-bold text-2xl custom-lg:text-3xl'>{ourGoalsContent.title}</div>
-                        <div className='text-[#5C5C5C] sm:text-md text-base'>{ourGoalsContent.text}</div>
-                        <button 
-                        className='session-button sm:text-md text-xs'
-                        onClick={() => navigate('/about/what-we-do')}
-                        >Learn More</button>
+                    <div className='sm:text-md text-base text-[#D00200] font-semibold'>Our Goals</div>
+                    <div className='flex flex-col custom-lg:flex-row justify-between space-x-0 custom-lg:gap-20 gap-10 md:space-y-0 justify-between items-start'>
+                        <div className='flex flex-col items-start md:gap-10 gap-5  w-full custom-lg:w-3/5'>
+                            <div className='font-bold text-2xl custom-lg:text-3xl'>{ourGoalsContent.title}</div>
+                            <div className='text-[#5C5C5C] sm:text-md text-base'>{ourGoalsContent.text}</div>
+                            <button 
+                            className='session-button sm:text-md text-base'
+                            onClick={() => navigate('/about/what-we-do')}
+                            >Learn More</button>
                         </div>
 
                         <img 
@@ -101,7 +108,7 @@ const Home = () =>{
                         {ourGoalsSession.map((session, index) => (
                         <div key={index} className="flex flex-col items-start gap-2">
                             <img src={session.icon} alt={session.title}/>
-                            <div className='text-xs sm:text-sm font-bold'>{session.title}</div>
+                            <div className='text-[13px] sm:text-[14px] font-semibold'>{session.title}</div>
                             <div className='text-xs sm:text-sm text-gray-600'>{session.description}</div>
                         </div>
                         ))}
@@ -111,7 +118,7 @@ const Home = () =>{
                 {/*Highlights*/}
                 <div className="py-10 bg-[#FBFBFB] w-screen">
                     <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10 space-y-10'>
-                        <div className="md:text-md sm:text-sm text-xs text-[#D00200] font-semibold">Highlights</div>
+                        <div className="sm:text-md text-base text-[#D00200] font-semibold">Highlights</div>
                         <div className="text-[28px] sm:text-[32px] font-semibold">
                             Over the past 5 years, Enactus SFU has dedicated over{" "}
                             <span className="text-[#D00200]">187,000+ hours</span> to improve the lives of over{" "}
@@ -134,7 +141,7 @@ const Home = () =>{
                 {/* What We Do */}
                 <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10'>
                     <div className="py-10 space-y-10">
-                        <div className="md:text-md sm:text-sm text-xs text-[#D00200] font-semibold">What We Do</div>
+                        <div className="sm:text-md  text-base text-[#D00200] font-semibold">What We Do</div>
                         <div className="flex flex-col whatWeDo-md:flex-row justify-between whatWeDo-md:gap-20 gap-5">
                             <div className="font-bold text-2xl md:text-3xl whatWeDo-md:w-2/5 w-full">{whatWeDoContent.title}</div>
                             <div className="text-[#5C5C5C] md:text-md text-base whatWeDo-md:w-3/5 w-full">{whatWeDoContent.text}</div>
@@ -158,7 +165,7 @@ const Home = () =>{
                                     <div className="text-[#5C5C5C] text-[11px] sm:text-[16px] mb-4 flex-grow">{project.description}</div>
                                     <a href="/about/what-we-do" 
                                     // className="learn-more text-red-500 font-semibold inline-block text-[12px] mt-auto"
-                                    className="learn-more text-red-500 font-semibold inline-block text-[11px] sm:text-[12px] mt-auto"> Learn More</a>
+                                    className="learn-more text-red-500 font-semibold inline-block text-[11px] sm:text-[12px] mt-auto "> Learn More</a>
                                     </div>
                                 </div>
                                 </div>
@@ -172,13 +179,13 @@ const Home = () =>{
                 <div className='md:mx-28 lg:mx-40 sm:mx-16 mx-10 space-y-10'>
                     <div className="grid grid-cols-1 home-competitions-md:grid-cols-2 home-competitions-md:gap-20 items-center gap-16">
                         <div className = 'space-y-4'>
-                        <div className="md:text-md sm:text-sm text-xs text-[#D00200] font-semibold">Enactus Canada Competitions</div>
+                        <div className="sm:text-md text-base text-[#D00200] font-semibold">Enactus Canada Competitions</div>
                         <div className='font-semibold text-2xl md:text-3xl'>{competitionsContent['title']}</div>
                         <div className='text-[#5C5C5C] sm:text-md text-base'>{competitionsContent['text']}</div>
         
                             <div className = 'flex flex-row gap-3'>
-                                <button className = 'bg-[#D00200] text-sm text-white rounded-full px-3 py-2 font-semibold hover:bg-red-800' onClick={() => navigate('/careers')}>Join Us</button>
-                                <button className = 'bg-[#868686] text-sm text-white rounded-full px-3 py-2 font-semibold hover:bg-gray-500' onClick={() => navigate('/competitions')}>Learn More</button>
+                                <button className = 'bg-[#D00200] text-white rounded-full px-3 py-2 font-semibold hover:bg-red-800 sm:text-md text-base' onClick={() => navigate('/careers')}>Join Us</button>
+                                <button className = 'bg-[#868686] text-white rounded-full px-3 py-2 font-semibold hover:bg-gray-500 sm:text-md text-base' onClick={() => navigate('/competitions')}>Learn More</button>
                             </div>
                         </div>
                         <img src = {competitions} alt = 'competitions' className = 'w-full rounded-xl'></img>
@@ -225,34 +232,8 @@ const Home = () =>{
                 </div>
 
                 {/* Get Updates */}
-                <div className='py-10 bg-[#FBFBFB] w-screen'>
-                    <div className="flex justify-center flex-col items-center py-6 gap-7 lg:mx-40 md:mx-28 sm:mx-16">
-                        <div className='font-semibold text-2xl md:text-3xl'>Get Updates</div>
-                        <div className='text-base sm:text-md text-[#5C5C5C] text-center justify-center home-subscribe-sm:w-2/5 sm:w-3/5 w-4/5'>
-                        Sign up with your email address to receive the latest news and updates from Enactus SFU!
-                        </div>
-      
-                        <form className="flex flex-row items-center justify-between rounded-full border border-gray-300 px-4 py-2 w-2/5 sm:w-3/5 w-4/5 max-w-lg">
-                            <input
-                            type="email"
-                            placeholder="Email Address"
-                            className="flex-grow outline-none px-4 py-2 text-gray-600 placeholder-gray-400 placeholder-text-xs sm:placeholder-text-sm home-subscribe-sm:w-full w-2/5 rounded-full"
-                            />
-                            <button
-                            type="submit"
-                            className="hidden home-subscribe-sm:flex bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition"
-                            >
-                            Subscribe
-                            </button>
-                        </form>
-                            <button
-                            type="submit"
-                            className="home-subscribe-sm:hidden bg-red-600 text-white px-3 py-2 rounded-full hover:bg-red-700 transition"
-                            >
-                            Subscribe
-                            </button>
-                    </div>
-                    </div>
+                <GetUpdate/>
+    
 
             </div>
             

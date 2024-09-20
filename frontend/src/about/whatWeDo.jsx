@@ -22,12 +22,12 @@ const WhatWeDo = () => {
         <main className="mt-4">
             <div className="flex flex-col gap-10 sm:gap-20 pt-12">
                 <div className="flex flex-col gap-10 items-center md:mx-28 lg:mx-40 sm:mx-16 mx-10 text-center">
-                    <div className="md:text-md sm:text-sm text-xs text-[#D00200] font-semibold cursor-pointer">About Us</div>
+                    <div className="sm:text-md text-base text-[#D00200] font-semibold cursor-pointer">About Us</div>
                     <div className="text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold">
                         A story about Enactus SFU and the work that we do
                     </div>
                     <div className="text-[#5C5C5C] sm:text-md text-base">{text}</div>
-                    <button className="session-button sm:text-sm text-xs" onClick={scrollToHistory}>
+                    <button className="session-button sm:text-md text-base" onClick={scrollToHistory}>
                         Our History
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +110,7 @@ const WhatWeDo = () => {
                 {/* Histroy */}
                 <div className='bg-[#FBFBFB]' id = 'history'>
                     <div className='md:mx-28 lg:mx-40 sm:mx-16 mx-10 pt-10 flex flex-col gap-10 text-[#181818] sm:text-md text-base'>
-                        <div className="text-md text-[#D00200] font-semibold cursor-pointer">Our History</div>
+                        <div className="sm:text-md text-base text-[#D00200] font-semibold cursor-pointer">Our History</div>
                         <div className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-start">
                             Explore our timeline to discover the pivotal moments and transformative events that have shaped our organization.
                         </div>

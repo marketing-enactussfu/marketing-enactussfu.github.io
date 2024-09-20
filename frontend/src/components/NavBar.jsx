@@ -10,7 +10,7 @@ function Navbar() {
   const navigate = useNavigate();
   return (
     <nav className="bg-white shadow-md py-4 fixed top-0 w-screen z-50">
-      <div className="mx-20 md:mx-40 flex justify-between items-center text-sm text-black font-semibold">
+      <div className="md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex justify-between items-center text-sm text-black font-semibold">
         <button onClick = {() => navigate('/')}>
 
           <img
@@ -82,7 +82,7 @@ function Navbar() {
               <ProjectGrid title="Past Projects" projects={pastProjects} type = 'past-projects'/>
             </div>
           </div>
-
+          
           <div>
             <a href="/events" className="hover:text-red-500 hover:underline">
               Events
