@@ -3,19 +3,19 @@
 
  import React from "react";
  import PageTemplate from './components/PageTemplate';
- import Events from './images/Events/eventspic.png';
+ import image from './images/Events/eventspic.png';
  
 
  
- const Events = () => {
-     const eventspage = (
-        hello
+ const BeeKind = () => {
+     const beekindpage = (
+
    
-      
+      hello
      );
  
-     return <PageTemplate component={eventspage} />;
+     return <PageTemplate component={beekindpage} />;
  };
  
- export default Events;
+ export default BeeKind;
  

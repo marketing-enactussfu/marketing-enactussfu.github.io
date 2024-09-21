@@ -3,7 +3,7 @@ import second_savour from '../icons/navbar/second_savour.png';
 import himalayan_skyes from '../icons/navbar/himalayan_skyes.png'; 
 import aqua_analyzer from '../icons/navbar/aqua_analyzer.png'; 
 import community from '../icons/navbar/community.png';  
-import tubio_engergy from '../icons/navbar/tubio_engergy.png';  
+import turbio_energy from '../icons/navbar/turbio_energy.png';  
 import entrepreneurship_challenges from '../icons/navbar/entrepreneurship_challenges.png';
 import kindred_knots from '../icons/navbar/kindred_knots.png';
 import count_on_me from '../icons/navbar/count_on_me.png';
@@ -15,12 +15,12 @@ import coast_cards from '../icons/navbar/coast_cards.png';
 import refresh from '../icons/navbar/refresh.png';
 
 export const currentProjects = [
-    { name: "The beeking Company", description: "Scented Candies", icon: beeking },
+    { name: "The beekind Company", description: "Scented Candies", icon: beeking },
     { name: "Second Savour", description: "Delicious Candied Peels", icon: second_savour },
     { name: "Himalayan Skyes", description: "Empowering Youth", icon: himalayan_skyes},
     { name: "Aqua Analyzer", description: "Testing Water Qualities", icon: aqua_analyzer },
     { name: "Community Grafts", description: "Social Media Platform", icon: community },
-    { name: "Tubio Engergy", description: "Sustainable Energy", icon: tubio_engergy },
+    { name: "Turbio Energy", description: "Sustainable Energy", icon: turbio_energy },
     { name: "Entrepreneurship Challenges", description: "Client Based Projects", icon: entrepreneurship_challenges }
   ];
   

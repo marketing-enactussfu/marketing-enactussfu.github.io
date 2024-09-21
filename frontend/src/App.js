@@ -43,11 +43,11 @@ export default function App() {
         <Route path='/projects/past-projects/media-mind' element={<MediaMind/>} />
         <Route path='/projects/past-projects/refresh' element={<ReFresh/>} />
         <Route path='/projects/past-projects/kindred-knots' element={<KindredKnots/>} />
-        <Route path='/projects/current-projects/skyes' element={<SKYES/>} />
+        <Route path='/projects/current-projects/himalayan-skyes' element={<SKYES/>} />
         <Route path='/projects/current-projects/community-grafts' element={<CommunityGrafts/>} />
         <Route path='/projects/current-projects/entrepreneurship-challenges' element={<EntrepreneurshipChallenges/>} />
         <Route path='/projects/current-projects/turbio-energy' element={<TurbioEnergy/>} />
-        <Route path='/projects/current-projects/aa' element={<AA/>} />
+        <Route path='/projects/current-projects/aqua-analyzer' element={<AA/>} />
         <Route path='/events' element={<Events/>} />
 
 
