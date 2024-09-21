@@ -21,6 +21,7 @@ import AA from './CurrentProjects/AA';
 import CommunityGrafts from './CurrentProjects/CommunityGrafts';
 import EntrepreneurshipChallenges from './CurrentProjects/EntrepreneurshipChallenges';
 import TurbioEnergy from './CurrentProjects/TurbioEnergy';
+import Events from './Events';
 
 
 export default function App() {
@@ -47,6 +48,8 @@ export default function App() {
         <Route path='/projects/current-projects/entrepreneurship-challenges' element={<EntrepreneurshipChallenges/>} />
         <Route path='/projects/current-projects/turbio-energy' element={<TurbioEnergy/>} />
         <Route path='/projects/current-projects/aa' element={<AA/>} />
+        <Route path='/events' element={<Events/>} />
+
 
       </Routes>
     </Router>
