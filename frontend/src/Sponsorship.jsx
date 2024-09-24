@@ -21,11 +21,11 @@ const Sponsorship = () =>{
         <main className = 'mt-4'>
             <div className = 'flex flex-col gap-20 pt-12'>
                 <div className = 'flex flex-col items-center gap-10'>
-                    <div className='text-md text-[#D00200] font-semibold cursor-pointer'
-                    >Sponsorship</div>
-                    <div className = 'text-4xl font-semibold text-center'>Thank you to all our partners!</div>
+                   <div className='sm:text-md text-base text-[#D00200] font-semibold'>
+                    Sponsorship</div>
+                    <div className = 'text-3xl sm:text-4xl font-semibold text-center'>Thank you to all our partners!</div>
                     <div className = 'flex flex-col gap-7 md:flex-row'>
-                        <button onClick={scrollToForm} className="session-button">
+                        <button onClick={scrollToForm} className="session-button text-[14px] sm:text-base font-semibold">
                             Become a Sponsor
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -44,41 +44,40 @@ const Sponsorship = () =>{
 
                         </button>
                         <button 
-                        className = 'sponsor-package-button'
+                        className = 'sponsor-package-button text-[14px] sm:text-base font-semibold'
                         >Sponsorship Package</button>
                     </div>
                 </div>
 
-                <div className='mx-20 border rounded-xl my-10 md:mx-40'>
+                <div className='border rounded-xl my-10 lg:mx-40 md:mx-28 sm:mx-16 mx-10'>
                         <div 
                         // className = 'mx-20 text-center items-center flex flex-col py-20 md:mx-56 lg:mx-56 gap-10'
-                         className = 'mx-5 text-center items-center flex flex-col md:mx-10 lg:mx-20 py-20 gap-10'
+                         className = 'mx-5 text-center items-center flex flex-col md:mx-10 lg:mx-20 py-20 gap-14'
                         >
                             <img src={main} alt = 'brand'></img>
-                            <p className = 'text-[#5C5C5C] text-md'>{text}</p>
+                            <p className = 'text-[#5C5C5C] sm:text-xl text-sm'>{text}</p>
                         </div>
 
                 </div>
 
-                <div className = 'flex flex-col gap-10 md:mx-40 mx-20'>
-                    <div className = 'flex flex-col gap-10 items-center justify-center md:flex-row'>
+                <div className = 'flex flex-col gap-10 lg:mx-40 md:mx-28 sm:mx-16 mx-10'>
+                    <div className = 'flex flex-col gap-10 items-center justify-center md:flex-row items-center'>
                         <div className = 'justify-center'><img src = {brandImages['brand_5.png']} alt = 'brand' ></img></div>
                         <div className = 'justify-center'><img src = {brandImages['brand_8.png']} alt = 'brand'></img></div>
                     </div>
                     {/* For smaller screens (combine both into a single div) */}
-                    <div className="grid grid-cols-2 md:hidden gap-5 items-center justify-center">
+                    {/* <div className="grid grid-cols-2 md:hidden gap-5 items-center justify-between"> */}
+                    <div className='flex flex-wrap items-center justify-between md:hidden'>
                     {/* First 5 images from the first div */}
-                    <div className="justify-center"><img src={brandImages['brand_2.png']} alt="brand" /></div>
-                    <div className="justify-center"><img src={brandImages['brand_11.png']} alt="brand" /></div>
-                    <div className="justify-center"><img src={brandImages['brand_3.png']} alt="brand" /></div>
-                    <div className="justify-center"><img src={brandImages['brand_6.png']} alt="brand" /></div>
-                    <div className="justify-center"><img src={brandImages['brand_9.png']} alt="brand" /></div>
-                    
-                    {/* Next 4 images from the second div */}
-                    <div className="justify-center"><img src={brandImages['brand_1.png']} alt="brand" /></div>
-                    <div className="justify-center"><img src={brandImages['brand_10.png']} alt="brand" /></div>
-                    <div className="justify-center"><img src={brandImages['brand_4.png']} alt="brand" /></div>
-                    <div className="justify-center"><img src={brandImages['brand_7.png']} alt="brand" /></div>
+                    <div className = 'w-1/2 flex justify-center p-2'><img src={brandImages['brand_2.png']} alt="brand" className = 'md:w-fit w-full'/></div>
+                    <div className = 'w-1/2 flex justify-center p-2'><img src={brandImages['brand_11.png']} alt="brand" className = 'md:w-fit w-full'/></div>
+                    <div className = 'w-1/2 flex justify-center p-2'><img src={brandImages['brand_3.png']} alt="brand" className = 'md:w-fit w-full'/></div>
+                    <div className = 'w-1/2 flex justify-center p-2'><img src={brandImages['brand_6.png']} alt="brand" className = 'md:w-fit w-full'/></div>
+                    <div className = 'w-1/2 flex justify-center p-2'><img src={brandImages['brand_9.png']} alt="brand" className = 'md:w-fit w-full'/></div>
+                    <div className = 'w-1/2 flex justify-center p-2'><img src={brandImages['brand_1.png']} alt="brand" className = 'md:w-fit w-full'/></div>
+                    <div className = 'w-1/2 flex justify-center p-2'><img src={brandImages['brand_10.png']} alt="brand" className = 'md:w-fit w-full'/></div>
+                    <div className = 'w-1/2 flex justify-center p-2'><img src={brandImages['brand_4.png']} alt="brand" className = 'md:w-fit w-full'/></div>
+                    <div className = 'w-1/2 flex justify-center p-2'><img src={brandImages['brand_7.png']} alt="brand" className = 'md:w-fit w-full'/></div>
                     </div>
 
                     {/* For larger screens (split into two divs) */}
@@ -101,11 +100,10 @@ const Sponsorship = () =>{
 
                 </div>
 
+                <div className ='bg-[#FBFBFB] w-screen py-40'>
 
-                <div className ='bg-[#FBFBFB] py-40 md:px-40 px-20'>
-
-                    <div className = 'flex flex-col gap-10 items-center text-3xl font-semibold'>
-                        <div className = 'text-center text-3xl'>Our partners for Forward Vision</div>
+                    <div className = 'flex flex-col gap-10 items-center text-3xl font-semibold lg:mx-40 md:mx-28 sm:mx-16 mx-10'>
+                       <div className = 'text-2xl sm:text-3xl font-semibold text-center'>Our partners for Forward Vision</div>
 
                         <div className='flex flex-wrap items-center justify-center'>
                             {Object.keys(forwardVisionImages)

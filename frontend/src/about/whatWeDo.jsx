@@ -27,7 +27,7 @@ const WhatWeDo = () => {
                         A story about Enactus SFU and the work that we do
                     </div>
                     <div className="text-[#5C5C5C] sm:text-md text-base">{text}</div>
-                    <button className="session-button sm:text-md text-base" onClick={scrollToHistory}>
+                    <button className="session-button sm:text-md text-base font-semibold" onClick={scrollToHistory}>
                         Our History
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +163,7 @@ const WhatWeDo = () => {
 
                 <div className='flex items-center md:mx-28 lg:mx-40 sm:mx-16 mx-10 justify-center my-10'>
                     {/* should adjust the icon */}
-                    <button className="session-button sm:text-sm text-xs" onClick={scrollToHistory}>
+                    <button className="session-button sm:text-sm text-xs font-semibold" onClick={scrollToHistory}>
                             Back To Top
                             <svg
                             xmlns="http://www.w3.org/2000/svg"

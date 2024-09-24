@@ -13,6 +13,7 @@ module.exports = {
         'home-competitions-md': '1153px',
         'home-brand-sm': '526px',
         'home-subscribe-sm': '813px',
+        'navbar-md': '1265px',
       },
     },
   },

@@ -1,14 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const ProjectGrid = ({ title, projects, type }) => {
+const ProjectGrid = ({ title, projects, type, isMobile}) => {
   const navigate = useNavigate();
 
   return (
     <div className='p-3 mx-1 my-1 bg-white rounded-md'>
-      <div className='mx-3 my-2'>
-        <h3 className="font-semibold text-black mb-1 text-[14px]">{title}</h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      <div className={(isMobile ? 'mt-4' : 'mx-3 my-2')}>
+        <h3 className='font-semibold text-black text-[14px] mb-4'>{title}</h3>
+        <div className={'grid ' + (isMobile ? 'grid-cols-1' : 'navbar-md:grid-cols-4 grid-cols-2 gap-4')}>
           {projects.map((project, index) => (
             <button 
               key={index} 

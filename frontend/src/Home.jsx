@@ -68,14 +68,13 @@ const Home = () =>{
                     ></img>
 
                     <div className="absolute inset-0 bg-black  opacity-10 z-20"></div>
-                    <div className="lg:mx-40 md:mx-28 sm:mx-16 mx-10 relative z-10 h-full flex items-center">
+                    <div className="lg:mx-40 md:mx-28 sm:mx-16 mx-10 relative z-30 h-full flex items-center">
                         <div className="text-white space-y-4 max-w-lg w-[300px]">
                         <h1 className="text-3xl sm:text-4xl font-bold">At Enactus SFU, we dare to do.</h1>
                         <p className="text-base sm:text-xl">
                             Ignite your integrity, passion, and learn from each other in a spirit of innovation and collaboration.
                         </p>
-                        {/* <button className="bg-red-600 text-white py-3 px-6 rounded-full hover:bg-red-600 transition"> */}
-                        <button className="session-button text-sm sm:text-base"
+                        <button className="session-button text-sm sm:text-base font-semibold"
                                 onClick={() => navigate('/careers')}>
                             Join Our Team
                         </button>
@@ -92,7 +91,7 @@ const Home = () =>{
                             <div className='font-bold text-2xl custom-lg:text-3xl'>{ourGoalsContent.title}</div>
                             <div className='text-[#5C5C5C] sm:text-md text-base'>{ourGoalsContent.text}</div>
                             <button 
-                            className='session-button sm:text-md text-base'
+                            className='session-button sm:text-md text-base font-semibold'
                             onClick={() => navigate('/about/what-we-do')}
                             >Learn More</button>
                         </div>

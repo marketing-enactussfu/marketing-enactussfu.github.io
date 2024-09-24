@@ -20,7 +20,7 @@ function Navbar() {
           />
         </button>
 
-        <div className="flex space-x-8 text-gray-600 items-center">
+        <div className="flex space-x-8 text-gray-600 items-center text-[14px]">
           {/* About Dropdown */}
           <div
             className="relative group inline-block" 
@@ -37,7 +37,7 @@ function Navbar() {
               id="dropdownDelay"
               aria-labelledby="dropdownDelayButton"
               className="mt-4 z-10 z-[1000] left-1/2 -translate-x-1/2 opacity-0 border border-gray-200 invisible absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 transition-all duration-500 ease-out transform scale-95">
-              <li>
+              <div>
                 <a
                   href="/about/what-we-do"
                   className="bg-white text-sm block px-4 py-3 mt-1 mx-1 text-gray-600 hover:bg-gray-100 flex items-center gap-2"
@@ -49,7 +49,7 @@ function Navbar() {
                   />
                   What We Do
                 </a>
-              </li>
+              </div>
 
               <div>
                 <a
@@ -78,8 +78,8 @@ function Navbar() {
             id="dropdownDelay"
             aria-labelledby="dropdownDelayButton"
             className="mt-3 z-10 z-[1000] left-1/2 -translate-x-1/2 opacity-0 border border-gray-200 invisible absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 transition-all duration-500 ease-out w-max transform scale-95">
-              <ProjectGrid title="Current Projects" projects={currentProjects} type = 'current-projects'/>
-              <ProjectGrid title="Past Projects" projects={pastProjects} type = 'past-projects'/>
+              <ProjectGrid title="Current Projects" projects={currentProjects} type = 'current-projects' isMobile = {false}/>
+              <ProjectGrid title="Past Projects" projects={pastProjects} type = 'past-projects' isMobile = {false}/>
             </div>
           </div>
           
@@ -102,14 +102,14 @@ function Navbar() {
           </div>
 
           {/* Join Our Team Button */}
-          <div>
+          {/* <div>
             <button 
             className="session-button"
             onClick={() => navigate('/career')}
             >
               Join Our Team
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
