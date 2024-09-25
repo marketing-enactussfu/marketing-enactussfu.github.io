@@ -13,7 +13,7 @@ const CurrentProjectsTemplate = ({title, text, pic }) => {
                             {title}
                         </div>
                         {/* lg:mx-60 currentProject-md:mx-10 mx-10 */}
-                        <div className="text-center text-[#5c5c5c] text-md sm:text-xl font-[400] lg:mx-60 currentProjectText-md:mx-20">
+                        <div className="text-center text-[#5c5c5c] text-md sm:text-xl font-[400] currentProject-md:mx-60 currentProjectText-md:mx-20">
                             {text}
                         </div>
                 </div>
@@ -25,8 +25,8 @@ const CurrentProjectsTemplate = ({title, text, pic }) => {
                   <img className="w-full rounded-xl" src={pic} alt="Desk Image" />
                 </div>
 
-                <div className="lg:mx-60 md:mx-40 sm:mx-28 mx-10 mb-36">
-                    <div className="text-xl md:text-2xl sm:text-3xl font-semibold text-center text-[#181818]">
+                <div className="currentProject-md:mx-80 currentProjectText-md:mx-78 currentProjectText-mx:mx-42 sm:mx-20 mx-5 mb-10">
+                    <div className="currentProject-md:text-3xl currentProjectText-md:text-3xl currentProjectText-mx:text-2xl sm:text-2xl text-xl font-semibold text-center text-[#181818]">
                         Details about this project will be revealed soon. Check back later!
                     </div>
                 </div>
