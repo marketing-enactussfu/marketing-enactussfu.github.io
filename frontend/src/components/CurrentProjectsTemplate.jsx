@@ -13,14 +13,15 @@ const CurrentProjectsTemplate = ({title, text, pic }) => {
                             {title}
                         </div>
                         {/* lg:mx-60 currentProject-md:mx-10 mx-10 */}
-                        <div className="text-center text-[#5c5c5c] text-md sm:text-xl font-[400] lg:mx-60 sm:mx-10 ">
+                        <div className="text-center text-[#5c5c5c] text-md sm:text-xl font-[400] lg:mx-60 currentProjectText-md:mx-20">
                             {text}
                         </div>
                 </div>
 
                 {/* md:mx-72 sm:mx-52 mx-28 */}
 
-                <div className="lg:mx-96 currentProject-md:mx-32 sm:mx-28 mx-8 items-center">
+                {/* <div className="lg:mx-96 currentProject-md:mx-32 sm:mx-28 mx-8 items-center"> */}
+                <div className="currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-48 sm:mx-28 mx-8 items-center">
                   <img className="w-full rounded-xl" src={pic} alt="Desk Image" />
                 </div>
 
