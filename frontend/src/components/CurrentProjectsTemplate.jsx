@@ -18,8 +18,6 @@ const CurrentProjectsTemplate = ({title, text, pic }) => {
                         </div>
                 </div>
 
-                {/* md:mx-72 sm:mx-52 mx-28 */}
-
                 {/* <div className="lg:mx-96 currentProject-md:mx-32 sm:mx-28 mx-8 items-center"> */}
                 <div className="currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-48 sm:mx-28 mx-8 items-center">
                   <img className="w-full rounded-xl" src={pic} alt="Desk Image" />
