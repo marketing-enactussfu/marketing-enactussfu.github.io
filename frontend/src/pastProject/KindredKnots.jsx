@@ -27,8 +27,8 @@ const KindredKnots = () => {
     ];
    
     const mainpage = (
-        <main className='mt-4'>
-            <div className='flex flex-col gap-40'>
+        <main className='mt-20'>
+            <div className='flex flex-col md:gap-36 gap-20'>
                 <PastProjectIntro 
                     timeRange={'2023-2024'} 
                     title={'Kindred Knots'} 
@@ -38,13 +38,12 @@ const KindredKnots = () => {
                     image={generalImages} 
                 />
 
-                <div className='bg-[#FBFBFB] py-36 w-screen'>
-                    <div className='mx-20 md:mx-40 flex flex-col gap-20'>
-                        
+                <div className='bg-[#FBFBFB] py-28 w-screen'>
+                    <div className='lg:mx-40 md:mx-28 sm:mx-16 mx-10 flex flex-col gap-20'>
                         <div className='flex flex-col items-center'>
-                            <div className="text-md text-[#D00200] font-semibold cursor-pointer">Our Impact</div>
+                            <div className='sm:text-md text-base text-[#D00200] font-semibold'>Our Impact</div>
                             
-                            <div className='grid grid-cols-1 md:grid-cols-3 gap-10 py-10'>
+                            <div className='grid grid-cols-1 impact-md:grid-cols-3 gap-10 py-10'>
                                 {corePillars.map((stat, index) => (
                                     <div key={index} className='text-center'>
                                         <div className='text-[#181818] text-2xl font-semibold'>{stat.title}</div>
@@ -56,41 +55,34 @@ const KindredKnots = () => {
                     </div>
                 </div>
 
-                <div className='md:mx-40 mx-20 flex flex-col gap-10 items-center'>
-                    <div className='text-md text-[#D00200] font-semibold cursor-pointer'>What We Do</div>
-                    <div className = 'md:mr-56 mr-10'>
+                <div className='lg:mx-40 md:mx-28 sm:mx-16 mx-10 flex flex-col whatweDoPic-sm:gap-10 gap-6 items-center'>
+                    <div className='sm:text-md text-base text-[#D00200] font-semibold'>What We Do</div>
+                    <div className = 'whatweDo-sm::mr-56 mr-10'>
                         <div className = 'text-start'>
                             Kindred Knots delivers bi-weekly interactive knitting sessions at partnering elder care centres. Our team provides social activities and knitting projects for both elders and youth participants, with each session meticulously crafted. Each knitting project is developed with an alignment to address the needs of the unhoused.
                         </div>
                     </div>
 
-                    {/* <div className='flex flex-row gap-4'> */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center items-center">
+                    <div className="grid grid-cols-1 whatweDoPic-sm:grid-cols-3 whatweDoPic-sm:gap-3 gap-6 items-center">
                             {Object.keys(whatWeDoImages).map((image, index) => (
                                 image !== 'whatWeDo_4.png' && (
-                                    <img key={index} src={whatWeDoImages[image]} className = 'rounded-md w-full'></img>
+                                    <img key={index} src={whatWeDoImages[image]} className = 'whatweDoPic-sm:rounded-md w-screen rounded-xl'></img>
                                 )
                             ))}
                     </div>
 
-                    <div className = 'flex md:flex-row flex-col justify-between gap-10 items-center'>
-                                <img src= {whatWeDoImages['whatWeDo_4.png']} className = 'rounded-xl '></img>
+                    <div className = 'flex whatweDo-sm:flex-row flex-col justify-between gap-10 items-center'>
+                                <img src= {whatWeDoImages['whatWeDo_4.png']} className = 'rounded-xl w-full'></img>
                                 <div className = 'space-y-10'>
                                 <div>Kindred Knots’ Monthly Clothing Donation Drives are hosted regularly at SFU’s Burnaby campus. Through the collaborative efforts of the student community, unused clothing items are given a second life. All collected donations are then donated to partnering organizations to provide essential clothing support for Vacnouver’s unhoused.</div>
                                 </div>
                     </div>
-
-                        
-               
-
-              
-    
+            
                 </div>
 
-
-                <div className='md:mx-40 mx-20 flex flex-col items-center gap-5'>
+                <div className='md:mx-40 mx-20 flex flex-col items-center gap-5 mb-20'>
                         <div className="text-md text-[#D00200] font-semibold cursor-pointer">Partners</div>
-                        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 justify-center items-center">
+                        <div className="grid grid-cols-1 partner-sm:grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 justify-center items-center">
                                 {Object.keys(parnerImages)
                                     .map((key, index) => (
                                             <div key={index} className="p-1 flex justify-center">

@@ -3,6 +3,7 @@ import PageTemplate from '../components/PageTemplate';
 import { importAll } from '../utilities/importImages'; 
 import { history } from '../data/history';
 import { PastProjectIntro } from '../components/PastProjectIntro';
+import Subtitle from '../components/Subtitle';
 
 const BrightIdeas =() => {
     const generalImages = importAll(require.context('../images/pastProject/brightIdeas/general', false, /\.(png|jpe?g|svg)$/));
@@ -11,47 +12,46 @@ const BrightIdeas =() => {
  
     
     const mainpage =(
-        <main className = 'mt-4'>
-            <div className = 'flex flex-col gap-40'>
-                <PastProjectIntro timeRange={'2014-2016'} title ={'Bright Ideas'}  hasButton = {true} buttonText={'Our Instagram'} aboutUsText={aboutUsText} image = {generalImages}/>
+        <main className='mt-20'>
+            <div className = 'flex flex-col md:gap-36 gap-20'>
+                <PastProjectIntro timeRange={'2016-2023'} title ={'Bright Ideas'}  hasButton = {true} buttonText={'Our Instagram'} aboutUsText={aboutUsText} image = {generalImages}/>
 
-                <div className = 'bg-[#FBFBFB] py-36 w-screen'>
+                <div className = 'bg-[#FBFBFB] py-28 w-screen'>
 
-                <div className = 'mx-20 md:mx-40'>
-                        <div className = 'text-2xl font-semibold text-center md:mx-40 mx-20'>
-                            Bright Ideas is designed to instill confidence in students to enact change in their communities.
-                        </div>
+                    <div className = 'lg:mx-40 md:mx-28 sm:mx-16 mx-10'>
+                            <div className = 'text-2xl font-[500] text-center lg:mx-40 md:mx-28 sm:mx-16 mx-10'>
+                                Bright Ideas is designed to instill confidence in students to enact change in their communities.
+                            </div>
                     </div> 
                    
                 </div>
 
-                <div className = 'mx-20 md:mx-40 flex flex-col gap-10 items-center'>
-                    <div className="text-md text-[#D00200] font-semibold cursor-pointer">Bright Ideas Timeline</div>
+                <div className = 'lg:mx-40 md:mx-28 sm:mx-16 mx-10 flex flex-col gap-10 items-center'>
+                    <Subtitle text='Bright Ideas Timeline'/>
                     <img src= {generalImages['general_3.png']}></img>
                 </div>
 
-                <div className='bg-[#FBFBFB] w-screen py-40 flex flex-col gap-20 items-center'>
-                    <div className="text-md text-[#D00200] font-semibold cursor-pointer">Our Sponsors</div>
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-10 justify-center items-center">
-                            {Object.keys(sponsorImages)
-                                .filter(key => key >= 'general_4.png')
-                                .map((key, index) => (
-                                        <div key={index} className="p-1 flex justify-center">
-                                            <img src={sponsorImages[key]} alt="general" className="rounded w-full" />
-                                        </div>
-                                    
-                                ))
-                            }
+                <div className='bg-[#FBFBFB] w-screen py-28 items-center'>
+                    <div className = 'lg:mx-40 md:mx-28 sm:mx-16 mx-10 flex flex-col gap-4'>
+                        <div className="text-md text-[#D00200] font-semibold cursor-pointer">Our Sponsors</div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-center items-center">
+                                {Object.keys(sponsorImages)
+                                    .filter(key => key >= 'general_4.png')
+                                    .map((key, index) => (
+                                            <div key={index} className="p-1 flex justify-center">
+                                                <img src={sponsorImages[key]} alt="general" className="rounded w-full" />
+                                            </div>
+                                    ))
+                                }
+                        </div>
                     </div>
-
-
-
+                   
                 </div>
 
                 
            
-                <div className = 'mx-20 md:mx-40'>
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center">
+                <div className = 'lg:mx-40 md:mx-28 sm:mx-16 mx-10 mb-20'>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center">
                             {Object.keys(generalImages)
                                 .filter(key => key >= 'general_4.png')
                                 .map((key, index) => (

@@ -3,6 +3,7 @@ import PageTemplate from '../components/PageTemplate';
 import { importAll } from '../utilities/importImages'; 
 import { history } from '../data/history';
 import { PastProjectIntro } from '../components/PastProjectIntro';
+import Subtitle from '../components/Subtitle';
 
 const BannerBags =() => {
     const generalImages = importAll(require.context('../images/pastProject/bannerBag/general', false, /\.(png|jpe?g|svg)$/));
@@ -41,59 +42,58 @@ const BannerBags =() => {
 
     
     const mainpage =(
-        <main className = 'mt-4'>
-            <div className = 'flex flex-col gap-40'>
+        <main className='mt-20'>
+            <div className = 'flex flex-col md:gap-36 gap-20'>
                 <PastProjectIntro timeRange={'2014-2016'} title ={'Banner Bag'}  hasButton = {false} buttonText={''} aboutUsText={aboutUsText} image = {generalImages}/>
 
-                <div className = 'bg-[#FBFBFB] py-36 w-screen'>
-
-                    <div className = 'mx-20 md:mx-40 flex flex-col gap-10 items-center'>
-                            <div className="text-md text-[#D00200] font-semibold cursor-pointer">Mission</div>
-                            <div className = 'text-2xl font-medium text-center md:mx-40 mx-10'>
+                <div className = 'bg-[#FBFBFB] py-28 w-screen'>
+                    <div className = 'lg:mx-40 md:mx-28 sm:mx-16 mx-10 flex flex-col gap-10 items-center'>
+                        <Subtitle text='Mission'/>
+                            <div className = 'text-xl sm:text-2xl font-medium text-center md:mx-40 mx-10'>
                             Banner Bags works to develop an education curriculum targeted at high school students to highlight the management of waste through the upcycling of banners that students can constantly reuse.
                             </div>
                     </div> 
                 
                 </div>
 
-                <div className = 'md:mx-40 mx-20 flex flex-col items-center gap-10' >
-
-                    <div className="text-md text-[#D00200] font-semibold text-pointer">3 Components</div>
-
-                    <div className='md:mx-20 mx-10'>
-                        <div className="p-10 pb-20 border rounded-lg">
-                            <h3 className="text-lg font-semibold text-center">{componentsData[0].title}</h3>
-                            <p className="mt-4 text-sm text-center">{componentsData[0].description}</p>
-                        </div>
-                        <div className="mt-10 grid grid-cols-1 md:grid-cols-5 gap-10">
-                        {componentsData.map((component, index) => (
-                            index > 0 && (
-                            <div
-                                key={index}
-                                className={`p-10 pb-20 border rounded-lg ${
-                                index % 2 !== 0
-                                    ? 'col-span-1 md:col-span-3'
-                                    : 'col-span-1 md:col-span-2'
-                                }`}
-                            >
-                                <h3 className="text-lg font-semibold text-center">{component.title}</h3>
-                                <p className="mt-4 text-sm text-center">{component.description}</p>
+                <div className = 'lg:mx-40 md:mx-28 sm:mx-16 mx-10 flex flex-col items-center 3components-md:gap-10 gap-7'>
+                        <Subtitle text='3 Components'/>   
+                       
+                        
+                            <div className="3components-sm:p-10 p-6 pb-20 border rounded-lg">
+                                <h3 className="text-md sm:text-lg font-semibold text-center">{componentsData[0].title}</h3>
+                                <p className="mt-4 text-xs sm:text-sm text-center">{componentsData[0].description}</p>
                             </div>
-                            )
-                        ))}
-                        </div>
+                            <div className="grid grid-cols-1 3components-md:grid-cols-5 3components-md:gap-10 gap-4">
+                                {componentsData.map((component, index) => (
+                                    index > 0 && (
+                                    <div
+                                        key={index}
+                                        className={`3components-sm:p-10 p-6 pb-20 border rounded-lg ${
+                                        index % 2 !== 0
+                                            ? 'col-span-1 3components-md:col-span-3'
+                                            : 'col-span-1 3components-md:col-span-2'
+                                        }`}
+                                    >
+                                        <h3 className="text-md sm:text-lg font-semibold text-center">{component.title}</h3>
+                                        <p className="mt-4 text-xs sm:text-sm text-center">{component.description}</p>
+                                    </div>
+                                    )
+                                ))}
+                            
 
-     
-                </div>
+               
+
+                        </div>
+                       
                                     
                 </div>
 
-                <div className = 'bg-[#FBFBFB] py-36 w-screen'>
+                <div className = 'bg-[#FBFBFB] py-28 w-screen'>
 
-                    <div className="md:mx-40 mx-20 flex flex-col items-center">
-                    <div className="text-md text-[#D00200] font-semibold cursor-pointer">Triple Bottom Line</div>
-
-                    <div className="flex flex-col justify-center gap-10 mt-10 md:flex-row">
+                    <div className="lg:mx-40 md:mx-28 sm:mx-16 mx-10 flex flex-col items-center">
+                    <Subtitle text='Triple Bottom Line'/>
+                    <div className="flex flex-col justify-center gap-10 mt-10 tripleBottomLine-md:flex-row">
                         {sustainabilityInitiatives.map((component, index) => (
                         <div 
                             key={index} 
@@ -104,9 +104,9 @@ const BannerBags =() => {
                                 alt={component.title} 
                                 className="w-full h-auto object-cover h-72 p-1 rounded-xl" 
                             />
-                            <div className="p-4 flex flex-col flex-grow items-center">
-                                <div className="font-semibold text-[18px] mb-2">{component.title}</div>
-                                <div className="text-[#181818] text-md">{component.description}</div>
+                            <div className="p-6 flex flex-col flex-grow items-center">
+                                <div className="font-semibold sm:text-lg text-md text-[#181818] mb-2">{component.title}</div>
+                                <div className="text-[#5C5C5C] text-xs sm:text-sm text-center">{component.description}</div>
                             </div>
                             </div>
                         </div>
@@ -116,14 +116,6 @@ const BannerBags =() => {
                    
 
                 </div>
-
-              
-
-            
-
-                
-
-         
      
              </div>
           

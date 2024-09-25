@@ -12,7 +12,7 @@ import ChangemakerChallenge from './pastProject/ChangemakerChallenge';
 import BrightIdeas from './pastProject/BrightIdeas';
 import Careers from './Careers';//:D
 import BannerBags from './pastProject/BannerBags';
-import MediaMind from './pastProject/MediaMind';
+import MediaMinds from './pastProject/MediaMinds';
 import ReFresh from './pastProject/ReFresh';
 import KindredKnots from './pastProject/KindredKnots';
 import SecondSavour from './CurrentProjects/SecondSavour';
@@ -40,7 +40,7 @@ export default function App() {
         <Route path='/projects/current-projects/second-savour' element={<SecondSavour/>} />
         <Route path="/careers" element={<Careers/>} />
         <Route path='/projects/past-projects/banner-bags' element={<BannerBags/>} />
-        <Route path='/projects/past-projects/media-mind' element={<MediaMind/>} />
+        <Route path='/projects/past-projects/media-minds' element={<MediaMinds/>} />
         <Route path='/projects/past-projects/refresh' element={<ReFresh/>} />
         <Route path='/projects/past-projects/kindred-knots' element={<KindredKnots/>} />
         <Route path='/projects/current-projects/himalayan-skyes' element={<SKYES/>} />

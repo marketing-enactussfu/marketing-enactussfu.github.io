@@ -2,6 +2,8 @@ import React from 'react';
 import PageTemplate from '../components/PageTemplate';
 import { importAll } from '../utilities/importImages'; 
 import { history } from '../data/history';
+import { PastProjectIntro } from '../components/PastProjectIntro';
+import Subtitle from '../components/Subtitle';
 
 const CoastCard =() => {
     const generalImages = importAll(require.context('../images/pastProject/coastCard/general', false, /\.(png|jpe?g|svg)$/));
@@ -18,28 +20,17 @@ const CoastCard =() => {
         {value: "150+",description: "Community members educated"},
     ];
 
-    const mainpage = (
-        <main className = 'mt-4'>
-            <div className = 'flex flex-col gap-20'>
-                <div className = 'mx-20 md:mx-40'>
-                    <div className="text-md text-[#D00200] font-semibold cursor-pointer">Enactus 2014-2016</div>
-                    <div className="text-3xl font-bold mb-4">Coast Cards</div>
-                    <img src= {generalImages['general_1.png']}></img>
-                </div>
+    const aboutUsText = 'In 2016, our project founder witnessed the overwhelming amount of coasters being thrown out every night by local restaurants. We created Coast Cards- a project within Enactus SFU that sells eco-friendly greeting cards made from upcycling used restaurant coasters.'
 
-                <div className = 'mx-20 md:mx-40 flex flex-col justify-between gap-40 items-center md:flex-row xl:flex-row'>
-                    <img src= {generalImages['general_2.png']} className = 'rounded-xl w-full md:w-2/5'></img>
-                    <div className = 'space-y-10'>
-                        <div className="text-md text-[#D00200] font-semibold cursor-pointer">About Us</div>
-                        <div>In 2016, our project founder witnessed the overwhelming amount of coasters being thrown out every night by local restaurants. We created Coast Cards- a project within Enactus SFU that sells eco-friendly greeting cards made from upcycling used restaurant coasters.</div>
-                        <button className = 'facebook-button'>Our Facebook</button>
-                    </div>
-                </div>
-                
-                <div className = 'mx-20 md:mx-40 space-y-5'>
+    const mainpage = (
+        <main className='mt-20'>
+            <div className = 'flex flex-col md:gap-36 gap-20'>
+
+                <PastProjectIntro timeRange={'2014-2016'} title ={'Coast Cards'}  hasButton = {true} buttonText={'Our Facebook'} aboutUsText={aboutUsText} image = {generalImages}/>
+                <div className = 'lg:mx-40 md:mx-28 sm:mx-16 mx-10 space-y-10'>
                         <div className='me-20 space-y-5 md:me-60'>
-                            <div className="text-md text-[#D00200] font-semibold cursor-pointer">Our Process</div>
-                            <div className='text-3xl bold-bold'>The coasters are blended together with scrap paper and organic material to create our beautiful handmade greeting cards</div>
+                            <Subtitle text='Our Process'/>
+                            <div className='text-2xl sm:text-3xl font-[500]'>The coasters are blended together with scrap paper and organic material to create our beautiful handmade greeting cards</div>
                         </div>
 
                         <div className="flex flex-col bg-white m-auto p-auto">
@@ -48,7 +39,7 @@ const CoastCard =() => {
                                 {processes.map((process, index) => (
                                     <div key={index} className="inline-block px-3">
                                     <div
-                                    className=" learn-more-button w-80 h-full max-w-xs overflow-hidden rounded-lg bg-white flex flex-col gap-5 justify-between border">
+                                    className=" learn-more-button w-80 h-full max-w-xs overflow-hidden rounded-xl bg-white flex flex-col gap-5 justify-between border">
 
                                         <img 
                                         src={processImages['process_'+ (index+1) + '.png']} 
@@ -56,8 +47,8 @@ const CoastCard =() => {
                                         className="w-full h-auto object-cover h-72 p-1 rounded-xl" 
                                         />
                                         <div className="p-4 flex flex-col flex-grow items-center">
-                                        <div className="font-semibold text-[18px] mb-2">{process.title}</div>
-                                        <div className="mx-5 text-center text-gray-700 text-base text-[16px] mb-4 flex-grow">{process.description}</div>
+                                        <div className="font-[400] sm:text-xl text-md mb-2 text-[#181818]">{process.title}</div>
+                                        <div className="mx-5 text-center text-xs sm:text-sm text-xs mb-4 flex-grow text-[#5C5C5C]">{process.description}</div>
                                         </div>
                                     </div>
                                     </div>
@@ -67,33 +58,36 @@ const CoastCard =() => {
                         </div>
                 </div>
 
-                <div className = 'bg-[#FBFBFB] py-36 w-screen'>
-                    <div className = 'mx-20 md:mx-40'>
-                        <div className = 'text-2xl font-semibold text-center'>
+                <div className = 'bg-[#FBFBFB] py-28 w-screen'>
+                    <div className = 'lg:mx-40 md:mx-28 sm:mx-16 mx-10'>
+                        <div className = 'sm:text-2xl text-xl font-[500] text-center text-[#181818]'>
                             Every candle you purchase is a step towards environmental conservation. Experience the magic of candlelight while being a part of something greater – a movement that believes in the power of small actions to create significant impact.
                         </div>
                     </div> 
                 </div>
          
-                <div className = 'mx-20 md:mx-40'>
-                    <div className = 'flex flex-col items-center gap-5'>
-                        <div className="text-md text-[#D00200] font-semibold cursor-pointer">Our Impact</div>
-                        <div className = 'flex flex-row gap-20 py-20'>
+                <div className = 'lg:mx-40 md:mx-28 sm:mx-16 mx-10'>
+                    <div className = 'flex flex-col items-center gap-10'>
+                        <Subtitle text='Our Impact'/>
+                        <div className = 'grid coastCardImpact-sm:grid-cols-3 grid-cols-1 coastCardImpact-sm:gap-20 gap-10 items-center'>
                             {impactStats.map((stat, index) => (
-                                <div>
-                                    <div className = 'text-[#181818] text-2xl font-semibold'>{stat.value}</div>
-                                    <div className='text-[#5C5C5C] text-sm'>{stat.description}</div>
+                                <div className = 'flex flex-col gap-2 items-center'>
+                                    <div className = 'text-[#181818] text-xl sm:text-2xl font-semibold'>{stat.value}</div>
+                                    <div className='text-[#5C5C5C] text-xs sm:text-sm text-center'>{stat.description}</div>
                                 </div>
                             ))}
-        
+    
                         </div>
 
                     </div>
-
-                    <img src= {generalImages['general_3.png']} className='w-full pb-10'></img>
-
-
                 </div>
+
+                <div className = 'lg:mx-40 md:mx-28 sm:mx-16 mx-10 mb-20'>
+                    <img src= {generalImages['general_3.png']} className='w-full pb-10'></img>
+                </div>
+
+                
+
             </div>
 
    
