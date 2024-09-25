@@ -43,7 +43,7 @@ const OurTeam = () =>{
         <main className = 'mt-4'>
 
             <div className = 'flex flex-col gap-20'>
-            <div className = 'text-2xl sm:text-3xl md:text-4xl font-semibold text-center'>Our Leadership Team</div>
+            <div className = 'text-2xl sm:text-4xl font-semibold text-center pt-12'>Our Leadership Team</div>
 
                 <div className = 'bg-[#FBFBFB]'>
                 

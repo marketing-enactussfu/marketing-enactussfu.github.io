@@ -5,7 +5,7 @@ import EventsPic from './images/Events/eventspic.png'; // Make sure the image pa
 const Events = () => {
     const eventspage = (
         <main className = 'mt-4'>
-            <div className = 'flex flex-col gap-10'>
+            <div className = 'flex flex-col gap-10 pt-12'>
                 {/* Header Section */}
                 <div className=" flex flex-col justify-center items-center gap-4 md:gap-6 lg:gap-8 mb-16  md:mx-28 lg:mx-40  sm:mx-16 mx-10">
                     <div className="text-[#181818] text-3xl sm:text-4xl font-semibold text-center">
