@@ -26,6 +26,8 @@ module.exports = {
         'pastIntro-md': '1011px',
         'impact-sm': '1017px',
         'coastCardImpact-sm': '571px',
+        'currentProject-md': '1258px',
+        
       
         
         
