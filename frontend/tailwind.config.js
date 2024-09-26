@@ -14,6 +14,7 @@ module.exports = {
         'home-brand-sm': '526px',
         'home-subscribe-sm': '813px',
         'navbar-md': '1265px',
+        'navbar-transition': '1077px',
         'events-md': '1153px',
         'impact-md' : '1090px',
         'whatweDo-sm': '1130px',
@@ -29,6 +30,7 @@ module.exports = {
         'currentProject-md': '1261px',
         'currentProjectText-md': '1024px',
         'currentProjectText-mx': '1011px',
+        'currentProjectText-ms': '607px',
 
       
         

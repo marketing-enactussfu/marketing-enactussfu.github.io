@@ -21,7 +21,9 @@ const WhatWeDo = () => {
     const mainpage = (
         <main className="mt-4">
             <div className="flex flex-col gap-10 sm:gap-20 pt-12">
-                <div className="flex flex-col gap-10 items-center md:mx-28 lg:mx-40 sm:mx-16 mx-10 text-center">
+                {/* currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-48 sm:mx-28 mx-8 */}
+                {/* <div className="flex flex-col gap-10 items-center md:mx-28 lg:mx-40 sm:mx-16 mx-10 text-center"> */}
+                <div className="flex flex-col gap-10 items-center currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 mx-10 text-center">
                     <div className="sm:text-md text-base text-[#D00200] font-semibold cursor-pointer">About Us</div>
                     <div className="text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold">
                         A story about Enactus SFU and the work that we do
@@ -46,21 +48,21 @@ const WhatWeDo = () => {
                     </button>
                 </div>
 
-                <div className="flex justify-center items-center md:mx-28 lg:mx-40 sm:mx-16 mx-10">
+                <div className="flex justify-center items-center currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 mx-10">
                     <img src={aboutImages['about_1.png']} alt="about" className = 'w-full'></img>
                 </div>
-                <div className="md:mx-28 lg:mx-40 sm:mx-16 mx-10 text-start space-y-4 sm:space-y-8">
+                <div className="currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-48 sm:mx-28 mx-8 text-start space-y-4 sm:space-y-8">
                     <div className="text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold mb-4">What are Enactus Projects?</div>
                     <div className="text-[#181818] sm:text-md text-base">
                         Teams develop innovative programs that address social, environmental, and economic needs in the community in an attempt to improve the livelihoods of others. Currently, Enactus is made up of <span className="font-bold">66,500 students in 1,600 teams across 36 countries around the world.</span>
                     </div>
                 </div>
 
-                <div className="flex justify-center items-center md:mx-28 lg:mx-40 sm:mx-16 mx-10">
+                <div className="flex justify-center items-center currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 mx-10">
                     <img src={aboutImages['about_2.png']} alt="about" className = 'w-full'/>
                 </div>
 
-                <div className="md:mx-28 lg:mx-40 sm:mx-16 mx-10 text-start space-y-4 space-y-8">
+                <div className="currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 mx-10 text-start space-y-4 space-y-8">
                     <div className="text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold mb-4">Enactus SFU's Impact</div>
                     <div className="text-[#181818] sm:text-md text-base">
                         At Enactus SFU, we seek issues within our community and see them as opportunities to innovate. With an active member base across multiple concentrations and faculties, Enactus SFU continues to grow and expand its sustainable projects into the community each year. We help students develop new skills and empower them to take initiative and become the future leaders that our communities need.
@@ -68,11 +70,11 @@ const WhatWeDo = () => {
                     </div>
                 </div>
 
-                <div className="md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex justify-center items-center">
+                <div className="currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 mx-10 flex justify-center items-center">
                     <img src={aboutImages['about_3.png']} alt="about" className = 'w-full' />
                 </div>
 
-                <div className ='md:mx-28 lg:mx-40 sm:mx-16 mx-10 justify-center flex flex-col gap-4 sm:gap-5'>
+                <div className ='currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 mx-10 justify-center flex flex-col gap-4 sm:gap-5'>
                     <div className="text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold mb-4">OUR TARGET SDG GOALS</div>
                     <div className = 'text-[#181818] sm:text-md text-base'>Enactus SFU is expecting to execute projects for Sustainable Development Goals  #1, 3, 4, 6, 10, 12, 13, 14, 15 in the 2023/2024 academic year.</div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center">
@@ -100,7 +102,7 @@ const WhatWeDo = () => {
                 {/* Mission and Vison */}
                 {Object.keys(sections).map((key, index) =>{
                         return(
-                            <div key={index} className = 'flex flex-col gap-4 items-start md:mx-28 lg:mx-40 sm:mx-16 mx-10 sm:space-y-6 space-y-4'>
+                            <div key={index} className = 'flex flex-col gap-4 items-start currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-48 sm:mx-28 mx-8 sm:space-y-6 space-y-4'>
                                 <div className = 'text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold'>{sections[key].title}</div>
                                 <div className = 'text-[#181818] sm:text-md text-base me-10 sm:me-20 md:me-40 lg:me-48'>{sections[key].description}</div>
                             </div>
@@ -109,7 +111,7 @@ const WhatWeDo = () => {
                 
                 {/* Histroy */}
                 <div className='bg-[#FBFBFB]' id = 'history'>
-                    <div className='md:mx-28 lg:mx-40 sm:mx-16 mx-10 pt-10 flex flex-col gap-10 text-[#181818] sm:text-md text-base'>
+                    <div className='currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 mx-10 pt-10 flex flex-col gap-10 text-[#181818] sm:text-md text-base'>
                         <div className="sm:text-md text-base text-[#D00200] font-semibold cursor-pointer">Our History</div>
                         <div className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-start">
                             Explore our timeline to discover the pivotal moments and transformative events that have shaped our organization.
@@ -161,7 +163,7 @@ const WhatWeDo = () => {
                     </div>
                 </div>
 
-                <div className='flex items-center md:mx-28 lg:mx-40 sm:mx-16 mx-10 justify-center my-10'>
+                <div className='flex items-center currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-48 sm:mx-28 mx-8 justify-center my-10'>
                     {/* should adjust the icon */}
                     <button className="session-button sm:text-sm text-xs font-semibold" onClick={scrollToHistory}>
                             Back To Top

@@ -17,7 +17,7 @@ const SecondSavour = () => {
     
     const Text = ({text})=>{
         return (
-            <div className="text-start text-[#5c5c5c] text-md sm:text-xl font-normal">
+            <div className="text-start text-[#5c5c5c] text-base sm:text-xl font-normal">
         
                 {text}
             </div>

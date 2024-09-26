@@ -1,6 +1,6 @@
 import React from "react";
-import PageTemplate from './components/PageTemplate';
-import EventsPic from './images/Events/eventspic.png'; // Make sure the image path is correct
+import PageTemplate from '../components/PageTemplate';
+import EventsPic from '../images/Events/eventspic.png'; // Make sure the image path is correct
 
 const Events = () => {
     const eventspage = (

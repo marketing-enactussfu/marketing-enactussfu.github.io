@@ -49,7 +49,7 @@ function MobileNav() {
 
   
   return (
-    <nav className="bg-white fixed top-0 w-screen z-50">
+    <nav className="bg-white fixed top-0 w-screen z-50 shadow-md">
 
       <div className = 'py-4 border-b-2 border-[#D8D8D8]'>
         {/* Navigation Bar */}

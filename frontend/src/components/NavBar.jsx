@@ -102,14 +102,14 @@ function Navbar() {
           </div>
 
           {/* Join Our Team Button */}
-          {/* <div>
+          <div>
             <button 
             className="session-button"
             onClick={() => navigate('/career')}
             >
               Join Our Team
             </button>
-          </div> */}
+          </div>
         </div>
       </div>
     </nav>

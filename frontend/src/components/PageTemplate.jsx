@@ -9,11 +9,11 @@ import MobileNav from './MobileNav.jsx';
 const PageTemplate = ({component}) =>{
     return(
         <div>
-            <div className="md:hidden">
+            <div className="navbar-transition:hidden">
                 <MobileNav />
             </div>
             
-            <div className="hidden md:flex flex-col">
+            <div className="hidden navbar-transition:flex flex-col">
                 <Navbar />
             </div>
    
