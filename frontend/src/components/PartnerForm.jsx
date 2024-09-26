@@ -40,11 +40,13 @@ const PartnerForm = () => {
         If you would like to partner with us, fill out the form below and one of our staff members will get back to you.
       </p>
 
-      <p className="text-gray-600 mb-8 sm:text-md text-base flex flex-row gap-1">Learn about our <button className = 'text-[#E72422] flex flex-row items-center gap-1' >Sponsorship Package 
+      <p className="text-gray-600 mb-8 sm:text-md text-base flex form-sm:flex-row  flex-col gap-1">Learn about our <a className = 'text-[#E72422] flex flex-row items-center gap-1' >Sponsorship Package 
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-4">
           <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
       </svg>
-</button></p>
+    </a></p>
+
+     
 
       {isSubmitted && (
         <p className="bg-green-100 text-green-600 p-3 rounded mb-4 sm:text-md text-base">

@@ -19,7 +19,7 @@ const Sponsorship = () =>{
 
     const mainpage = (
         <main className = 'mt-4'>
-            <div className = 'flex flex-col gap-20 pt-12'>
+            <div className = 'flex flex-col gap-10 md:gap-20 pt-12'>
                 <div className = 'flex flex-col items-center gap-10'>
                    <div className='sm:text-md text-base text-[#D00200] font-semibold'>
                     Sponsorship</div>
@@ -49,18 +49,18 @@ const Sponsorship = () =>{
                     </div>
                 </div>
 
-                <div className='border rounded-xl my-10 lg:mx-40 md:mx-28 sm:mx-16 mx-10'>
+                <div className='border rounded-xl my-10 lg:mx-60 md:mx-28 sm:mx-16 mx-10'>
                         <div 
                         // className = 'mx-20 text-center items-center flex flex-col py-20 md:mx-56 lg:mx-56 gap-10'
                          className = 'mx-5 text-center items-center flex flex-col md:mx-10 lg:mx-20 py-20 gap-14'
                         >
                             <img src={main} alt = 'brand'></img>
-                            <p className = 'text-[#5C5C5C] sm:text-xl text-sm'>{text}</p>
+                            <p className = 'text-[#5C5C5C] sm:text-xl text-base'>{text}</p>
                         </div>
 
                 </div>
 
-                <div className = 'flex flex-col gap-10 lg:mx-40 md:mx-28 sm:mx-16 mx-10'>
+                <div className = 'flex flex-col gap-10 lg:mx-60 md:mx-28 sm:mx-16 mx-10'>
                     <div className = 'flex flex-col gap-10 items-center justify-center md:flex-row items-center'>
                         <div className = 'justify-center'><img src = {brandImages['brand_5.png']} alt = 'brand' ></img></div>
                         <div className = 'justify-center'><img src = {brandImages['brand_8.png']} alt = 'brand'></img></div>
@@ -102,7 +102,7 @@ const Sponsorship = () =>{
 
                 <div className ='bg-[#FBFBFB] w-screen py-40'>
 
-                    <div className = 'flex flex-col gap-10 items-center text-3xl font-semibold lg:mx-40 md:mx-28 sm:mx-16 mx-10'>
+                    <div className = 'flex flex-col gap-10 items-center text-3xl font-semibold lg:mx-60 md:mx-28 sm:mx-16 mx-10'>
                        <div className = 'text-2xl sm:text-3xl font-semibold text-center'>Our partners for Forward Vision</div>
 
                         <div className='flex flex-wrap items-center justify-center'>

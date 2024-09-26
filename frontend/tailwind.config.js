@@ -31,6 +31,7 @@ module.exports = {
         'currentProjectText-md': '1024px',
         'currentProjectText-mx': '1011px',
         'currentProjectText-ms': '607px',
+        'form-sm': '363px',
 
       
         
