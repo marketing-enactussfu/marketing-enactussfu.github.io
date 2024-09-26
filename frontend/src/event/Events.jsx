@@ -26,7 +26,7 @@ const Events = () => {
                             alt="Events" 
                         />
                     </div>
-
+                    
                     {/* Text Section */}
                     <div className="w-full events-md:w-1/2 flex flex-col justify-start items-start gap-12">
                         {/* PM Series Section */}
