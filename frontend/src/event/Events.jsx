@@ -1,13 +1,16 @@
 import React from "react";
 import PageTemplate from '../components/PageTemplate';
-import EventsPic from '../images/Events/eventspic.png'; // Make sure the image path is correct
+import EventsPic from '../images/Events/eventspic.png';
+import { useNavigate } from 'react-router-dom';
+
 
 const Events = () => {
+    const navigate = useNavigate();
     const eventspage = (
         <main className = 'mt-4'>
-            <div className = 'flex flex-col gap-10 pt-12'>
+            <div className = 'flex flex-col md:gap-10 gap-2 pt-12'>
                 {/* Header Section */}
-                <div className=" flex flex-col justify-center items-center gap-4 md:gap-6 lg:gap-8 mb-16  md:mx-28 lg:mx-40  sm:mx-16 mx-10">
+                <div className=" flex flex-col justify-center items-center gap-4 md:gap-6 lg:gap-8 mb-16  currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
                     <div className="text-[#181818] text-3xl sm:text-4xl font-semibold text-center">
                         Our Events
                     </div>
@@ -17,7 +20,7 @@ const Events = () => {
                 </div>
 
                 {/* Events Content Section */}
-                <div className="flex flex-col events-md:flex-row max-w-7xl justify-center items-start gap-12 lg:gap-24 md:mx-28 lg:mx-40  sm:mx-16 mx-10 mb-20">
+                <div className="flex flex-col events-md:flex-row max-w-7xl justify-center items-start gap-12 lg:gap-24 md:mx-28 lg:mx-48  sm:mx-16 mx-10 mb-20">
                     {/* Image Section */}
                     <div className="w-full events-md:w-1/2 flex justify-center">
                         <img 
@@ -26,7 +29,7 @@ const Events = () => {
                             alt="Events" 
                         />
                     </div>
-                    
+
                     {/* Text Section */}
                     <div className="w-full events-md:w-1/2 flex flex-col justify-start items-start gap-12">
                         {/* PM Series Section */}
@@ -37,7 +40,10 @@ const Events = () => {
                             <div className="text-[#5c5c5c] text-md sm:text-xl leading-6 md:leading-7 lg:leading-8">
                                 The Project Management (PM) series is an opportunity for undergraduate students to take a deep dive into the world of project management, whilst experiencing the diverse opportunities for hands-on learning.
                             </div>
-                            <button className="session-button text-[12px] sm:text-[14px] font-semibold">
+                            <button 
+                            className="session-button text-[12px] sm:text-[14px] font-semibold"
+                            onClick={() => navigate('/events/pm-series')}
+                            >
                                 Learn More
                             </button>
                         </div>

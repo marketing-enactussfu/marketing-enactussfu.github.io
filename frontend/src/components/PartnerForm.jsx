@@ -118,7 +118,7 @@ const PartnerForm = () => {
         </div>
 
         <button
-          className="session-button sm:text-md text-base font-light"
+          className="session-button sm:text-md text-base font-semibold"
         >
           Submit
         </button>

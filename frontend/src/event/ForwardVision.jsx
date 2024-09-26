@@ -3,25 +3,8 @@ import PageTemplate from '../components/PageTemplate';
 import EventsPic from '../images/Events/eventspic.png';
 import { importAll } from '../utilities/importImages'; 
 
-const PMSeries = () => {
+const ForwardVision = () => {
     const generalPic = importAll(require.context('../images/Events/PMSeries', false, /\.(png|jpe?g|svg)$/));
-    const workshops = [
-        {
-          id: 1, 
-          title: "Workshop #1",
-          name: "Introduction to Project Management",
-        },
-        {
-          id: 2,
-          title: "Workshop #2",
-          name: "Project Management Industry Exploration",
-        },
-        {
-          id: 3,
-          title: "Workshop #3",
-          name: "Stay Tuned for More Details",
-        }
-      ];
       
     const eventspage = (
         <main className = 'mt-4'>
@@ -56,18 +39,7 @@ const PMSeries = () => {
                             PM Series features three in-person workshops:
                     </div>
     
-                    {workshops.map((workshop) => (
-                            <div key={workshop.id} className="flex flex-col gap-4  items-center currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
-                            <h2 className="font-semibold text-xl sm:text-2xl md:text-3xl text-[#D00200] text-center">{workshop.title}</h2>
-                            <h3 className="font-semibold text-2xl sm:text-3xl md:text-4xl text-[#181818] text-center">{workshop.name}</h3>
-                            <img
-                                src={generalPic[`PM${workshop.id + 2}.png`]}
-                                alt={workshop.name}
-                                className="workshop-image"
-                            />
-                            </div>
-                    ))}
-
+        
                 </div>
 
 
@@ -107,4 +79,4 @@ const PMSeries = () => {
     return <PageTemplate component={eventspage} />;
 };
 
-export default PMSeries;
+export default ForwardVision;

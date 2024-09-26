@@ -23,6 +23,7 @@ import EntrepreneurshipChallenges from './CurrentProjects/EntrepreneurshipChalle
 import TurbioEnergy from './CurrentProjects/TurbioEnergy';
 import Events from './event/Events';
 import PMSeries from './event/PMSeries';
+import ForwardVision from './event/ForwardVision';
 
 
 export default function App() {
@@ -51,6 +52,7 @@ export default function App() {
         <Route path='/projects/current-projects/aqua-analyzer' element={<AA/>} />
         <Route path='/events' element={<Events/>} />
         <Route path='/events/pm-series' element={<PMSeries/>} />
+        <Route path='/events/forward-vision' element={<ForwardVision/>} />
 
 
       </Routes>

@@ -49,7 +49,7 @@ function MobileNav() {
 
   
   return (
-    <nav className="bg-white fixed top-0 w-screen z-50 shadow-md">
+    <nav className="bg-white fixed top-0 z-50 shadow-md w-screen">
 
       <div className = 'py-4 border-b-2 border-[#D8D8D8]'>
         {/* Navigation Bar */}
@@ -125,7 +125,7 @@ function MobileNav() {
                 </li>
                 <li className="flex flex-row items-center gap-6 py-2 text-[16px] font-semibold">
                   <a
-                  href="/about/our-team"
+                  href="/about/what-we-do"
                   className="flex items-center gap-6"
                   >
                   <img
