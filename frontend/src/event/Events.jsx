@@ -56,7 +56,9 @@ const Events = () => {
                             <div className="text-[#5c5c5c] text-md sm:text-xl leading-6 md:leading-7 lg:leading-8">
                                 Showcase your entrepreneurial spirit and skills in our very own competition! Competitors will be tested on their entrepreneurship, social enterprise, and the practical application of their idea that positively impacts society in a pitch style.
                             </div>
-                            <button className="session-button text-[12px] sm:text-[14px] font-semibold">
+                            <button className="session-button text-[12px] sm:text-[14px] font-semibold"
+                            onClick={() => navigate('/events/forward-vision')}
+                            >
                                 Learn More
                             </button>
                         </div>
