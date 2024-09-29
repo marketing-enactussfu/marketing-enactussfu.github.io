@@ -11,7 +11,7 @@
      const beekindpage = (
 
    
-      hello
+  hello
      );
  
      return <PageTemplate component={beekindpage} />;

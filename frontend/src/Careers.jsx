@@ -28,9 +28,9 @@ const Careers = () => {
             {/* <div className="w-full min-h-[485px] px-8 py-[120px] flex flex-col justify-center items-center gap-16"> */}
             <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10'>
                 <div className="text-center flex flex-col items-center gap-7">
-                    <div className="text-[#d00200] text-base font-semibold font-['Inter']">Join Our Team</div>
-                    <div className="text-[#181818] text-[40px] font-semibold font-['Inter']">Careers at Enactus</div>
-                    <div className="w-full max-w-lg text-[#181818] text-xl font-normal font-['Inter'] leading-[27px]">
+                    <div className="text-[#d00200] text-base font-semibold ">Join Our Team</div>
+                    <div className="text-[#181818] text-[40px] font-semibold">Careers at Enactus</div>
+                    <div className="w-full max-w-lg text-[#181818] text-xl font-normal leading-[27px]">
                         Join us in making an impact in our community through entrepreneurial action.
                     </div>
                     <div className="flex justify-center">
@@ -48,8 +48,8 @@ const Careers = () => {
                         <div>
                             <img src={WeDareToDo} alt="We Dare To Do" className="w-full h-auto" />
                         </div>
-                        <div className="text-[#181818] text-2xl text-2xl md:text-3xl font-semibold font-['Inter'] mb-4">Open Positions</div>
-                        <div className="text-[#181818] text-base sm:text-md font-normal font-['Inter'] leading-relaxed text-center mx-10 sm:mx-20 md:mx-40">
+                        <div className="text-[#181818] text-2xl text-2xl md:text-3xl font-semibold  mb-4">Open Positions</div>
+                        <div className="text-[#181818] text-base sm:text-md font-normal leading-relaxed text-center mx-10 sm:mx-20 md:mx-40">
                             There are no open positions for now! Follow @EnactusSFU on Instagram to get the latest updates on our hiring initiatives!
                         </div>
                     </div>
@@ -63,8 +63,8 @@ const Careers = () => {
                 {/* Organization Culture */}
                 <div className="flex flex-col gap-8 items-start">
                     <img src={GroupPhoto} alt="Organization Culture" className="w-full h-auto" /> 
-                    <div className="text-center text-[#181818] text-2xl sm:text-3xl font-semibold font-['Inter']">☕ Organization Culture</div>
-                    <div className="text-[#181818] text-base sm:text-xl font-normal font-['Inter'] leading-[27px]">
+                    <div className="text-center text-[#181818] text-2xl sm:text-3xl font-semibold ">☕ Organization Culture</div>
+                    <div className="text-[#181818] text-base sm:text-xl font-normal leading-[27px]">
                         At Enactus SFU, our culture is deeply rooted in innovation, collaboration, and competition. As part of a global network committed to social entrepreneurship, we focus on developing sustainable solutions to the social, environmental, and economic challenges within our community.
                         <br /><br />
                         Our team leads seven impactful projects, each addressing a unique aspect of these challenges. These projects are a testament to our commitment to making a difference and are a key part of what defines us as an organization. Over the past five years, our team has dedicated over 85,000 hours to improving the lives of more than 7,000 individuals. This unwavering commitment to service and excellence reflects the heart of Enactus SFU—a culture focused on making a lasting impact while nurturing the next generation of leaders.
@@ -82,15 +82,15 @@ const Careers = () => {
             </div>
             {/* Interview Guides */}
             <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex flex-col gap-6 items-start'> 
-                    <div className="text-center text-[#181818] text-2xl sm:text-3xl font-semibold font-['Inter'] mb-4">📕 Interview Guides</div>
+                    <div className="text-center text-[#181818] text-2xl sm:text-3xl font-semibold mb-4">📕 Interview Guides</div>
                     <div className="flex flex-col gap-6 items-center">
                         {guides.map((item, index) => (
                             <div key={index} className=" bg-white rounded-xl border border-[#d7d7d7] flex flex-col justify-start items-start p-8">
                                 <div className="flex items-start md:gap-7 sm:gap-4 gap-2">
                                     <img src={item.src} alt={item.alt} className = 'md:w-auto sm:w-[28px] w-[20px]'/> 
                                     <div className="flex-1">
-                                        <div className="text-[#181818] text-base sm:text-lg font-medium font-['Inter']">{item.title}</div>
-                                        <div className="text-[#5c5c5c] text-xs sm:text-sm font-normal font-['Inter'] leading-relaxed">
+                                        <div className="text-[#181818] text-base sm:text-lg font-medium">{item.title}</div>
+                                        <div className="text-[#5c5c5c] text-xs sm:text-sm font-normal leading-relaxed">
                                             {item.content}
                                         </div>
                                     </div>

@@ -7,7 +7,7 @@ import WhatWeDo from './about/WhatWeDo';
 import OurTeam from './about/OurTeam';
 import CoastCards from './pastProject/CoastCards';
 import Competitions from './Competitions';  
-import CountOnMe from './pastProject/CountOnMe';
+import CountOnMe from './pastProject/CountonMe';
 import ChangemakerChallenge from './pastProject/ChangemakerChallenge';
 import BrightIdeas from './pastProject/BrightIdeas';
 import Careers from './Careers';//:D
@@ -24,6 +24,9 @@ import TurbioEnergy from './CurrentProjects/TurbioEnergy';
 import Events from './event/Events';
 import PMSeries from './event/PMSeries';
 import ForwardVision from './event/ForwardVision';
+import BeeKind from './CurrentProjects/beekind';
+
+
 
 
 export default function App() {
@@ -40,7 +43,7 @@ export default function App() {
         <Route path='/projects/past-projects/changemaker-challenge' element={<ChangemakerChallenge/>} />
         <Route path='/projects/past-projects/bright-ideas' element={<BrightIdeas/>} />
         <Route path='/projects/current-projects/second-savour' element={<SecondSavour/>} />
-        <Route path="/careers" element={<Careers/>} />
+        <Route path="/career" element={<Careers/>} />
         <Route path='/projects/past-projects/banner-bags' element={<BannerBags/>} />
         <Route path='/projects/past-projects/media-minds' element={<MediaMinds/>} />
         <Route path='/projects/past-projects/refresh' element={<ReFresh/>} />
@@ -53,6 +56,8 @@ export default function App() {
         <Route path='/events' element={<Events/>} />
         <Route path='/events/pm-series' element={<PMSeries/>} />
         <Route path='/events/forward-vision' element={<ForwardVision/>} />
+        <Route path='/projects/current-projects/the-beekind-company' element={<BeeKind/>} />
+
 
 
       </Routes>

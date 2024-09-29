@@ -48,7 +48,7 @@ const Competitions = () => {
                                 {year}
                             </div>
                         </div>
-                        <div className="flex flex-wrap justify-start gap-11 w-full">
+                        <div className="flex flex-wrap justify-start gap-1 w-full">
                             {images.map((imgSrc, index) => (
                                 <div key={index} className="flex flex-col items-center">
                                     <img
