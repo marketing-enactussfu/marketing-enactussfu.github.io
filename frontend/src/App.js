@@ -7,7 +7,7 @@ import WhatWeDo from './about/WhatWeDo';
 import OurTeam from './about/OurTeam';
 import CoastCards from './pastProject/CoastCards';
 import Competitions from './Competitions';  
-import CountOnMe from './pastProject/CountOnMe';
+import CountOnMe from './pastProject/CountonMe';
 import ChangemakerChallenge from './pastProject/ChangemakerChallenge';
 import BrightIdeas from './pastProject/BrightIdeas';
 import Careers from './Careers';//:D
