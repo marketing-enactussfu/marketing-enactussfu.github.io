@@ -20,7 +20,8 @@ import filter from '../images/currentprojects/filter.png';
 const BeeKind = () => {
   const beekindpage = (
     <>
-<div className="w-full h-auto px-4 md:px-8 lg:px-24 py-8 md:py-16 lg:py-24 bg-white flex flex-col justify-start items-center gap-12">
+            <div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-32 sm:gap-20 gap-10 md:mb-32 sm:mb-20 mb-10">
+
   <div className="w-full max-w-5xl flex flex-col justify-start items-center gap-8">
     <div className="text-center text-[#d00200] text-base md:text-lg font-semibold">Current Projects</div>
     <div className="text-center text-[#181818] text-2xl md:text-4xl font-semibold">The BeeKind Company</div>
@@ -37,14 +38,14 @@ const BeeKind = () => {
     </div>
   </div>
 </div>
+<div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-32 sm:gap-20 gap-10 md:mb-32 sm:mb-20 mb-10">
 
-<div className="w-full h-auto px-4 md:px-8 bg-white flex flex-col justify-center items-center">
   <div className="w-full h-[300px] md:h-[500px] lg:h-[732px] relative rounded-xl overflow-hidden">
     <img className="w-full h-full object-cover" src={candle} alt="BeeKind Candle" />
   </div>
 </div>
+<div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-32 sm:gap-20 gap-10 md:mb-32 sm:mb-20 mb-10">
 
-<div className="w-full h-auto px-4 md:px-12 lg:px-24 py-12 lg:py-24 bg-white flex flex-col justify-start items-center gap-16 lg:gap-24 mx-auto">
   <div className="w-full max-w-5xl flex flex-col justify-start items-start gap-8">
     <div className="text-[#181818] text-[24px] md:text-[32px] font-semibold">
       We are more than just a candle company.
@@ -55,9 +56,9 @@ const BeeKind = () => {
       Our mission is to create sustainable candles using beeswax as a renewable resource, providing environmentally-friendly alternatives to conventional paraffin-based candles.
     </div>
   </div>
-  
-<div className="w-full max-w-lg h-auto relative rounded-xl overflow-hidden">
-  <img className="w-full h-auto object-cover" src={candle2} alt="BeeKind Candle" />
+  <div className="w-full max-w-5xl flex flex-col justify-center relative rounded-xl items-start gap-8">
+
+  <img className="w-full h-full object-cover" src={candle2} alt="BeeKind Candle" />
 </div>
 
   
@@ -175,8 +176,8 @@ const BeeKind = () => {
   </div>
 </div>
 
+<div className="w-full max-w-4xl flex flex-col justify-start items-center gap-6 text-center">
 
-<div className="w-full h-auto px-4 md:px-12 lg:px-24 py-12 lg:py-24 bg-[#fbfbfb] flex flex-col justify-start items-center gap-12 lg:gap-16 mx-auto">
   <div className="w-full max-w-5xl flex flex-col justify-start items-start gap-10">
     <div className="text-[#181818] text-[24px] md:text-[32px] font-semibold">Our Process</div>
   </div>
@@ -223,8 +224,8 @@ const BeeKind = () => {
     </div>
   </div>
 </div>
+<div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-32 sm:gap-20 gap-10 md:mb-32 sm:mb-20 mb-10">
 
-<div className="w-full h-auto px-4 md:px-12 lg:px-24 py-12 lg:py-24 bg-white flex flex-col justify-center items-center gap-8 lg:gap-16">
   <div className="w-full max-w-4xl flex flex-col justify-start items-center gap-6 text-center">
     <div className="text-[#181818] text-[28px] md:text-[40px] font-semibold">Shop with Purpose</div>
     <div className="text-[#5c5c5c] text-lg md:text-xl font-normal leading-relaxed">
