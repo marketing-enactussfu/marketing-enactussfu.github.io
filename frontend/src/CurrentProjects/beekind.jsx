@@ -44,7 +44,7 @@ const BeeKind = () => {
     <img className="w-full h-full object-cover" src={candle} alt="BeeKind Candle" />
   </div>
 </div>
-<div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-32 sm:gap-20 gap-10 md:mb-32 sm:mb-20 mb-10">
+<div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-25 sm:gap-10 gap-10 md:mb-32 sm:mb-20 mb-10">
 
   <div className="w-full max-w-5xl flex flex-col justify-start items-start gap-8">
     <div className="text-[#181818] text-[24px] md:text-[32px] font-semibold">
