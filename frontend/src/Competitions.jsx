@@ -17,6 +17,7 @@ import AwardCard15 from './images/home/AwardCard/AwardCard15.png';
 import AwardCard16 from './images/home/AwardCard/AwardCard16.png';
 import AwardCard17 from './images/home/AwardCard/AwardCard17.png';
 import PageTemplate from './components/PageTemplate';
+import award1 from './icons/awards/award1.png';
 
 const awardsData = [
     { year: 2024, images: [AwardCard1, AwardCard2, AwardCard3] },
@@ -29,34 +30,37 @@ const awardsData = [
 
 const Competitions = () => {
     const competitionspage = (
-        <div className="bg-white flex flex-col items-center w-full min-h-screen py-16 px-4">
+        // <div className="bg-white flex flex-col items-center w-full min-h-screen py-16 px-4">
+        <div className="flex flex-col md:gap-10 gap-4 mt-4">
+
             {/* Header Section */}
-            <div className="text-center mb-16 max-w-4xl mx-auto">
-                <div className="text-red-500 text-3xl font-bold">Awards</div>
+            <div className="text-center mb-16 md:mx-28 lg:mx-40 sm:mx-16 mx-10 pt-12">
+                <div className="text-[#D00200] sm:text-md text-base font-bold">Awards</div>
                 <div className="text-4xl font-bold text-gray-800 mt-2">Our Legacy of Excellence</div>
-                <p className="text-gray-600 text-lg mt-4 max-w-3xl mx-auto">
+                <p className="text-gray-600 sm:text-lg text-md mt-4 max-w-3xl mx-auto">
                     Over the years, Enactus SFU has consistently secured top positions in Enactus Canada’s competitions. In each exposition, we demonstrate our commitment to innovation, earning awards that reflect the hard work of our members. Join us, and you could be part of our next winning team.
                 </p>
             </div>
 
             {/* Awards Section */}
-            <div className="flex flex-col w-full max-w-screen-lg mx-auto gap-12 px-4 md:px-8 lg:px-12">
+            <div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-32 sm:gap-20 gap-10  md:mb-32 sm:mb-20 mb-10">
                 {awardsData.map(({ year, images }) => (
                     <div key={year} className="w-full">
-                        <div className="flex items-center mb-6 w-full">
-                            <div className="text-2xl font-bold text-gray-800 text-left">
+                        <div className="flex items-start mb-6">
+                            <div className="sm:text-2xl text-xl font-bold text-gray-800 text-left">
                                 {year}
                             </div>
                         </div>
-                        <div className="flex flex-wrap justify-start gap-1 w-full">
+                        <div className='grid custom-lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-8'>
                             {images.map((imgSrc, index) => (
-                                <div key={index} className="flex flex-col items-center">
-                                    <img
-                                        src={imgSrc}
-                                        className="w-full max-w-[280px] h-auto"
-                                        alt={`Award ${year}-${index + 1}`}
-                                    />
+                                <div className = 'text-[#181818] border border-[#ECECEC] rounded-md p-4 space-y-4'>
+                                <img src={award1}  alt='Award 1' />
+                                <div className = 'justify-center flex flex-col gap-4'>
+                                    <div className = 'sm:text-md text-base font-semibold'>1st Place</div>
+                                    <div className = 'sm:text-md text-base font-[400]'>Enactus Alumni Innovation Impact Challenge</div>
+                                    <div className = 'sm:text-xs text-xs text-[#5C5C5C] '>Enactus Canada Regionals</div>
                                 </div>
+                            </div>
                             ))}
                         </div>
                     </div>
