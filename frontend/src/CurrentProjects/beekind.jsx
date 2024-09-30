@@ -56,7 +56,7 @@ const BeeKind = () => {
       Our mission is to create sustainable candles using beeswax as a renewable resource, providing environmentally-friendly alternatives to conventional paraffin-based candles.
     </div>
   </div>
-  <div className="w-full max-w-5xl flex flex-col justify-center relative rounded-xl items-start gap-8">
+  <div className="w-full max-w-5xl flex flex-col justify-center relative rounded-xl items-center gap-8">
 
   <img className="w-full h-full object-cover" src={candle2} alt="BeeKind Candle" />
 </div>
