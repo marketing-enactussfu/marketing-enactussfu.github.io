@@ -97,13 +97,13 @@ function Navbar() {
                         © 2024 Enactus SFU | <a href="/land-acknowledgement">Land Acknowledgement</a> | <a href="/privacy-policy">Privacy Policy</a>
                     </div>
                     <div className="flex flex-row gap-3 me-2 ms-6">
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/enactussfu/" target="_blank" rel="noopener noreferrer">
                             <img src={Instagram} alt="Instagram" className="w-6 h-6" />
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/enactussfu/?originalSubdomain=ca" target="_blank" rel="noopener noreferrer">
                             <img src={LinkedIn} alt="LinkedIn" className="w-6 h-6" />
                         </a>
-                        <a href="mailto:info@enactus.com">
+                        <a href="mailto:president@enactussfu.com">
                             <img src={Mail} alt="Mail" className="w-6 h-6" />
                         </a>
                     </div>
