@@ -3,17 +3,29 @@ import enactus_logo from '../icons/footer/enactus_logo.png';
 import Instagram from '../icons/footer/Instagram.png';
 import LinkedIn from '../icons/footer/LinkdIn.png';
 import Mail from '../icons/footer/Mail.png';
-import { currentProjects, pastProjects } from '../data/projectsData'; // Use the existing currentProjects and pastProjects data
+import { currentProjects, pastProjects } from '../data/projectsData'; // Assume both current and past projects are imported
 
 function Navbar() {
     const currentProjects = [
-        { name: 'The beekind Company', slug: 'current-projects/the-beekind-company' },
-        { name: 'Second Savour', slug: 'current-projects/second-savour' },
-        { name: 'Himalayan Skyes', slug: 'current-projects/himalayan-skyes' },
-        { name: 'Aqua Analyzer', slug: 'current-projects/aqua-analyzer' },
-        { name: 'Community Grafts', slug: 'current-projects/community-grafts' },
-        { name: 'Turbio Energy', slug: 'current-projects/turbio-energy' },
-        { name: 'Entrepreneurship Challenges', slug: 'current-projects/entrepreneurship-challenges' },
+        { name: 'The beekind Company', slug: 'the-beekind-company' },
+        { name: 'Second Savour', slug: 'second-savour' },
+        { name: 'Himalayan Skyes', slug: 'himalayan-skyes' },
+        { name: 'Aqua Analyzer', slug: 'aqua-analyzer' },
+        { name: 'Community Grafts', slug: 'community-grafts' },
+        { name: 'Turbio Energy', slug: 'turbio-energy' },
+        { name: 'Entrepreneurship Challenges', slug: 'entrepreneurship-challenges' },
+    ];
+
+    const pastProjects = [
+        { name: 'Kindred Knots', slug: 'past-projects/kindred-knots' },
+        { name: 'Bright Ideas', slug: 'past-projects/bright-ideas' },
+        { name: 'Banner Bags', slug: 'past-projects/banner-bags' },
+        { name: 'Coast Cards', slug: 'past-projects/coast-cards' },
+        { name: 'Count On Me', slug: 'past-projects/count-on-me' },
+        { name: 'Changemaker Challenge', slug: 'past-projects/changemaker-challenge' },
+        { name: 'Media Minds', slug: 'past-projects/media-minds' },
+        { name: 'Refresh', slug: 'past-projects/refresh' },
+
     ];
 
     return (
@@ -61,7 +73,7 @@ function Navbar() {
                             {pastProjects.map((project) => (
                                 <a
                                     key={project.slug}
-                                    href={`/projects/${project.slug}`}  // Assuming you have slugs for past projects too
+                                    href={`/projects/${project.slug}`}
                                     className="text-gray-700 hover:text-blue-500 hover:underline"
                                 >
                                     {project.name}
