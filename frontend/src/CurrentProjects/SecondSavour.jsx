@@ -38,9 +38,10 @@ const SecondSavour = () => {
                                 <button className="session-button sm:text-[14px] text-[12px] font-semifold">
                                     Visit Website
                                 </button>
-                                <div className="facebook-button sm:text-[14px] text-[12px] font-semifold">
+                                <button className="facebook-button sm:text-[14px] text-[12px] font-semifold"
+                                onClick = {()=> window.open('https://www.instagram.com/second.savour', '_blank')}>
                                     Our Instagram
-                                </div>
+                                </button>
                             </div>
                     </div>
 

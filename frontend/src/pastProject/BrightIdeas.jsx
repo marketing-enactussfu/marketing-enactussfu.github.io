@@ -14,7 +14,7 @@ const BrightIdeas =() => {
     const mainpage =(
         <main className='mt-20'>
             <div className = 'flex flex-col md:gap-36 gap-20'>
-                <PastProjectIntro timeRange={'2016-2023'} title ={'Bright Ideas'}  hasButton = {true} buttonText={'Our Instagram'} aboutUsText={aboutUsText} image = {generalImages}/>
+                <PastProjectIntro timeRange={'2016-2023'} title ={'Bright Ideas'}  hasButton = {true} buttonText={'Our Instagram'} aboutUsText={aboutUsText} image = {generalImages} buttonLink={'https://www.instagram.com/sfubrightideas/'}/>
 
                 <div className = 'bg-[#FBFBFB] py-28 w-screen'>
 

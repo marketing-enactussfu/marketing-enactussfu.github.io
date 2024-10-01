@@ -26,7 +26,7 @@ const CoastCard =() => {
         <main className='mt-20'>
             <div className = 'flex flex-col md:gap-36 gap-20'>
 
-                <PastProjectIntro timeRange={'2014-2016'} title ={'Coast Cards'}  hasButton = {true} buttonText={'Our Facebook'} aboutUsText={aboutUsText} image = {generalImages}/>
+                <PastProjectIntro timeRange={'2014-2016'} title ={'Coast Cards'}  hasButton = {true} buttonText={'Our Facebook'} aboutUsText={aboutUsText} image = {generalImages} buttonLink={'https://www.facebook.com/coastcardsSFU?__xts__[0]=68.ARA6BoPRaWy-CXtg23bN_mhGx-2oA37brCLmEsaLBDXDS3yz7fxP4QlEQEYJIt9lZJsQNS0kblMC6WF6rkxNWH5UM-xMAgokRP3Cky2cwyw85mpC44ENzKvXSjwPJHT_urtcdhQjhNt5l-sj2oL-SeEOQdGpRC2InoAI0RjAtvG2V8CB9TSjmxuhlEmXIuLfMc_vDqKXQ89ytx-NaXljOetSHxvJozoDp6ztQYk-WUMAyjWHJ56GQ7eQhZ2cLXpT0dKu7cOvVwd6QNhBkKFCF8DXzFdN3uQ&fref=nf&hc_ref=ARQ7uBSwvyANBTho71Aj73KFqZKQ1IHYZfnMvJ6QjJp5QX96VJOJiI0HRfwrwSeWnrE'}/>
                 <div className = 'lg:mx-40 md:mx-28 sm:mx-16 mx-10 space-y-10'>
                         <div className='me-20 space-y-5 md:me-60'>
                             <Subtitle text='Our Process'/>

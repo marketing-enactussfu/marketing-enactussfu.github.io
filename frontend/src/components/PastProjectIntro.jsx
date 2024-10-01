@@ -1,7 +1,7 @@
 import React from "react";
 import Subtitle from "./Subtitle";
 
-export const PastProjectIntro = ({timeRange, title, hasButton, buttonText, aboutUsText, image }) => {
+export const PastProjectIntro = ({timeRange, title, hasButton, buttonText, aboutUsText, image, buttonLink}) => {
     return(
 
         <div className = 'flex flex-col md:gap-20 gap-10'>
@@ -16,7 +16,9 @@ export const PastProjectIntro = ({timeRange, title, hasButton, buttonText, about
                                 <div className = 'flex flex-col gap-10 items-start'>
                                     <Subtitle text='About Us'/>
                                     <div className = 'text-[#181818] sm:text-md text-base'>{aboutUsText}</div>
-                                    {hasButton && <button className = 'facebook-button sm:text-md text-sm font-semibold'>{buttonText}</button> }
+                                    {hasButton && <button className = 'facebook-button sm:text-md text-sm font-semibold' 
+                                    onClick={() => window.open(buttonLink, '_blank')}
+                                    >{buttonText}</button> }
                                 </div>
             </div>
         </div>

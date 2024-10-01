@@ -36,6 +36,7 @@ const KindredKnots = () => {
                     buttonText={'Our Instagram'} 
                     aboutUsText={aboutUsText} 
                     image={generalImages} 
+                    buttonLink={'https://www.instagram.com/kindred.knots/?locale=zh_tw&hl=am-et'}
                 />
 
                 <div className='bg-[#FBFBFB] py-28 w-screen'>

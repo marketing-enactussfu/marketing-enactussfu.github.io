@@ -18,7 +18,7 @@ const  ChangemakerChallenge =() => {
     const mainpage =(
         <main className='mt-20'>
             <div className = 'flex flex-col md:gap-36 gap-20'>
-                <PastProjectIntro timeRange={'2014-2016'} title ={'Changemaker Challenge'}  hasButton = {true} buttonText={'Our Facebook'} aboutUsText={aboutUsText} image = {generalImages}/>
+                <PastProjectIntro timeRange={'2014-2016'} title ={'Changemaker Challenge'}  hasButton = {true} buttonText={'Our Facebook'} aboutUsText={aboutUsText} image = {generalImages} buttonLink={'https://www.facebook.com/changemakerchallenge/'}/>
 
                 
                 <div className = 'lg:mx-40 md:mx-28 sm:mx-16 mx-10 mb-20 space-y-10'>
