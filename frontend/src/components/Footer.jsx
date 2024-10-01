@@ -7,13 +7,13 @@ import { currentProjects, pastProjects } from '../data/projectsData'; // Assume 
 
 function Navbar() {
     const currentProjects = [
-        { name: 'The beekind Company', slug: 'the-beekind-company' },
-        { name: 'Second Savour', slug: 'second-savour' },
-        { name: 'Himalayan Skyes', slug: 'himalayan-skyes' },
-        { name: 'Aqua Analyzer', slug: 'aqua-analyzer' },
-        { name: 'Community Grafts', slug: 'community-grafts' },
-        { name: 'Turbio Energy', slug: 'turbio-energy' },
-        { name: 'Entrepreneurship Challenges', slug: 'entrepreneurship-challenges' },
+        { name: 'The beekind Company', slug: 'current-projects/the-beekind-company' },
+        { name: 'Second Savour', slug: 'current-projects/second-savour' },
+        { name: 'Himalayan Skyes', slug: 'current-projects/himalayan-skyes' },
+        { name: 'Aqua Analyzer', slug: 'current-projects/aqua-analyzer' },
+        { name: 'Community Grafts', slug: 'current-projects/community-grafts' },
+        { name: 'Turbio Energy', slug: 'current-projects/turbio-energy' },
+        { name: 'Entrepreneurship Challenges', slug: 'current-projects/entrepreneurship-challenges' },
     ];
 
     const pastProjects = [
@@ -86,7 +86,7 @@ function Navbar() {
                             <div className="text-black text-sm font-semibold">Get Involved</div>
                             <a href="/career">Careers</a>
                             <a href="/sponsorship">Sponsor Us</a>
-                            <a href="/contact">Contact Us</a> {/* Corrected the Contact Us link */}
+                            <a href="/mailto:info@enactussfu.com">Contact Us</a> {/* Corrected the Contact Us link */}
                         </div>
                     </div>
                 </div>
