@@ -4,8 +4,12 @@ import { currentProjects, pastProjects } from '../data/projectsData';
 import Instagram from '../icons/footer/Instagram.png';
 import LinkdIn from '../icons/footer/LinkdIn.png';
 import Mail from '../icons/footer/Mail.png';
+import { useHistory } from 'react-router-dom';
+
+
 
 function Navbar() {
+
     
     return(
         <footer className = 'w-screen bg-[#ECECEC]'>
@@ -28,10 +32,13 @@ function Navbar() {
                     <div className = 'flex md:flex-row flex-col gap-9 text-[#5C5C5C] text-xs md:mt-3 mt-10'>
                         <div className = 'flex flex-col gap-2'>
                             <div className = 'text-black text-sm font-semibold'>Organization</div>
-                            <p>About Us</p>
-                            <p>The Team</p>
-                            <p>History</p>
-                            <p>Awards</p>
+                            <a href="/about/what-we-do">About Us</a>
+                            <a href="/about/our-team">The Team</a>
+                            <a href="/about/what-we-do#history">History</a>
+                            <a href="/competitions">Awards</a>
+                            
+
+
                         </div>
                         <div className = 'flex flex-col gap-2'>
                             <div className = 'text-black text-sm font-semibold'>Current Projects</div>
@@ -49,9 +56,9 @@ function Navbar() {
 
                         <div className = 'flex flex-col gap-2'>
                             <div className = 'text-black text-sm font-semibold'>Get Involved</div>
-                            <p>Careers</p>
-                            <p>Sponsor Us</p>
-                            <p>Contact Us</p>
+                            <a href="/career">Careers</a>
+                            <a href="/sponsorship">Sponsor Us</a>
+                            <a href="/career">Contact Us</a> 
                         </div>
 
                     </div>

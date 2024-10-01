@@ -113,12 +113,14 @@ const WhatWeDo = () => {
                 {/* Histroy */}
                 <div className='bg-[#FBFBFB]' id = 'history'>
                     <div className='currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 pt-10 flex flex-col gap-10 text-[#181818] sm:text-md text-base'>
+                        
                         <div className="sm:text-md text-base text-[#D00200] font-semibold cursor-pointer">Our History</div>
                         <div className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-start">
                             Explore our timeline to discover the pivotal moments and transformative events that have shaped our organization.
                         </div>
 
                         {/* Add a check to ensure history is defined */}
+                       
                         <div className = 'flex flex-col gap-4'>
                             {history.map((yearData, index) => (
                                 <div key={index} className = 'flex flex-col gap-9 border-b-2 py-2'>
@@ -161,8 +163,11 @@ const WhatWeDo = () => {
                                 </div>
                             ))}
                         </div>
+                        
                     </div>
                 </div>
+                
+
 
                 <div className='flex items-center currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 justify-center my-10'>
                     {/* should adjust the icon */}
