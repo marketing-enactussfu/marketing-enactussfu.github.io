@@ -94,7 +94,7 @@ function Navbar() {
                 {/* Footer Links */}
                 <div className="flex flex-col sm:flex-row mx-10 justify-between text-xs items-start sm:items-end sm:gap-2 gap-5">
                     <div className="ms-6">
-                        © 2024 Enactus SFU | <a href="/land-acknowledgement">Land Acknowledgement</a> | <a href="/privacy-policy">Privacy Policy</a>
+                        © 2024 Enactus SFU | <a href="https://www.sfu.ca/communicators-toolkit/brand/guidelines/writing/editorial-style-guide/language-grammar/territorial-acknowledgements.html" target="_blank" >Land Acknowledgement</a> | <a href="/privacy-policy">Privacy Policy</a>
                     </div>
                     <div className="flex flex-row gap-3 me-2 ms-6">
                         <a href="https://www.instagram.com/enactussfu/" target="_blank" rel="noopener noreferrer">

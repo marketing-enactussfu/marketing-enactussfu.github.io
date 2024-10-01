@@ -52,14 +52,15 @@ const ForwardVision = () => {
                             </div>
 
                             <button className = 'facebook-button text-[14px] text-semibold'>
-                                Forward Vision Participant Package
+                                <a href="https://drive.google.com/file/d/1sH5dmqYyXKlifyMZx-JKznBXVBxeR-wu/view" target="_blank">Forward Vision Participant Package </a>
+                                
                             </button>
                     </div>
 
 
                 <div className="md:py-20 sm:py-16 py-10 bg-[#FBFBFB] w-screen flex flex-col gap-8">
                     <div className="flex flex-col items-center currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
-                        {/* Image Section */}
+                        
 
                         <div className="text-[#181818] text-xl sm:text-2xl md:text-3xl font-semibold text-center">
                                 What To Expect At Forward Vision
