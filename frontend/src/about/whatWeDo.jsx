@@ -21,9 +21,6 @@ const WhatWeDo = () => {
     const mainpage = (
         <main className="mt-4">
             <div className="flex flex-col gap-10 sm:gap-20 pt-12">
-                {/* currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-48 sm:mx-28 mx-8 */}
-                {/* <div className="flex flex-col gap-10 items-center md:mx-28 lg:mx-40 sm:mx-16 mx-10 text-center"> */}
-                {/* <div className="flex flex-col gap-10 items-center currentProject-md:mx-96 currentProjectText-md:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 mx-10 text-center"> */}
                 <div className="flex flex-col gap-10 items-center currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 text-center">
                     <div className="sm:text-md text-base text-[#D00200] font-semibold cursor-pointer">About Us</div>
                     <div className="text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold">
@@ -49,8 +46,9 @@ const WhatWeDo = () => {
                     </button>
                 </div>
 
-                <div className="flex justify-center items-center currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
-                    <img src={aboutImages['about_1.png']} alt="about" className = 'w-full'></img>
+                {/* Rounded image */}
+                <div className="flex justify-center rounded-xl items-center currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
+                    <img src={aboutImages['about_1.png']} alt="about" className = 'w-full rounded-xl' />
                 </div>
                 <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 text-start space-y-4 sm:space-y-8">
                     <div className="text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold mb-4">What are Enactus Projects?</div>
@@ -59,8 +57,9 @@ const WhatWeDo = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-center items-centercurrentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
-                    <img src={aboutImages['about_2.png']} alt="about" className = 'w-full'/>
+                {/* Rounded image */}
+                <div className="flex justify-center rounded-xl items-centercurrentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
+                    <img src={aboutImages['about_2.png']} alt="about" className='w-full rounded-xl' />
                 </div>
 
                 <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 text-start space-y-4 space-y-8">
@@ -71,8 +70,9 @@ const WhatWeDo = () => {
                     </div>
                 </div>
 
+                {/* Rounded image */}
                 <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 flex justify-center items-center">
-                    <img src={aboutImages['about_3.png']} alt="about" className = 'w-full' />
+                    <img src={aboutImages['about_3.png']} alt="about" className='w-full rounded-xl' />
                 </div>
 
                 <div className ='currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 justify-center flex flex-col gap-4 sm:gap-5'>
@@ -95,110 +95,94 @@ const WhatWeDo = () => {
                         }
 
                         <div className="col-span-2 md:col-span-4 flex justify-center">
-                                <img src={goalsImages['goal_9.png']} alt="goal" className="rounded w-full md:w-1/2" />
+                                <img src={goalsImages['goal_9.png']} alt="goal" className="rounded-xl w-full md:w-1/2" />
                         </div>
                     </div>
 
                 </div>
-                {/* Mission and Vison */}
+
+                {/* Mission and Vision */}
                 {Object.keys(sections).map((key, index) =>{
-                        return(
-                            <div key={index} className = 'flex flex-col gap-4 items-start currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 sm:space-y-6 space-y-4'>
-                                <div className = 'text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold'>{sections[key].title}</div>
-                                <div className = 'text-[#181818] sm:text-md text-base me-10 sm:me-20 md:me-40 lg:me-48'>{sections[key].description}</div>
-                            </div>
-                        )
+                    return(
+                        <div key={index} className='flex flex-col gap-4 items-start currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 sm:space-y-6 space-y-4'>
+                            <div className='text-2xl sm:text-3xl lg:text-4xl sm:font-semibold font-bold'>{sections[key].title}</div>
+                            <div className='text-[#181818] sm:text-md text-base me-10 sm:me-20 md:me-40 lg:me-48'>{sections[key].description}</div>
+                        </div>
+                    )
                 })}
-                
-                {/* Histroy */}
-                <div className='bg-[#FBFBFB]' id = 'history'>
+
+                {/* History */}
+                <div className='bg-[#FBFBFB]' id='history'>
                     <div className='currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 pt-10 flex flex-col gap-10 text-[#181818] sm:text-md text-base'>
-                        
                         <div className="sm:text-md text-base text-[#D00200] font-semibold cursor-pointer">Our History</div>
                         <div className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-start">
                             Explore our timeline to discover the pivotal moments and transformative events that have shaped our organization.
                         </div>
-
-                        {/* Add a check to ensure history is defined */}
-                       
-                        <div className = 'flex flex-col gap-4'>
+                        <div className='flex flex-col gap-4'>
                             {history.map((yearData, index) => (
-                                <div key={index} className = 'flex flex-col gap-9 border-b-2 py-2'>
-                               
+                                <div key={index} className='flex flex-col gap-9 border-b-2 py-2'>
                                     <div className="text-xl sm:text-2xl font-bold text-red-600">{yearData.year}</div>
-                                  
                                     <div className="grid min-[496px]:grid-cols-1 sm:grid-cols-3 space-y-2">
                                         <p className="font-semibold sm:col-start-1 sm:col-span-1">President</p>
                                         <p className="sm:col-start-2 sm:col-span-2">{yearData.president}</p>
                                     </div>
-                        
                                     <div className="grid min-[496px]:grid-cols-1 sm:grid-cols-3 space-y-2">
                                         <h3 className="font-semibold sm:col-start-1 sm:col-span-1">Vice-Presidents</h3>
                                         <ul className="sm:col-start-2 sm:col-span-2 sm:space-y-1 space-y-2">
                                             {yearData['vice_presidents'] && Object.entries(yearData['vice_presidents']).map(([role, name], idx) => (
-                                            <li key={idx}>{role.replace(/_/g, ' ')}: {name}</li>
+                                                <li key={idx}>{role.replace(/_/g, ' ')}: {name}</li>
                                             ))}
                                         </ul>
                                     </div>
-   
                                     <div className="grid min-[496px]:grid-cols-1 sm:grid-cols-3 space-y-2">
                                         <h3 className="font-semibold sm:col-start-1 sm:col-span-1">Projects</h3>
                                         <ul className="sm:col-start-2 sm:col-span-2 sm:space-y-1 space-y-2">
                                             {yearData.projects && yearData.projects.map((project, idx) => (
-                                            <li key={idx}>{project}</li>
+                                                <li key={idx}>{project}</li>
                                             ))}
                                         </ul>
                                     </div>
 
                                     {yearData.regional_wins && (
-                                          <div className="grid min-[496px]:grid-cols-1 sm:grid-cols-3 space-y-2">
-                                          <h3 className="font-semibold sm:col-start-1 sm:col-span-1">Regional Wins</h3>
-                                          <ul className="sm:col-start-2 sm:col-span-2 sm:space-y-1 space-y-2">
-                                              {yearData.regional_wins && yearData.regional_wins.map((win, idx) => (
-                                              <li key={idx}>{win}</li>
-                                              ))}
-                                          </ul>
-                                      </div>
+                                        <div className="grid min-[496px]:grid-cols-1 sm:grid-cols-3 space-y-2">
+                                            <h3 className="font-semibold sm:col-start-1 sm:col-span-1">Regional Wins</h3>
+                                            <ul className="sm:col-start-2 sm:col-span-2 sm:space-y-1 space-y-2">
+                                                {yearData.regional_wins && yearData.regional_wins.map((win, idx) => (
+                                                    <li key={idx}>{win}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     )}
                                 </div>
                             ))}
                         </div>
-                        
                     </div>
                 </div>
-                
-
 
                 <div className='flex items-center currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 justify-center my-10'>
-                    {/* should adjust the icon */}
                     <button className="session-button sm:text-sm text-xs font-semibold" onClick={scrollToHistory}>
-                            Back To Top
-                            <svg
+                        Back To Top
+                        <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="ml-2 h-4 w-4 transform rotate-180"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                             strokeWidth="2"
-                            >
+                        >
                             <path
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                                 d="M19 9l-7 7-7-7"
                             />
-                            </svg>
-                
+                        </svg>
                     </button>
-
                 </div>
-                
-    </div>
+            </div>
         </main>
     );
 
-    return (
-        <PageTemplate component={mainpage}></PageTemplate>
-    );
+    return <PageTemplate component={mainpage}></PageTemplate>;
 }
 
 export default WhatWeDo;
