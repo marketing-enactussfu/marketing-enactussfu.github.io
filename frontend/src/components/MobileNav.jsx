@@ -153,7 +153,9 @@ function MobileNav() {
           {/* Footer-like Button */}
           <footer className="w-screen py-4 bg-white bg-opacity-20 shadow-t mb-20">
             <div className="flex justify-center">
-              <button className="session-button text-[12px] font-semibold">
+              <button className="session-button text-[12px] font-semibold"
+                  onClick={() => navigate('/career')}
+              >
                 Join Our Team
               </button>
             </div>
