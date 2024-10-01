@@ -11,7 +11,7 @@ module.exports = {
         'whatWeDo-sm': '583px',
         'whatWeDo-md': '842px',
         'home-competitions-md': '1153px',
-        'home-brand-sm': '526px',
+        'home-brand-sm': '312px',
         'home-subscribe-sm': '813px',
         'navbar-md': '1265px',
         'navbar-transition': '1077px',

@@ -41,7 +41,7 @@ function MobileNav() {
 
   const back_button =()=>{
     return(
-      <button onClick={handleBackClick} className="flex items-center text-red-600 mb-4">
+      <button onClick={handleBackClick} className="flex flex-row text-red-600">
         {chevron_left()} Back
       </button>
     )
@@ -54,13 +54,13 @@ function MobileNav() {
       <div className = 'py-4 border-b-2 border-[#D8D8D8]'>
         {/* Navigation Bar */}
         <div className="md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex items-center justify-between">
-          <div className="flex items-center">
+
             {/* Logo */}
             {currentView === 'main' ?<button onClick = {() => navigate('/')}>
               <img src={enactus_logo} alt="Logo"/>
             </button> : back_button()
             }
-          </div>
+
           {/* Hamburger Menu Icon */}
           <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700">
             {isOpen ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke={'#30313D'} className="size-6">

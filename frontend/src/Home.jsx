@@ -55,7 +55,7 @@ const Home = () =>{
 
     const mainpage = (
         <main className = 'space-y-5'>
-            <div className="flex flex-col gap-20">
+            <div className="flex flex-col md:gap-36 gap-20">
                 <div className="relative w-full h-screen w-screen">
                     <img 
                         src={header}
@@ -193,10 +193,10 @@ const Home = () =>{
                 </div>
                
                 {/* brands */}
-                <div className = 'gap-10 lg:mx-40 md:mx-28 sm:mx-16'>
+                <div className = 'gap-10 lg:mx-40 md:mx-28 sm:mx-16 mx-10'>
                 {/* For smaller screens (combine both into a single div) */}
                 <div className=" flex flex-col gap-10 items-center justify-center">
-                    <div className='home-competitions-md:hidden grid md:grid-cols-4 sm:grid-cols-3 home-brand-sm:grid-cols-2 grid-cols-1 items-center justify-center'>
+                    <div className='home-competitions-md:hidden grid md:grid-cols-4 sm:grid-cols-3 home-brand-sm:grid-cols-2  grid-cols-1 items-center justify-center'>
                             {Object.keys(brandImages)
                                 .sort((a, b) => {
                                     const numA = parseInt(a.match(/\d+/)[0], 10);
