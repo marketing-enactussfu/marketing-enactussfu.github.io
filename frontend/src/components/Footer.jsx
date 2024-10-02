@@ -47,10 +47,10 @@ function Navbar() {
                     <div className="flex md:flex-row flex-col gap-9 text-[#5C5C5C] text-xs md:mt-3 mt-10">
                         <div className="flex flex-col gap-2">
                             <div className="text-black text-sm font-semibold">Organization</div>
-                            <a href="/about/what-we-do">About Us</a>
-                            <a href="/about/our-team">The Team</a>
-                            <a href="/about/what-we-do#history">History</a>
-                            <a href="/competitions">Awards</a>
+                            <a href="/about/what-we-do" className = 'hover:text-red-600 hover:underline'>About Us</a>
+                            <a href="/about/our-team" className = 'hover:text-red-600 hover:underline'>The Team</a>
+                            <a href="/about/what-we-do#history" className = 'hover:text-red-600 hover:underline'>History</a>
+                            <a href="/competitions" className = 'hover:text-red-600 hover:underline'>Awards</a>
                         </div>
 
                         {/* Current Projects Links */}
@@ -60,7 +60,7 @@ function Navbar() {
                                 <a
                                     key={project.slug}
                                     href={`/projects/${project.slug}`}
-                                    className="text-gray-700 hover:text-blue-500 hover:underline"
+                                    className="text-gray-700 hover:text-red-600 hover:underline"
                                 >
                                     {project.name}
                                 </a>
@@ -74,7 +74,7 @@ function Navbar() {
                                 <a
                                     key={project.slug}
                                     href={`/projects/${project.slug}`}
-                                    className="text-gray-700 hover:text-blue-500 hover:underline"
+                                    className="text-gray-700 hover:text-red-600 hover:underline"
                                 >
                                     {project.name}
                                 </a>
@@ -84,9 +84,9 @@ function Navbar() {
                         {/* Get Involved Links */}
                         <div className="flex flex-col gap-2">
                             <div className="text-black text-sm font-semibold">Get Involved</div>
-                            <a href="/career">Careers</a>
-                            <a href="/sponsorship">Sponsor Us</a>
-                            <a href="/mailto:info@enactussfu.com">Contact Us</a> {/* Corrected the Contact Us link */}
+                            <a href="/career" className = 'hover:text-red-600 hover:underline'>Careers</a>
+                            <a href="/sponsorship" className = 'hover:text-red-600 hover:underline'>Sponsor Us</a>
+                            <a href="/mailto:info@enactussfu.com" className = 'hover:text-red-600 hover:underline'>Contact Us</a> {/* Corrected the Contact Us link */}
                         </div>
                     </div>
                 </div>

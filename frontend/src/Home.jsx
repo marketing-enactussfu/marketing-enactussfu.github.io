@@ -75,7 +75,7 @@ const Home = () =>{
                             Ignite your integrity, passion, and learn from each other in a spirit of innovation and collaboration.
                         </p>
                         <button className="session-button text-sm sm:text-base font-semibold"
-                                onClick={() => navigate('/careers')}>
+                                onClick={() => navigate('/career')}>
                             Join Our Team
                         </button>
                         </div>
