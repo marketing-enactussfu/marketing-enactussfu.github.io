@@ -151,7 +151,10 @@ const Home = () =>{
                         <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
                             <div className="flex flex-nowrap ml-0">
                             {currentProjectsContent.map((project, index) => (
-                                <div key={index} className="inline-block px-3">
+                                <div key={index} className="inline-block px-3"   onClick={() => {
+                                    navigate(`/enactussfu/projects/current-projects/` + (project.title === 'BeeKind Co.' ? 'the-beekind-company' : project.title.toLowerCase().replace(/\s+/g, '-')));
+                                    window.scrollTo(0, 0);
+                                  }}>
                                 <div
                                     className=" learn-more-button w-60 sm:w-80 h-full max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col items-start justify-between">
                                     <img 
@@ -163,10 +166,6 @@ const Home = () =>{
                                     <div className="font-semibold text-[12px] sm:text-[18px] mb-2">{project.title}</div>
                                     <div className="text-[#5C5C5C] text-[11px] sm:text-[16px] mb-4 flex-grow">{project.description}</div>
                                     <button
-                                        onClick={() => {
-                                            navigate(`/enactussfu/projects/current-projects/` + (project.title === 'BeeKind Co.' ? 'the-beekind-company' : project.title.toLowerCase().replace(/\s+/g, '-')));
-                                            window.scrollTo(0, 0);
-                                          }}
                                         className="learn-more text-red-500 font-semibold inline-block text-[11px] sm:text-[12px] mt-auto text-left self-start">
                                         Learn More
                                     </button>
