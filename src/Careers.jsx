@@ -26,7 +26,7 @@ const Careers = () => {
             {/* First Section */}
 
             {/* <div className="w-full min-h-[485px] px-8 py-[120px] flex flex-col justify-center items-center gap-16"> */}
-            <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10'>
+            <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10 pt-12'>
                 <div className="text-center flex flex-col items-center gap-7">
                     <div className="text-[#d00200] text-base font-semibold ">Join Our Team</div>
                     <div className="text-[#181818] text-[40px] font-semibold">Careers at Enactus</div>
