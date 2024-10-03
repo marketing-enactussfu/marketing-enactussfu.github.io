@@ -47,7 +47,7 @@ function Navbar() {
 
                     {/* Organization Links */}
                     <div className="flex md:flex-row flex-col gap-9 text-[#5C5C5C] text-xs md:mt-3 mt-10">
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2 items-start">
                             <div className="text-black text-sm font-semibold">Organization</div>
                             <button onClick={() => navigate('/enactussfu/about/what-we-do')} className='hover:text-red-600 hover:underline'>
                                     About Us
@@ -64,7 +64,7 @@ function Navbar() {
                         </div>
 
                         {/* Current Projects Links */}
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2 items-start">
                             <div className="text-black text-sm font-semibold">Current Projects</div>
                             {currentProjects.map((project) => (
                                 <button
@@ -78,7 +78,7 @@ function Navbar() {
                         </div>
 
                         {/* Past Projects Links */}
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2 items-start">
                             <div className="text-black text-sm font-semibold">Past Projects</div>
                             {pastProjects.map((project) => (
                                         <button
@@ -92,7 +92,7 @@ function Navbar() {
                         </div>
 
                         {/* Get Involved Links */}
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2 items-start">
                             <div className="text-black text-sm font-semibold">Get Involved</div>
                             <button 
                                     onClick={() => navigate('/enactussfu/career')} 
