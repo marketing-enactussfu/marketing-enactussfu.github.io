@@ -84,19 +84,19 @@ function Navbar() {
           </div>
           
           <div>
-            <a href="/enactussfu/events" className="hover:text-red-500 hover:underline">
+            <a href="/events" className="hover:text-red-500 hover:underline">
               Events
             </a>
           </div>
 
           <div>
-            <a href="/enactussfu/sponsorship" className="hover:text-red-500 hover:underline">
+            <a href="/sponsorship" className="hover:text-red-500 hover:underline">
               Sponsorships
             </a>
           </div>
 
           <div>
-            <a href="/enactussfu/competitions" className="hover:text-red-500 hover:underline">
+            <a href="/competitions" className="hover:text-red-500 hover:underline">
               Competitions
             </a>
           </div>

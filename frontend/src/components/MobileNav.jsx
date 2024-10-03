@@ -41,7 +41,7 @@ function MobileNav() {
 
   const back_button =()=>{
     return(
-      <button onClick={handleBackClick} className="flex flex-row text-red-600 font-semibold">
+      <button onClick={handleBackClick} className="flex flex-row text-red-600">
         {chevron_left()} Back
       </button>
     )
