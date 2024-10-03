@@ -84,21 +84,27 @@ function Navbar() {
           </div>
           
           <div>
-            <a href="/enactussfu/events" className="hover:text-red-500 hover:underline">
+            <button
+            onClick = {() => navigate('/enactussfu/events')}
+            className="hover:text-red-500 hover:underline">
               Events
-            </a>
+            </button>
           </div>
 
           <div>
-            <a href="/enactussfu/sponsorship" className="hover:text-red-500 hover:underline">
+            <button 
+              onClick = {() => navigate('/enactussfu/sponsorship')}
+              className="hover:text-red-500 hover:underline">
               Sponsorships
-            </a>
+            </button>
           </div>
 
           <div>
-            <a href="/enactussfu/competitions" className="hover:text-red-500 hover:underline">
+            <button 
+            onClick = {() => navigate('/enactussfu/competitions')}
+            className="hover:text-red-500 hover:underline">
               Competitions
-            </a>
+            </button>
           </div>
 
           {/* Join Our Team Button */}
