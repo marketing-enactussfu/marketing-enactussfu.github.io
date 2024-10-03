@@ -162,9 +162,11 @@ const Home = () =>{
                                     <div className="p-4 flex flex-col flex-grow">
                                     <div className="font-semibold text-[12px] sm:text-[18px] mb-2">{project.title}</div>
                                     <div className="text-[#5C5C5C] text-[11px] sm:text-[16px] mb-4 flex-grow">{project.description}</div>
-                                    <a href="/about/what-we-do" 
+                                    <button
+                                    onClick={() => navigate(`/enactussfu/projects/current-projects/` + project.title.toLowerCase().replace(/\s+/g, '-'))}
                                     // className="learn-more text-red-500 font-semibold inline-block text-[12px] mt-auto"
-                                    className="learn-more text-red-500 font-semibold inline-block text-[11px] sm:text-[12px] mt-auto "> Learn More</a>
+                                    className="learn-more text-red-500 font-semibold inline-block text-[11px] sm:text-[12px] mt-auto"> Learn More
+                                    </button>
                                     </div>
                                 </div>
                                 </div>

@@ -153,7 +153,7 @@ const Home = () =>{
                             {currentProjectsContent.map((project, index) => (
                                 <div key={index} className="inline-block px-3">
                                 <div
-                                    className=" learn-more-button w-60 sm:w-80 h-full max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col justify-between">
+                                    className=" learn-more-button w-60 sm:w-80 h-full max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col items-start justify-between">
                                     <img 
                                     src={currentProjectsContentImages[project.title.replace(/\s+/g, '_').toLowerCase() + '.png']} 
                                     alt={project.title} 
@@ -162,9 +162,11 @@ const Home = () =>{
                                     <div className="p-4 flex flex-col flex-grow">
                                     <div className="font-semibold text-[12px] sm:text-[18px] mb-2">{project.title}</div>
                                     <div className="text-[#5C5C5C] text-[11px] sm:text-[16px] mb-4 flex-grow">{project.description}</div>
-                                    <a href="/about/what-we-do" 
-                                    // className="learn-more text-red-500 font-semibold inline-block text-[12px] mt-auto"
-                                    className="learn-more text-red-500 font-semibold inline-block text-[11px] sm:text-[12px] mt-auto "> Learn More</a>
+                                    <button
+                                        onClick={() => navigate(`/enactussfu/projects/current-projects/` + (project.title == 'BeeKind Co.' ? 'the-beekind-company' : project.title.toLowerCase().replace(/\s+/g, '-')))}
+                                        className="learn-more text-red-500 font-semibold inline-block text-[11px] sm:text-[12px] mt-auto text-left self-start">
+                                        Learn More
+                                    </button>
                                     </div>
                                 </div>
                                 </div>
