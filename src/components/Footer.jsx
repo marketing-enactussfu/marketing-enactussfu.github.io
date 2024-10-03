@@ -3,9 +3,11 @@ import enactus_logo from '../icons/footer/enactus_logo.png';
 import Instagram from '../icons/footer/Instagram.png';
 import LinkedIn from '../icons/footer/LinkdIn.png';
 import Mail from '../icons/footer/Mail.png';
+import { useNavigate } from 'react-router-dom';
 import { currentProjects, pastProjects } from '../data/projectsData'; // Assume both current and past projects are imported
 
 function Navbar() {
+    const navigate = useNavigate();
     const currentProjects = [
         { name: 'The beekind Company', slug: 'current-projects/the-beekind-company' },
         { name: 'Second Savour', slug: 'current-projects/second-savour' },
@@ -47,23 +49,31 @@ function Navbar() {
                     <div className="flex md:flex-row flex-col gap-9 text-[#5C5C5C] text-xs md:mt-3 mt-10">
                         <div className="flex flex-col gap-2">
                             <div className="text-black text-sm font-semibold">Organization</div>
-                            <a href="/about/what-we-do" className = 'hover:text-red-600 hover:underline'>About Us</a>
-                            <a href="/about/our-team" className = 'hover:text-red-600 hover:underline'>The Team</a>
-                            <a href="/about/what-we-do#history" className = 'hover:text-red-600 hover:underline'>History</a>
-                            <a href="/competitions" className = 'hover:text-red-600 hover:underline'>Awards</a>
+                            <button onClick={() => navigate('/enactussfu/about/what-we-do')} className='hover:text-red-600 hover:underline'>
+                                    About Us
+                                </button>
+                                <button onClick={() => navigate('/enactussfu/about/our-team')} className='hover:text-red-600 hover:underline'>
+                                    The Team
+                                </button>
+                                <button onClick={() => navigate('/enactussfu/about/what-we-do#history')} className='hover:text-red-600 hover:underline'>
+                                    History
+                                </button>
+                                <button onClick={() => navigate('/enactussfu/competitions')} className='hover:text-red-600 hover:underline'>
+                                    Awards
+                                </button>                        
                         </div>
 
                         {/* Current Projects Links */}
                         <div className="flex flex-col gap-2">
                             <div className="text-black text-sm font-semibold">Current Projects</div>
                             {currentProjects.map((project) => (
-                                <a
-                                    key={project.slug}
-                                    href={`/projects/${project.slug}`}
-                                    className="text-gray-700 hover:text-red-600 hover:underline"
-                                >
-                                    {project.name}
-                                </a>
+                                <button
+                                key={project.slug}
+                                onClick={() => navigate(`/enactussfu/projects/${project.slug}`)}
+                                className="text-gray-700 hover:text-red-600 hover:underline"
+                              >
+                                {project.name}
+                              </button>
                             ))}
                         </div>
 
@@ -71,21 +81,29 @@ function Navbar() {
                         <div className="flex flex-col gap-2">
                             <div className="text-black text-sm font-semibold">Past Projects</div>
                             {pastProjects.map((project) => (
-                                <a
-                                    key={project.slug}
-                                    href={`/projects/${project.slug}`}
-                                    className="text-gray-700 hover:text-red-600 hover:underline"
-                                >
-                                    {project.name}
-                                </a>
+                                        <button
+                                        key={project.slug}
+                                        onClick={() => navigate(`/enactussfu/projects/${project.slug}`)}
+                                        className="text-gray-700 hover:text-red-600 hover:underline"
+                                      >
+                                        {project.name}
+                                      </button>
                             ))}
                         </div>
 
                         {/* Get Involved Links */}
                         <div className="flex flex-col gap-2">
                             <div className="text-black text-sm font-semibold">Get Involved</div>
-                            <a href="/career" className = 'hover:text-red-600 hover:underline'>Careers</a>
-                            <a href="/sponsorship" className = 'hover:text-red-600 hover:underline'>Sponsor Us</a>
+                            <button 
+                                    onClick={() => navigate('/enactussfu/career')} 
+                                    className='hover:text-red-600 hover:underline'>
+                                    Careers
+                                </button>
+                                <button 
+                                    onClick={() => navigate('/enactussfu/sponsorship')} 
+                                    className='hover:text-red-600 hover:underline'>
+                                    Sponsor Us
+                                </button>
                             <a href="/mailto:info@enactussfu.com" className = 'hover:text-red-600 hover:underline'>Contact Us</a> {/* Corrected the Contact Us link */}
                         </div>
                     </div>
