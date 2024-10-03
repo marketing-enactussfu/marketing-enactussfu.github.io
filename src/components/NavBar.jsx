@@ -39,7 +39,7 @@ function Navbar() {
               className="mt-4 z-10 z-[1000] left-1/2 -translate-x-1/2 opacity-0 border border-gray-200 invisible absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 transition-all duration-500 ease-out transform scale-95">
               <div>
                 <a
-                  href="/about/what-we-do"
+                  href="/enactussfu/about/what-we-do"
                   className="bg-white text-sm block px-4 py-3 mt-1 mx-1 text-gray-600 hover:bg-gray-100 flex items-center gap-2"
                 >
                   <img
@@ -53,7 +53,7 @@ function Navbar() {
 
               <div>
                 <a
-                  href="/about/our-team"
+                  href="/enactussfu/about/our-team"
                   className="bg-white block px-4 py-3 mb-1 mx-1 text-gray-600 hover:bg-gray-100 flex items-center gap-2"
                 >
                   <img src={about} alt="About" className="h-5 w-5" />
