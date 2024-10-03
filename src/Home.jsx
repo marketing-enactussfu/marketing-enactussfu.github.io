@@ -163,7 +163,10 @@ const Home = () =>{
                                     <div className="font-semibold text-[12px] sm:text-[18px] mb-2">{project.title}</div>
                                     <div className="text-[#5C5C5C] text-[11px] sm:text-[16px] mb-4 flex-grow">{project.description}</div>
                                     <button
-                                        onClick={() => navigate(`/enactussfu/projects/current-projects/` + (project.title == 'BeeKind Co.' ? 'the-beekind-company' : project.title.toLowerCase().replace(/\s+/g, '-')))}
+                                        onClick={() => {
+                                            navigate(`/enactussfu/projects/current-projects/` + (project.title === 'BeeKind Co.' ? 'the-beekind-company' : project.title.toLowerCase().replace(/\s+/g, '-')));
+                                            window.scrollTo(0, 0);
+                                          }}
                                         className="learn-more text-red-500 font-semibold inline-block text-[11px] sm:text-[12px] mt-auto text-left self-start">
                                         Learn More
                                     </button>
