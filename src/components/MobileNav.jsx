@@ -86,9 +86,9 @@ function MobileNav() {
           {currentView === 'main' && (
             <ul className="flex-grow flex flex-col space-y-4 text-[#181818] text-[18px] font-[500] md:mx-28 lg:mx-40 sm:mx-16 mx-10 overflow-y-auto">
               <li className="border-b-2 border-[#D8D8D8] py-5 ">
-                <a onClick={() => setCurrentView('about')} className="flex justify-between cursor-pointer">
+                <button onClick={() => setCurrentView('about')} className="flex justify-between cursor-pointer">
                   About <span>{chevron_right()}</span>
-                </a>
+                </button>
               </li>
               <li className="border-b-2 border-[#D8D8D8] py-5">
                 <a onClick={() => setCurrentView('projects')} className="flex justify-between cursor-pointer">
@@ -96,19 +96,25 @@ function MobileNav() {
                 </a>
               </li>
               <li className="border-b-2 border-[#D8D8D8] py-5">
-                <a href="/events" className="flex justify-between">
+                <button 
+                onClick={() => navigate('/enactussfu/events')}
+                 className="flex justify-between">
                   Events
-                </a>
+                </button>
               </li>
               <li className="border-b-2 border-[#D8D8D8] py-5">
-                <a href="/sponsorship" className="flex justify-between">
+                <button 
+                onClick={() => navigate('/enactussfu/sponsorship')}
+                 className="flex justify-between">
                   Sponsorship
-                </a>
+                </button>
               </li>
               <li className="border-b-2 border-[#D8D8D8] py-5">
-                <a href="/competitions" className="flex justify-between">
+                <button 
+                onClick={() => navigate('/enactussfu/competitions')}
+                 className="flex justify-between">
                   Competitions
-                </a>
+                </button>
               </li>
             </ul>
           )}
@@ -119,18 +125,18 @@ function MobileNav() {
               <h2 className="text-xl font-bold text-[#181818] text-sm">About</h2>
               <ul className = 'flex flex-col gap-3'>
                 <li className="flex flex-row items-center gap-6 py-2 text-[16px] font-semibold">
-                  <a
-                  href="/enactussfu/about/our-team" 
+                  <button
+                  onClick = {() => navigate('/enactussfu/about/our-team')}
                   className="flex items-center gap-6"
                   >
                   <img src={about} alt="About" className="h-5 w-5" />
                   Our Team
-                  </a>
+                  </button>
 
                 </li>
                 <li className="flex flex-row items-center gap-6 py-2 text-[16px] font-semibold">
-                  <a
-                  href="/enactussfu/about/what-we-do"
+                  <button
+                  onClick={() => navigate('/enactussfu/about/what-we-do')}
                   className="flex items-center gap-6"
                   >
                   <img
@@ -139,7 +145,7 @@ function MobileNav() {
                     className="h-5 w-5"
                   />
                   What We Do
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
