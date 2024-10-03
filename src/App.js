@@ -33,30 +33,30 @@ export default function App() {
   return (
     <Router> 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sponsorship" element={<Sponsorship/>} />
-        <Route path="/about/what-we-do" element={<WhatWeDo/>} />
-        <Route path="/about/our-team" element={<OurTeam/>} />
-        <Route path='/projects/past-projects/coast-cards' element={<CoastCards/>} />
-        <Route path="/competitions" element={<Competitions/>} />
-        <Route path='/projects/past-projects/count-on-me' element={<CountOnMe/>} />
-        <Route path='/projects/past-projects/changemaker-challenge' element={<ChangemakerChallenge/>} />
-        <Route path='/projects/past-projects/bright-ideas' element={<BrightIdeas/>} />
-        <Route path='/projects/current-projects/second-savour' element={<SecondSavour/>} />
-        <Route path="/career" element={<Careers/>} />
-        <Route path='/projects/past-projects/banner-bags' element={<BannerBags/>} />
-        <Route path='/projects/past-projects/media-minds' element={<MediaMinds/>} />
-        <Route path='/projects/past-projects/refresh' element={<ReFresh/>} />
-        <Route path='/projects/past-projects/kindred-knots' element={<KindredKnots/>} />
-        <Route path='/projects/current-projects/himalayan-skyes' element={<SKYES/>} />
-        <Route path='/projects/current-projects/community-grafts' element={<CommunityGrafts/>} />
-        <Route path='/projects/current-projects/entrepreneurship-challenges' element={<EntrepreneurshipChallenges/>} />
-        <Route path='/projects/current-projects/turbio-energy' element={<TurbioEnergy/>} />
-        <Route path='/projects/current-projects/aqua-analyzer' element={<AA/>} />
-        <Route path='/events' element={<Events/>} />
-        <Route path='/events/pm-series' element={<PMSeries/>} />
-        <Route path='/events/forward-vision' element={<ForwardVision/>} />
-        <Route path='/projects/current-projects/the-beekind-company' element={<BeeKind/>} />
+        <Route path="/enactussfu" element={<Home />} />
+        <Route path="/enactussfu/sponsorship" element={<Sponsorship/>} />
+        <Route path="/enactussfu/about/what-we-do" element={<WhatWeDo/>} />
+        <Route path="/enactussfu/about/our-team" element={<OurTeam/>} />
+        <Route path='/enactussfu/projects/past-projects/coast-cards' element={<CoastCards/>} />
+        <Route path="/enactussfu/competitions" element={<Competitions/>} />
+        <Route path='/enactussfu/projects/past-projects/count-on-me' element={<CountOnMe/>} />
+        <Route path='/enactussfu/projects/past-projects/changemaker-challenge' element={<ChangemakerChallenge/>} />
+        <Route path='/enactussfu/projects/past-projects/bright-ideas' element={<BrightIdeas/>} />
+        <Route path='/enactussfu/projects/current-projects/second-savour' element={<SecondSavour/>} />
+        <Route path="/enactussfu/career" element={<Careers/>} />
+        <Route path='/enactussfu/projects/past-projects/banner-bags' element={<BannerBags/>} />
+        <Route path='/enactussfu/projects/past-projects/media-minds' element={<MediaMinds/>} />
+        <Route path='/enactussfu/projects/past-projects/refresh' element={<ReFresh/>} />
+        <Route path='/enactussfu/projects/past-projects/kindred-knots' element={<KindredKnots/>} />
+        <Route path='/enactussfu/projects/current-projects/himalayan-skyes' element={<SKYES/>} />
+        <Route path='/enactussfu/projects/current-projects/community-grafts' element={<CommunityGrafts/>} />
+        <Route path='/enactussfu/projects/current-projects/entrepreneurship-challenges' element={<EntrepreneurshipChallenges/>} />
+        <Route path='/enactussfu/projects/current-projects/turbio-energy' element={<TurbioEnergy/>} />
+        <Route path='/enactussfu/projects/current-projects/aqua-analyzer' element={<AA/>} />
+        <Route path='/enactussfu/events' element={<Events/>} />
+        <Route path='/enactussfu/events/pm-series' element={<PMSeries/>} />
+        <Route path='/enactussfu/events/forward-vision' element={<ForwardVision/>} />
+        <Route path='/enactussfu/projects/current-projects/the-beekind-company' element={<BeeKind/>} />
 
 
 
