@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/enactussfu/static/css/main.dfb79f4c.css",
-    "main.js": "/enactussfu/static/js/main.c144ca76.js",
+    "main.js": "/enactussfu/static/js/main.c3bcbf0c.js",
     "static/js/453.6952da46.chunk.js": "/enactussfu/static/js/453.6952da46.chunk.js",
     "static/media/header.png": "/enactussfu/static/media/header.f0c9470966181f64123d.png",
     "static/media/general_3.png": "/enactussfu/static/media/general_3.24720059cba0648f362c.png",
@@ -110,11 +110,11 @@
     "static/media/logo.svg": "/enactussfu/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/enactussfu/index.html",
     "main.dfb79f4c.css.map": "/enactussfu/static/css/main.dfb79f4c.css.map",
-    "main.c144ca76.js.map": "/enactussfu/static/js/main.c144ca76.js.map",
+    "main.c3bcbf0c.js.map": "/enactussfu/static/js/main.c3bcbf0c.js.map",
     "453.6952da46.chunk.js.map": "/enactussfu/static/js/453.6952da46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfb79f4c.css",
-    "static/js/main.c144ca76.js"
+    "static/js/main.c3bcbf0c.js"
   ]
 }
