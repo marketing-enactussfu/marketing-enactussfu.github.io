@@ -181,7 +181,7 @@ const Home = () =>{
 
                 <div className='md:mx-28 lg:mx-40 sm:mx-16 mx-10 space-y-10'>
                     <div className="grid grid-cols-1 home-competitions-md:grid-cols-2 home-competitions-md:gap-20 items-center gap-16">
-                        <div className = 'space-y-4'>
+                        <div className = 'space-y-10'>
                         <div className="sm:text-md text-base text-[#D00200] font-semibold">Enactus Canada Competitions</div>
                         <div className='font-semibold text-2xl md:text-3xl'>{competitionsContent['title']}</div>
                         <div className='text-[#5C5C5C] sm:text-md text-base'>{competitionsContent['text']}</div>
