@@ -187,8 +187,12 @@ const Home = () =>{
                         <div className='text-[#5C5C5C] sm:text-md text-base'>{competitionsContent['text']}</div>
         
                             <div className = 'flex flex-row gap-3'>
-                                <button className = 'bg-[#D00200] text-white rounded-full px-3 py-2 font-semibold hover:bg-red-800 sm:text-md text-base' onClick={() => navigate('/enactussfu/career')}>Join Us</button>
-                                <button className = 'bg-[#868686] text-white rounded-full px-3 py-2 font-semibold hover:bg-gray-500 sm:text-md text-base' onClick={() => navigate('/enactussfu/competitions')}>Learn More</button>
+                                <button className = 'bg-[#D00200] text-white rounded-full px-3 py-2 font-semibold hover:bg-red-800 sm:text-md text-base' onClick={() => {navigate('/enactussfu/career');
+                                    window.scrollTo(0, 0);
+                                }}>Join Us</button>
+                                <button className = 'bg-[#868686] text-white rounded-full px-3 py-2 font-semibold hover:bg-gray-500 sm:text-md text-base' onClick={() => {navigate('/enactussfu/competitions');
+                                    window.scrollTo(0, 0);
+                                }}>Learn More</button>
                             </div>
                         </div>
                         <img src = {competitions} alt = 'competitions' className = 'w-full rounded-xl'></img>
