@@ -33,7 +33,7 @@ export default function App() {
   return (
     <Router> 
       <Routes>
-        <Route path="/enactussfu" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/enactussfu/sponsorship" element={<Sponsorship/>} />
         <Route path="/enactussfu/about/what-we-do" element={<WhatWeDo/>} />
         <Route path="/enactussfu/about/our-team" element={<OurTeam/>} />
