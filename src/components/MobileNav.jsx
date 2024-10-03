@@ -120,7 +120,7 @@ function MobileNav() {
               <ul className = 'flex flex-col gap-3'>
                 <li className="flex flex-row items-center gap-6 py-2 text-[16px] font-semibold">
                   <a
-                  href="/about/our-team"
+                  href="/enactussfu/about/our-team" 
                   className="flex items-center gap-6"
                   >
                   <img src={about} alt="About" className="h-5 w-5" />
@@ -130,7 +130,7 @@ function MobileNav() {
                 </li>
                 <li className="flex flex-row items-center gap-6 py-2 text-[16px] font-semibold">
                   <a
-                  href="/about/what-we-do"
+                  href="/enactussfu/about/what-we-do"
                   className="flex items-center gap-6"
                   >
                   <img
