@@ -71,7 +71,9 @@ function MobileNav() {
             {isOpen ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke={'#30313D'} className="size-6">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                       </svg>
-            : <img src={menu} alt="menu_logo" />}
+            : <div className = 'p-2'>
+              <img src={menu} alt="menu_logo" />
+              </div>}
             
           </button>
         </div>
@@ -86,9 +88,9 @@ function MobileNav() {
           {currentView === 'main' && (
             <ul className="flex-grow flex flex-col space-y-4 text-[#181818] text-[18px] font-[500] md:mx-28 lg:mx-40 sm:mx-16 mx-10 overflow-y-auto">
               <li className="border-b-2 border-[#D8D8D8] py-5 ">
-                <button onClick={() => setCurrentView('about')} className="flex justify-between cursor-pointer">
+                <a onClick={() => setCurrentView('about')} className="flex justify-between cursor-pointer">
                   About <span>{chevron_right()}</span>
-                </button>
+                </a>
               </li>
               <li className="border-b-2 border-[#D8D8D8] py-5">
                 <a onClick={() => setCurrentView('projects')} className="flex justify-between cursor-pointer">
