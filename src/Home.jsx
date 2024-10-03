@@ -75,7 +75,7 @@ const Home = () =>{
                             Ignite your integrity, passion, and learn from each other in a spirit of innovation and collaboration.
                         </p>
                         <button className="session-button text-sm sm:text-base font-semibold"
-                                onClick={() => navigate('/enactussfu/career')}>
+                                onClick={() => navigate('/career')}>
                             Join Our Team
                         </button>
                         </div>
@@ -92,7 +92,7 @@ const Home = () =>{
                             <div className='text-[#5C5C5C] sm:text-md text-base'>{ourGoalsContent.text}</div>
                             <button 
                             className='session-button sm:text-md text-base font-semibold'
-                            onClick={() => navigate('/enactussfu/about/what-we-do')}
+                            onClick={() => navigate('/about/what-we-do')}
                             >Learn More</button>
                         </div>
 
@@ -152,7 +152,7 @@ const Home = () =>{
                             <div className="flex flex-nowrap ml-0">
                             {currentProjectsContent.map((project, index) => (
                                 <div key={index} className="inline-block px-3"   onClick={() => {
-                                    navigate(`/enactussfu/projects/current-projects/` + (project.title === 'BeeKind Co.' ? 'the-beekind-company' : project.title.toLowerCase().replace(/\s+/g, '-')));
+                                    navigate(`/projects/current-projects/` + (project.title === 'BeeKind Co.' ? 'the-beekind-company' : project.title.toLowerCase().replace(/\s+/g, '-')));
                                     window.scrollTo(0, 0);
                                   }}>
                                 <div
@@ -187,10 +187,10 @@ const Home = () =>{
                         <div className='text-[#5C5C5C] sm:text-md text-base'>{competitionsContent['text']}</div>
         
                             <div className = 'flex flex-row gap-3'>
-                                <button className = 'bg-[#D00200] text-white rounded-full px-3 py-2 font-semibold hover:bg-red-800 sm:text-md text-base' onClick={() => {navigate('/enactussfu/career');
+                                <button className = 'bg-[#D00200] text-white rounded-full px-3 py-2 font-semibold hover:bg-red-800 sm:text-md text-base' onClick={() => {navigate('/career');
                                     window.scrollTo(0, 0);
                                 }}>Join Us</button>
-                                <button className = 'bg-[#868686] text-white rounded-full px-3 py-2 font-semibold hover:bg-gray-500 sm:text-md text-base' onClick={() => {navigate('/enactussfu/competitions');
+                                <button className = 'bg-[#868686] text-white rounded-full px-3 py-2 font-semibold hover:bg-gray-500 sm:text-md text-base' onClick={() => {navigate('/competitions');
                                     window.scrollTo(0, 0);
                                 }}>Learn More</button>
                             </div>

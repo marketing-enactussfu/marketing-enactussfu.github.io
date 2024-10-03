@@ -17,7 +17,7 @@ export const PastProjectIntro = ({timeRange, title, hasButton, buttonText, about
                                     <Subtitle text='About Us'/>
                                     <div className = 'text-[#181818] sm:text-md text-base'>{aboutUsText}</div>
                                     {hasButton && <button className = 'facebook-button sm:text-md text-sm font-semibold' 
-                                    onClick={() => window.open('/enactussfu' + buttonLink, '_blank')}
+                                    onClick={() => window.open( buttonLink, '_blank')}
                                     >{buttonText}</button> }
                                 </div>
             </div>

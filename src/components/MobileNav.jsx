@@ -57,7 +57,7 @@ function MobileNav() {
         <div className="md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex items-center justify-between">
 
             {/* Logo */}
-            {currentView === 'main' ?<button onClick = {() => navigate('/enactussfu')}>
+            {currentView === 'main' ?<button onClick = {() => navigate('/')}>
               <img src={enactus_logo} alt="Logo"/>
             </button> : back_button()
             }
@@ -99,21 +99,21 @@ function MobileNav() {
               </li>
               <li className="border-b-2 border-[#D8D8D8] py-5">
                 <button 
-                onClick={() => navigate('/enactussfu/events')}
+                onClick={() => navigate('/events')}
                  className="flex justify-between">
                   Events
                 </button>
               </li>
               <li className="border-b-2 border-[#D8D8D8] py-5">
                 <button 
-                onClick={() => navigate('/enactussfu/sponsorship')}
+                onClick={() => navigate('/sponsorship')}
                  className="flex justify-between">
                   Sponsorship
                 </button>
               </li>
               <li className="border-b-2 border-[#D8D8D8] py-5">
                 <button 
-                onClick={() => navigate('/enactussfu/competitions')}
+                onClick={() => navigate('/competitions')}
                  className="flex justify-between">
                   Competitions
                 </button>
@@ -128,7 +128,7 @@ function MobileNav() {
               <ul className = 'flex flex-col gap-3'>
                 <li className="flex flex-row items-center gap-6 py-2 text-[16px] font-semibold">
                   <button
-                  onClick = {() => navigate('/enactussfu/about/our-team')}
+                  onClick = {() => navigate('/about/our-team')}
                   className="flex items-center gap-6"
                   >
                   <img src={about} alt="About" className="h-5 w-5" />
@@ -138,7 +138,7 @@ function MobileNav() {
                 </li>
                 <li className="flex flex-row items-center gap-6 py-2 text-[16px] font-semibold">
                   <button
-                  onClick={() => navigate('/enactussfu/about/what-we-do')}
+                  onClick={() => navigate('/about/what-we-do')}
                   className="flex items-center gap-6"
                   >
                   <img
@@ -167,7 +167,7 @@ function MobileNav() {
           <footer className="w-screen py-4 bg-white bg-opacity-20 shadow-t mb-20">
             <div className="flex justify-center">
               <button className="session-button text-[12px] font-semibold"
-                  onClick={() => navigate('/enactussfu/career')}
+                  onClick={() => navigate('/career')}
               >
                 Join Our Team
               </button>

@@ -29,7 +29,7 @@ const BeeKind = () => {
               </div>
 
               <div className="flex justify-center items-center gap-4 md:gap-6 flex sm:flex-row flex-col">
-                <button className="session-button text-[14px] font-semibold">
+                <button className="session-button text-[14px] font-semibold"onClick = {()=> window.open('https://thebeekind.company', '_blank')} >
                     Visit Website
                 </button>
                 <button className="facebook-button text-[14px] font-semibold" onClick = {()=> window.open('https://www.instagram.com/thebeekind.company/', '_blank')}> 

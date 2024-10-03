@@ -42,7 +42,7 @@ const Events = () => {
                             </div>
                             <button 
                             className="session-button text-[12px] sm:text-[14px] font-semibold"
-                            onClick={() => navigate('/enactussfu/events/pm-series')}
+                            onClick={() => navigate('/events/pm-series')}
                             >
                                 Learn More
                             </button>
@@ -57,7 +57,7 @@ const Events = () => {
                                 Showcase your entrepreneurial spirit and skills in our very own competition! Competitors will be tested on their entrepreneurship, social enterprise, and the practical application of their idea that positively impacts society in a pitch style.
                             </div>
                             <button className="session-button text-[12px] sm:text-[14px] font-semibold"
-                            onClick={() => navigate('/enactussfu/events/forward-vision')}
+                            onClick={() => navigate('/events/forward-vision')}
                             >
                                 Learn More
                             </button>

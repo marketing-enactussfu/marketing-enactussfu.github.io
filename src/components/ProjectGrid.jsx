@@ -13,7 +13,7 @@ const ProjectGrid = ({ title, projects, type, isMobile}) => {
               <button 
                 key={index} 
                 className="project-button flex items-start space-x-2 p-2 bg-white rounded-lg"
-                onClick={() => navigate(`/enactussfu/projects/${type}/` + project.name.toLowerCase().replace(/\s+/g, '-'))}
+                onClick={() => navigate(`/projects/${type}/` + project.name.toLowerCase().replace(/\s+/g, '-'))}
               >
                 <img src={project.icon} alt={project.name} className="w-8 h-8" />
                 <div className="flex flex-col items-start">

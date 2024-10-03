@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <nav className="bg-white shadow-md py-4 fixed top-0 w-screen z-50">
       <div className="md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex justify-between items-center text-sm text-black font-semibold">
-        <button onClick = {() => navigate('/enactussfu')}>
+        <button onClick = {() => navigate('/')}>
 
           <img
             src={enactus_logo}
@@ -39,7 +39,7 @@ function Navbar() {
               className="mt-4 z-10 z-[1000] left-1/2 -translate-x-1/2 opacity-0 border border-gray-200 invisible absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 transition-all duration-500 ease-out transform scale-95">
               <div>
                 <button
-                  onClick={() => navigate('/enactussfu/about/what-we-do')}
+                  onClick={() => navigate('/about/what-we-do')}
                   className="bg-white text-sm block px-4 py-3 mt-1 mx-1 text-gray-600 hover:bg-gray-100 flex items-center gap-2"
                 >
                   <img
@@ -53,7 +53,7 @@ function Navbar() {
 
               <div>
                 <button
-                  onClick = {() => navigate('/enactussfu/about/our-team')}
+                  onClick = {() => navigate('/about/our-team')}
                   className="bg-white block px-4 py-3 mb-1 mx-1 text-gray-600 hover:bg-gray-100 flex items-center gap-2"
                 >
                   <img src={about} alt="About" className="h-5 w-5" />
@@ -85,7 +85,7 @@ function Navbar() {
           
           <div>
             <button
-            onClick = {() => navigate('/enactussfu/events')}
+            onClick = {() => navigate('/events')}
             className="hover:text-red-500 hover:underline">
               Events
             </button>
@@ -93,7 +93,7 @@ function Navbar() {
 
           <div>
             <button 
-              onClick = {() => navigate('/enactussfu/sponsorship')}
+              onClick = {() => navigate('/sponsorship')}
               className="hover:text-red-500 hover:underline">
               Sponsorships
             </button>
@@ -101,7 +101,7 @@ function Navbar() {
 
           <div>
             <button 
-            onClick = {() => navigate('/enactussfu/competitions')}
+            onClick = {() => navigate('/competitions')}
             className="hover:text-red-500 hover:underline">
               Competitions
             </button>
@@ -111,7 +111,7 @@ function Navbar() {
           <div>
             <button 
             className="session-button"
-            onClick={() => navigate('/enactussfu/career')}
+            onClick={() => navigate('/career')}
             >
               Join Our Team
             </button>

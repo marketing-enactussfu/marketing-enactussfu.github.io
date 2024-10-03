@@ -49,16 +49,16 @@ function Navbar() {
                     <div className="flex md:flex-row flex-col gap-9 text-[#5C5C5C] text-xs md:mt-3 mt-10">
                         <div className="flex flex-col gap-2 items-start">
                             <div className="text-black text-sm font-semibold">Organization</div>
-                            <button onClick={() => navigate('/enactussfu/about/what-we-do')} className='hover:text-red-600 hover:underline'>
+                            <button onClick={() => navigate('/about/what-we-do')} className='hover:text-red-600 hover:underline'>
                                     About Us
                                 </button>
-                                <button onClick={() => navigate('/enactussfu/about/our-team')} className='hover:text-red-600 hover:underline'>
+                                <button onClick={() => navigate('/about/our-team')} className='hover:text-red-600 hover:underline'>
                                     The Team
                                 </button>
-                                <button onClick={() => navigate('/enactussfu/about/what-we-do#history')} className='hover:text-red-600 hover:underline'>
+                                <button onClick={() => navigate('/about/what-we-do#history')} className='hover:text-red-600 hover:underline'>
                                     History
                                 </button>
-                                <button onClick={() => navigate('/enactussfu/competitions')} className='hover:text-red-600 hover:underline'>
+                                <button onClick={() => navigate('/competitions')} className='hover:text-red-600 hover:underline'>
                                     Awards
                                 </button>                        
                         </div>
@@ -69,7 +69,7 @@ function Navbar() {
                             {currentProjects.map((project) => (
                                 <button
                                 key={project.slug}
-                                onClick={() => navigate(`/enactussfu/projects/${project.slug}`)}
+                                onClick={() => navigate(`/projects/${project.slug}`)}
                                 className="text-gray-700 hover:text-red-600 hover:underline"
                               >
                                 {project.name}
@@ -83,7 +83,7 @@ function Navbar() {
                             {pastProjects.map((project) => (
                                         <button
                                         key={project.slug}
-                                        onClick={() => navigate(`/enactussfu/projects/${project.slug}`)}
+                                        onClick={() => navigate(`/projects/${project.slug}`)}
                                         className="text-gray-700 hover:text-red-600 hover:underline"
                                       >
                                         {project.name}
@@ -95,12 +95,12 @@ function Navbar() {
                         <div className="flex flex-col gap-2 items-start">
                             <div className="text-black text-sm font-semibold">Get Involved</div>
                             <button 
-                                    onClick={() => navigate('/enactussfu/career')} 
+                                    onClick={() => navigate('/career')} 
                                     className='hover:text-red-600 hover:underline'>
                                     Careers
                                 </button>
                                 <button 
-                                    onClick={() => navigate('/enactussfu/sponsorship')} 
+                                    onClick={() => navigate('/sponsorship')} 
                                     className='hover:text-red-600 hover:underline'>
                                     Sponsor Us
                                 </button>
