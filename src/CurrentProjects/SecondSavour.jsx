@@ -28,7 +28,7 @@ const SecondSavour = () => {
         <main className = 'mt-4'>
             {/* Header Section */}
             <div className = 'flex flex-col gap-10 sm:gap-12 md:gap-16'>
-                    <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 bg-white flex flex-col items-center gap-5 pt-12">
+                    <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 bg-white flex flex-col items-center gap-8 pt-12">
                             <Subtitle text="Current Projects" />
                             <Title title="Second Savour" />
                             <div className="text-center text-[#5c5c5c] text-md sm:text-xl font-[400] currentProject-md:mx-20 currentProjectText-md:mx-10">

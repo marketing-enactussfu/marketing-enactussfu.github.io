@@ -9,6 +9,7 @@ import about from '../icons/navbar/about.png';
 import enactus_logo_grey from '../icons/navbar/enactus_logo_grey.png';
 import { currentProjects, pastProjects } from '../data/projectsData';
 import ProjectGrid from './ProjectGrid';
+import { is } from '@babel/types';
 
 
 
@@ -62,7 +63,11 @@ function MobileNav() {
             }
 
           {/* Hamburger Menu Icon */}
-          <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700">
+          <button onClick={() => {
+            setIsOpen(!isOpen);
+            isOpen && setCurrentView('main');
+
+          }} className="text-gray-700">
             {isOpen ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke={'#30313D'} className="size-6">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                       </svg>
@@ -142,7 +147,7 @@ function MobileNav() {
 
 
           {currentView === 'projects' && (
-                   <div className='md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex flex-col bg-[#FBFBFB]'>
+                   <div className='flex flex-col bg-[#FBFBFB]'>
                      <ProjectGrid title="Current Projects" projects={currentProjects} type = 'current-projects' isMobile = {true}/>
                      <ProjectGrid title="Past Projects" projects={pastProjects} type = 'past-projects' isMobile = {true}/>
                    </div>

@@ -87,7 +87,7 @@ const Careers = () => {
                         {guides.map((item, index) => (
                             <div key={index} className=" bg-white rounded-xl border border-[#d7d7d7] flex flex-col justify-start items-start p-8">
                                 <div className="flex items-start md:gap-7 sm:gap-4 gap-2">
-                                    <img src={item.src} alt={item.alt} className = 'md:w-auto sm:w-[28px] w-[20px]'/> 
+                                    <img src={item.src} alt={item.alt} className = 'md:w-auto sm:w-[28px] w-[20px] mt-1'/> 
                                     <div className="flex-1">
                                         <div className="text-[#181818] text-base sm:text-lg font-medium">{item.title}</div>
                                         <div className="text-[#5c5c5c] text-xs sm:text-sm font-normal leading-relaxed">

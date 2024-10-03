@@ -59,10 +59,10 @@ const Competitions = () => {
         <div className="flex flex-col md:gap-10 gap-4 mt-4">
 
             {/* Header Section */}
-            <div className="text-center mb-16 md:mx-28 lg:mx-40 sm:mx-16 mx-10 pt-12">
+            <div className="text-center mb-16 md:mx-28 lg:mx-40 sm:mx-16 mx-10 pt-12 gap-10 flex flex-col">
                 <div className="text-[#D00200] sm:text-md text-base font-bold">Awards</div>
-                <div className="text-4xl font-bold text-gray-800 mt-2">Our Legacy of Excellence</div>
-                <p className="text-gray-600 sm:text-lg text-md mt-4 max-w-3xl mx-auto">
+                <div className="text-4xl font-bold text-gray-800 ">Our Legacy of Excellence</div>
+                <p className="text-gray-600 sm:text-lg text-md max-w-3xl mx-auto">
                     Over the years, Enactus SFU has consistently secured top positions in Enactus Canada’s competitions. In each exposition, we demonstrate our commitment to innovation, earning awards that reflect the hard work of our members. Join us, and you could be part of our next winning team.
                 </p>
             </div>

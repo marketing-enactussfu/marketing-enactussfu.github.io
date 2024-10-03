@@ -20,9 +20,9 @@ const BeeKind = () => {
       <div className = 'flex flex-col md:gap-20 gap-12'>
           <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
 
-            <div className=" max-w-5xl flex flex-col justify-start items-center gap-8">
+            <div className=" max-w-5xl flex flex-col justify-start items-center gap-8  pt-12">
               <div className="text-center text-[#d00200] text-base md:text-lg font-semibold">Current Projects</div>
-              <div className="text-center text-[#181818] text-2xl md:text-4xl font-semibold">The BeeKind Company</div>
+              <div className="text-center text-[#181818] text-3xl sm:text-4xl font-semibold">The BeeKind Company</div>
 
               <div className="text-center text-[#5c5c5c] text-lg md:text-xl font-normal leading-relaxed">
                 We aim to repurpose damaged honeycombs into sustainable candles, educating minds, and sowing seeds for bee pollination.
@@ -32,15 +32,13 @@ const BeeKind = () => {
                 <button className="session-button text-[14px] font-semibold">
                     Visit Website
                 </button>
-                <button className="facebook-button text-[14px] font-semibold">
+                <button className="facebook-button text-[14px] font-semibold" onClick = {()=> window.open('https://www.instagram.com/thebeekind.company/', '_blank')}> 
                   Our Instagram
                 </button>
               </div>
             </div>
             </div>
 
-
-           
             <div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-25 sm:gap-10 gap-10">
             <img className="w-full h-full object-cover" src={candle} alt="BeeKind Candle" />
             </div>
