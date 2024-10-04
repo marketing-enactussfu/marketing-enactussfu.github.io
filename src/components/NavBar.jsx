@@ -27,8 +27,7 @@ function Navbar() {
           >
             <button 
             id="dropdownDelayButton"
-            className="hover:text-gray-900 focus:outline-none"
-            type="button"
+            
             >
               About
             </button>
@@ -36,11 +35,13 @@ function Navbar() {
             <div 
               id="dropdownDelay"
               aria-labelledby="dropdownDelayButton"
-              className="mt-4 z-10 z-[1000] left-1/2 -translate-x-1/2 opacity-0 border border-gray-200 invisible absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 transition-all duration-500 ease-out transform scale-95">
-              <div>
+              // className="mt-4 z-10 z-[1000] left-1/2 -translate-x-1/2 opacity-0 border border-gray-200 invisible absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 transition-all duration-500 ease-out transform scale-95"
+              className="mt-4 z-10 z-[1000] left-1/2 -translate-x-1/2 opacity-0 border border-gray-200 invisible absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 transition-all duration-500 ease-out transform scale-95"
+              >
+             
                 <button
                   onClick={() => navigate('/about/what-we-do')}
-                  className="bg-white text-sm block px-4 py-3 mt-1 mx-1 text-gray-600 hover:bg-gray-100 flex items-center gap-2"
+                  className="w-full bg-white text-sm px-4 py-3 text-gray-600 hover:bg-gray-100 flex items-center gap-2"
                 >
                   <img
                     src={enactus_logo_grey}
@@ -49,18 +50,17 @@ function Navbar() {
                   />
                   What We Do
                 </button>
-              </div>
-
-              <div>
+               
+                    
                 <button
                   onClick = {() => navigate('/about/our-team')}
-                  className="bg-white block px-4 py-3 mb-1 mx-1 text-gray-600 hover:bg-gray-100 flex items-center gap-2"
+                  className="w-full bg-white block px-4 py-3 text-gray-600 hover:bg-gray-100 flex items-center gap-2 "
                 >
                   <img src={about} alt="About" className="h-5 w-5" />
                   Our Team
                 </button>
               </div>
-            </div>
+            
           </div>
 
           {/* Projects Dropdown */}
