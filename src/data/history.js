@@ -1,4 +1,30 @@
 export const history = [
+      {
+        "year": "2024",
+        "president": "David Guo, Cedric Tanafranca",
+        "vice_presidents": {
+          "events": "Lauren Riestra, Rachael Varghese",
+          "finance": "Andrew Learmonth",
+          "internal_strategy": "Cameron Miranda",
+          "media_and_marketing": "Celine August Santoso, Jenna Emperador",
+          "external": "Peehu Gupta, Ruchi Sharma"
+        },
+        "projects": [
+          "Beekind Co",
+          "Second Savour",
+          "Himalyan Skyes",
+          "Aqua Analyzer",
+          "Unify",
+          "Tubio Energy",
+          "Catalyst"
+
+        ],
+        "regional_wins": [
+          "Innovation and Impact Challenge 1st place",
+          "Canadian Tire Environmental Sustainability Challenge 2nd place",
+          "TD Entrepreneurship Challenge 2nd place",
+        ]
+      },
 
       {
         "year": "2023",
@@ -20,7 +46,10 @@ export const history = [
         "regional_wins": [
           "Enactus Canada Regionals Enactus Alumni Innovation Impact Challenge 1st Place",
           "Enactus Canada Regionals TD Entrepreneurship Challenge 2nd Place",
-          "Enactus Canada Regionals Canadian Tire Environmental Sustainability 2nd Place"
+          "Enactus Canada Regionals Canadian Tire Environmental Sustainability 2nd Place",
+          "TD Entrepreneurship Challenge 3rd place",
+          "Scotia-bank Climate Action Challenge 3rd place",
+
         ]
       },
       {

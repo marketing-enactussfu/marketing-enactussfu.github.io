@@ -27,8 +27,8 @@ const coreOperations = [
     {name: "Ethan Chan",description: "Co-Project Manager of Himalayan SKYES"},
     {name: "Lin Lin",description: "Co-Project Manager of Turbio Energy"},
     {name: "Justin Cheung",description: "Co-Project Manager of Second Savour"},
-    {name: "Rami Alhanna",description: "Co-Project Manager of Community Grafts"},
-    {name: "Savar Gupta", description: "Co-Project Manager of Community Grafts"},
+    {name: "Rami Alhanna",description: "Co-Project Manager of Unify"},
+    {name: "Savar Gupta", description: "Co-Project Manager of Unify"},
     {name: "Claudia Arana Leon",description: "Co-Project Manager of Aqua Analyzer"},
     {name: 'Danny Dong', description: 'Project Manager of Catalyst'}
   ];

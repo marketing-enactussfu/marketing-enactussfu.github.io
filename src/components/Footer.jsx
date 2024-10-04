@@ -13,7 +13,7 @@ function Navbar() {
         { name: 'Second Savour', slug: 'current-projects/second-savour' },
         { name: 'Himalayan Skyes', slug: 'current-projects/himalayan-skyes' },
         { name: 'Aqua Analyzer', slug: 'current-projects/aqua-analyzer' },
-        { name: 'Community Grafts', slug: 'current-projects/community-grafts' },
+        { name: 'Unify', slug: 'current-projects/unify' },
         { name: 'Turbio Energy', slug: 'current-projects/turbio-energy' },
         { name: 'Entrepreneurship Challenges', slug: 'current-projects/entrepreneurship-challenges' },
     ];

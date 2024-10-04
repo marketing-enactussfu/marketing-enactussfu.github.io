@@ -18,8 +18,8 @@ import KindredKnots from './pastProject/KindredKnots';
 import SecondSavour from './CurrentProjects/SecondSavour';
 import SKYES from './CurrentProjects/SKYES';
 import AA from './CurrentProjects/AA';
-import CommunityGrafts from './CurrentProjects/CommunityGrafts';
-import EntrepreneurshipChallenges from './CurrentProjects/EntrepreneurshipChallenges';
+import Unify from './CurrentProjects/Unify';
+import Catalyst from './CurrentProjects/Catalyst';
 import TurbioEnergy from './CurrentProjects/TurbioEnergy';
 import Events from './event/Events';
 import PMSeries from './event/PMSeries';
@@ -49,8 +49,8 @@ export default function App() {
         <Route path='/projects/past-projects/refresh' element={<ReFresh/>} />
         <Route path='/projects/past-projects/kindred-knots' element={<KindredKnots/>} />
         <Route path='/projects/current-projects/himalayan-skyes' element={<SKYES/>} />
-        <Route path='/projects/current-projects/community-grafts' element={<CommunityGrafts/>} />
-        <Route path='/projects/current-projects/entrepreneurship-challenges' element={<EntrepreneurshipChallenges/>} />
+        <Route path='/projects/current-projects/unify' element={<Unify/>} />
+        <Route path='/projects/current-projects/catalyst' element={<Catalyst/>} />
         <Route path='/projects/current-projects/turbio-energy' element={<TurbioEnergy/>} />
         <Route path='/projects/current-projects/aqua-analyzer' element={<AA/>} />
         <Route path='/events' element={<Events/>} />

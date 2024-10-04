@@ -93,6 +93,12 @@
   pointer-events: auto;
 }
 
+.session-button:hover {
+  background-color: #B00000;
+  color: #F1F1F1; 
+}
+
+
 .session-button:active {
   background-color: white;
   color: #D00200;
@@ -114,6 +120,13 @@
   outline: none; 
   transition: background-color 0.3s, color 0.3s;
 }
+
+.facebook-button:hover {
+  background-color: #868686;  
+  color: #ffffff;        
+}
+
+
 
 .facebook-button:active {
   background-color: white;
@@ -146,6 +159,12 @@
   outline: none; 
   transition: background-color 0.3s, color 0.3s;
 }
+
+.sponsor-package-button:hover {
+  background-color: #6b6b6b; 
+  color: #f1f1f1; 
+}
+
 
 .sponsor-package-button:active {
   background-color: white;

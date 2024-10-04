@@ -72,7 +72,7 @@ const PartnerForm = () => {
                 value={formData[field.name]}
                 onChange={handleChange}
                 required={field.required}
-                className="mt-1 sm:p-2 p-1  border border-gray-300 rounded w-full focus:ring-blue-500 focus:border-blue-500 sm:placeholder:text-sm text-xs"
+                className="mt-1 sm:p-2 p-1  border border-gray-300 rounded w-full focus:ring-red-500 focus:border-red-500 sm:placeholder:text-sm text-xs hover:border-red-400 sm:placeholder:text-sm text-xs hover:border-red-400 sm:placeholder:text-sm text-xs"
                 placeholder={field.placeholder}
               />
             </div>
@@ -94,7 +94,8 @@ const PartnerForm = () => {
               value={formData[field.name]}
               onChange={handleChange}
               required={field.required}
-              className="mt-1 sm:p-2 p-1  border border-gray-300 rounded w-full focus:ring-blue-500 focus:border-blue-500 sm:placeholder:text-sm text-xs"
+              // className="mt-1 sm:p-2 p-1  border border-gray-300 rounded w-full focus:ring-blue-500 focus:border-blue-500 sm:placeholder:text-sm text-xs"
+              className="mt-1 sm:p-2 p-1 border border-gray-300 rounded w-full focus:ring-red-500 focus:border-red-500 sm:placeholder:text-sm text-xs hover:border-red-400"
               placeholder={field.placeholder}
             />
           </div>
@@ -111,7 +112,7 @@ const PartnerForm = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="mt-1 p-2 border border-gray-300 rounded w-full focus:ring-blue-500 focus:border-blue-500 sm:placeholder:text-sm text-xs"
+            className="mt-1 p-2 border border-gray-300 rounded w-full focus:ring-red-500 focus:border-red-500 sm:placeholder:text-sm text-xs hover:border-red-400 sm:placeholder:text-sm text-xs"
             placeholder="Message about why you would like to partner with us."
             rows="4"
           />
