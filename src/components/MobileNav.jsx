@@ -126,20 +126,20 @@ function MobileNav() {
             <div className="flex flex-col overflow-y-auto gap-7 md:mx-28 lg:mx-40 sm:mx-16 mx-10 py-5">
               <h2 className="text-xl font-bold text-[#181818] text-sm">About</h2>
               <ul className = 'flex flex-col gap-3'>
-                <li className="flex flex-row items-center gap-6 py-2 text-[16px] font-semibold">
+                <li className="flex flex-row items-center gap-6 py-2 text-[16px] font-semibold hover:bg-gray-100 rounded-md">
                   <button
                   onClick = {() => navigate('/about/our-team')}
-                  className="flex items-center gap-6"
+                  className="flex items-center gap-6 hover:bg-gray-100"
                   >
                   <img src={about} alt="About" className="h-5 w-5" />
                   Our Team
                   </button>
 
                 </li>
-                <li className="flex flex-row items-center gap-6 py-2 text-[16px] font-semibold">
+                <li className="flex flex-row items-center gap-6 py-2 text-[16px] font-semibold hover:bg-gray-100 rounded-md">
                   <button
                   onClick={() => navigate('/about/what-we-do')}
-                  className="flex items-center gap-6"
+                  className="flex items-center gap-6 "
                   >
                   <img
                     src={enactus_logo_grey}
