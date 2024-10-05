@@ -39,7 +39,7 @@ function Navbar() {
         <footer className="w-screen bg-[#ECECEC]">
             <div className="w-screen py-4 sm:px-8">
                 {/* Header and Logo Section */}
-                <div className="flex justify-between px-16 py-10 sm:py-16 text-[#5C5C5C] items-start md:flex-row flex-col gap-5">
+                <div className="flex justify-between px-16 py-10 sm:py-16 text-[#5C5C5C] items-start footer-md:flex-row flex-col gap-5">
                     <img
                         className="absolute -translate-y-1/2 -translate-x-1/2"
                         src={enactus_logo}
@@ -51,7 +51,7 @@ function Navbar() {
                     </div>
 
                     {/* Organization Links */}
-                    <div className="flex md:flex-row flex-col gap-9 text-[#5C5C5C] text-xs md:mt-3 mt-10">
+                    <div className="flex footer-md:flex-row flex-col gap-9 text-[#5C5C5C] text-xs md:mt-3 mt-10">
                         <div className="flex flex-col gap-2 items-start">
                             <div className="text-black text-sm font-semibold">Organization</div>
                             <button className='hover:text-red-600 hover:underline'>
