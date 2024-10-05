@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router-dom';
 
 const ProjectGrid = ({ title, projects, type, isMobile}) => {
   const navigate = useNavigate();
+  const handleClick = (path) =>{
+    navigate(path);
+    window.scrollTo(0, 0);
+  }
 
   return (
     <div className={(isMobile ? 'md:mx-28 lg:mx-40 sm:mx-16 mx-10 p-3 mx-1 my-1 bg-white rounded-md' : 'p-3 mx-1 my-1 bg-white rounded-md')}>
@@ -13,7 +17,7 @@ const ProjectGrid = ({ title, projects, type, isMobile}) => {
               <button 
                 key={index} 
                 className="project-button flex items-start space-x-2 p-2 bg-white rounded-lg"
-                onClick={() => navigate(`/projects/${type}/` + project.name.toLowerCase().replace(/\s+/g, '-'))}
+                onClick={(e) => handleClick(`/projects/${type}/` + project.name.toLowerCase().replace(/\s+/g, '-'))}
               >
                 <img src={project.icon} alt={project.name} className="w-8 h-8" />
                 <div className="flex flex-col items-start">

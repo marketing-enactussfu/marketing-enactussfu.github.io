@@ -6,6 +6,11 @@ import { useNavigate } from 'react-router-dom';
 
 const Events = () => {
     const navigate = useNavigate();
+    const handleClick = (path) =>{
+        navigate(path);
+        window.scrollTo(0, 0);
+      }
+    
     const eventspage = (
         <main className = 'mt-4'>
             <div className = 'flex flex-col md:gap-10 gap-2 pt-12'>
@@ -42,7 +47,7 @@ const Events = () => {
                             </div>
                             <button 
                             className="session-button text-[12px] sm:text-[14px] font-semibold"
-                            onClick={() => navigate('/events/pm-series')}
+                            onClick={(e) => handleClick('/events/pm-series')}
                             >
                                 Learn More
                             </button>
@@ -57,7 +62,7 @@ const Events = () => {
                                 Showcase your entrepreneurial spirit and skills in our very own competition! Competitors will be tested on their entrepreneurship, social enterprise, and the practical application of their idea that positively impacts society in a pitch style.
                             </div>
                             <button className="session-button text-[12px] sm:text-[14px] font-semibold"
-                            onClick={() => navigate('/events/forward-vision')}
+                            onClick={(e) => handleClick('/events/forward-vision')}
                             >
                                 Learn More
                             </button>

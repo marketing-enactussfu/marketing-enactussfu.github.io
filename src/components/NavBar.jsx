@@ -6,12 +6,17 @@ import enactus_logo_grey from '../icons/navbar/enactus_logo_grey.png';
 import { currentProjects, pastProjects } from '../data/projectsData';
 import { useNavigate } from 'react-router-dom';
 
+
 function Navbar() {
   const navigate = useNavigate();
+  const handleClick = (path) =>{
+    navigate(path);
+    window.scrollTo(0, 0);
+  }
   return (
     <nav className="bg-white shadow-md py-4 fixed top-0 w-screen z-50">
       <div className="md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex justify-between items-center text-sm text-black font-semibold">
-        <button onClick = {() => navigate('/')}>
+        <button onClick = {(e) =>  handleClick('/')}>
 
           <img
             src={enactus_logo}
@@ -40,7 +45,7 @@ function Navbar() {
               >
              
                 <button
-                  onClick={() => navigate('/about/what-we-do')}
+                  onClick={(e) =>  handleClick('/about/what-we-do')}
                   className="w-full bg-white text-sm px-4 py-3 text-gray-600 hover:bg-gray-100 flex items-center gap-2"
                 >
                   <img
@@ -53,7 +58,7 @@ function Navbar() {
                
                     
                 <button
-                  onClick = {() => navigate('/about/our-team')}
+                  onClick = {(e) =>  handleClick('/about/our-team')}
                   className="w-full bg-white block px-4 py-3 text-gray-600 hover:bg-gray-100 flex items-center gap-2 "
                 >
                   <img src={about} alt="About" className="h-5 w-5" />
@@ -85,7 +90,7 @@ function Navbar() {
           
           <div>
             <button
-            onClick = {() => navigate('/events')}
+            onClick = {(e) =>  handleClick('/events')}
             className="hover:text-red-500 hover:underline">
               Events
             </button>
@@ -93,7 +98,7 @@ function Navbar() {
 
           <div>
             <button 
-              onClick = {() => navigate('/sponsorship')}
+              onClick = {(e) =>  handleClick('/sponsorship')}
               className="hover:text-red-500 hover:underline">
               Sponsorships
             </button>
@@ -101,7 +106,7 @@ function Navbar() {
 
           <div>
             <button 
-            onClick = {() => navigate('/competitions')}
+            onClick = {(e) =>  handleClick('/competitions')}
             className="hover:text-red-500 hover:underline">
               Competitions
             </button>
@@ -111,7 +116,7 @@ function Navbar() {
           <div>
             <button 
             className="session-button"
-            onClick={() => navigate('/career')}
+            onClick={(e) =>  handleClick('/career')}
             >
               Join Our Team
             </button>
