@@ -12,12 +12,12 @@ import GroupPhoto2 from './images/Careers/GroupPhoto2.png';
 import GetUpdate from "./components/GetUpdate";
 
 const guides = [
-    { src: ReviewRole, alt: "Review the Role", title: "Review the role", content: "Before your interview, carefully read through the job description to understand the expectations and responsibilities. This will help you align your experiences and skills with what we’re looking for." },
+    { src: ReviewRole, alt: "Review the Role", title: "Review the role", content: "Before your interview, carefully read through the job description to understand the expectations and responsibilities. This will help you align your experiences and skills with what we’re looking for.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          " },
     { src: MagnifyingGlass, alt: "Showcase your Research", title: "Showcase your research", content: "We appreciate candidates who take the time to learn about Enactus SFU. Research our current projects, values, and the impact we’re making in the community. Understanding our mission and how we operate will allow you to speak confidently about why you want to be part of Enactus SFU. Explore our Enactus SFU Projects page to get insights into our ongoing initiatives. Knowing how your role contributes to these projects is a great way to demonstrate your fit with our team." },
     { src: Heart, alt: "Focus on your fit and contribution", title: "Focus on your fit and contribution to our culture", content: "At Enactus SFU, we value not only skills and experience but also personality and cultural fit. We aim to build a team where lifelong connections are formed. Showcase how you can contribute to our community and why you believe you’d be a great addition to our team. Let your personality shine through!" },
-    { src: Clock, alt: "Clarify and take your time", title: "Clarify and take your time", content: "If you don’t understand a question, ask for clarification or request it to be rephrased. Don’t hesitate to take a moment to gather your thoughts before responding. We value clear and thoughtful communication." },
+    { src: Clock, alt: "Clarify and take your time", title: "Clarify and take your time", content: "If you don’t understand a question, ask for clarification or request it to be rephrased. Don’t hesitate to take a moment to gather your thoughts before responding. We value clear and thoughtful communication.                                                                                                                                                                                                        " },
     { src: Target, alt: "Be detailed but concise", title: "Be detailed but concise", content: "We appreciate thorough responses that focus on your personal contributions and the outcomes of your efforts. Rather than giving broad overviews, dive into specific challenges you’ve faced and what actions you took. Avoid spending too much time discussing team efforts without highlighting your own role and impact." },
-    { src: Questionmark, alt: "Bring your questions", title: "Bring your questions", content: "Your curiosity matters to us. Use this opportunity to learn more about Enactus SFU, our projects, and the team. We’re eager to answer your questions and provide you with a deeper understanding of our organization." }
+    { src: Questionmark, alt: "Bring your questions", title: "Bring your questions", content: "Your curiosity matters to us. Use this opportunity to learn more about Enactus SFU, our projects, and the team. We’re eager to answer your questions and provide you with a deeper understanding of our organization.                                                                                                                                                                                                                                                          " }
 ]
 
 const Careers = () => {
@@ -81,9 +81,10 @@ const Careers = () => {
                     <img src={GroupPhoto2} alt="Your New Image Description" className="w-full h-auto" /> 
             </div>
             {/* Interview Guides */}
-            <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex flex-col gap-6 items-start'> 
+            {/* Interview Guides           */}
+            <div className = ' md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex flex-col gap-6 items-start'> 
                     <div className="text-center text-[#181818] text-2xl sm:text-3xl font-semibold mb-4">📕 Interview Guides</div>
-                    <div className="flex flex-col gap-6 items-center">
+                    <div className="flex flex-col gap-6 items-left">
                         {guides.map((item, index) => (
                             <div key={index} className=" bg-white rounded-xl border border-[#d7d7d7] flex flex-col justify-start items-start p-8 w-full">
                                 <div className="flex items-start md:gap-7 sm:gap-4 gap-2">
@@ -99,6 +100,8 @@ const Careers = () => {
                         ))}
                     </div>
             </div>
+
+  
 
 
             {/* Get Updates */}
