@@ -10,46 +10,46 @@ const awardsData = [
         year: 2024,
         awards: [
             { imgSrc: award1, title: "1st Place", subtitle: "Enactus Alumni Innovation Impact Challenge", description: "Enactus Canada Regionals" },
-            { imgSrc: award2, title: "Top Innovator", subtitle: "Global Impact Challenge", description: "Enactus World Cup" },
-            { imgSrc: award2, title: "Best Social Enterprise", subtitle: "Community Development Awards", description: "Enactus Nationals" }
+            { imgSrc: award2, title: "2nd Place", subtitle: "Canadian Tire Environmental Sustainability", description: "Enactus Canada Regionals" },
+            { imgSrc: award2, title: "2nd Place", subtitle: "TD Entrepreneurship Challenge", description: "Enactus Canada Regionals" }
         ]
     },
     {
         year: 2023,
         awards: [
-            { imgSrc: award3, title: "1st Place", subtitle: "Environmental Sustainability Challenge", description: "Enactus Regionals" },
-            { imgSrc: award3, title: "Top Social Impact", subtitle: "Social Impact Awards", description: "Enactus Nationals" }
+            { imgSrc: award3, title: "3rd Place", subtitle: "TD Entrepreneurship Challenge", description: "Enactus Canada Regionals" },
+            { imgSrc: award3, title: "3rd Place", subtitle: "Scotiabank Climate Action Project Idea Pitch", description: "Enactus Canada Regionals" }
         ]
     },
     {
         year: 2021,
         awards: [
-            { imgSrc: award3, title: "2nd Place", subtitle: "Tech Innovation Challenge", description: "Enactus Regionals" },
-            { imgSrc: award1, title: "Best Presentation", subtitle: "Enactus Presentation Challenge", description: "Enactus Nationals" }
+            { imgSrc: award3, title: "3rd Place", subtitle: "TD Entrepreneurship Challenge", description: "Enactus Canada Regionals" },
+            { imgSrc: award3, title: "1st Place", subtitle: "Scotiabank Climate Action Project Idea Pitch", description: "Enactus Canada Regionals" }
         ]
     },
     {
         year: 2020,
         awards: [
-            { imgSrc: award1, title: "1st Place", subtitle: "Innovation in Action", description: "Enactus Nationals" },
-            { imgSrc: award3, title: "Community Impact Award", subtitle: "Community Leadership Awards", description: "Enactus Regionals" }
+            { imgSrc: award1, title: "1st Place", subtitle: "Scotiabank Youth Empowerment Challenge", description: "Enactus Canada Regionals" },
+            { imgSrc: award3, title: "3rd Place", subtitle: "Western Bank Financial Education Challenge", description: "Enactus Canada Regionals" }
         ]
     },
     {
         year: 2018,
         awards: [
-            { imgSrc: award1, title: "1st Place", subtitle: "Best Tech for Good", description: "Enactus Nationals" },
-            { imgSrc: award1, title: "Excellence in Leadership", subtitle: "Leadership Awards", description: "Enactus Regionals" }
+            { imgSrc: award1, title: "Semi-Finalist", subtitle: "Nationals Exposition", description: "Enactus Canada Regionals" },
+            { imgSrc: award1, title: "1st Place", subtitle: "Scotiabank Youth Empowerment Challenge", description: "Enactus Canada Regionals" }
         ]
     },
     {
         year: 2017,
         awards: [
-            { imgSrc: award1, title: "Top Innovator", subtitle: "Innovation Challenge", description: "Enactus Nationals" },
-            { imgSrc: award1, title: "Best New Project", subtitle: "Start-Up Awards", description: "Enactus Regionals" },
-            { imgSrc: award1, title: "1st Place", subtitle: "Sustainable Development Goals", description: "Enactus World Cup" },
-            { imgSrc: award1, title: "Best Community Initiative", subtitle: "Community Awards", description: "Enactus Nationals" },
-            { imgSrc: award1, title: "Excellence in Technology", subtitle: "Tech for Good Awards", description: "Enactus Regionals" }
+            { imgSrc: award1, title: "1st Place", subtitle: "Capital One Financial Education Challenge", description: "Enactus Canada Regionals" },
+            { imgSrc: award1, title: "Semi-Finalist", subtitle: "Nationals Exposition", description: "Enactus Canada Regionals" },
+            { imgSrc: award1, title: "1st Place", subtitle: "EcoLiving Challenge", description: "Enactus Canada Regionals" },
+            { imgSrc: award1, title: "1st Place", subtitle: "Scotiabank Youth Empowerment Challenge", description: "Enactus Canada Regionals" },
+            { imgSrc: award1, title: "1st Place", subtitle: "TD Entrepreneurship Challenge", description: "Enactus Canada Regionals" }
         ]
     }
 ];
