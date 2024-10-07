@@ -33,10 +33,14 @@ const Careers = () => {
                     <div className="w-full max-w-lg text-[#181818] text-xl font-normal leading-[27px]">
                         Join us in making an impact in our community through entrepreneurial action.
                     </div>
-                    <div className="flex justify-center">
-                        <div className="session-button sm:text-md text-base font-semibold">
+                    <div className="flex sm:flex-row flex-col items-center gap-5">
+                        <button className="session-button sm:text-md text-base font-semibold"  onClick = {()=> window.open('https://drive.google.com/file/d/116pgBWhsTP-prsc1mSO04jJLC-HsgEX1/view', '_blank')}>
                             Hiring Package
-                        </div>
+                        </button>
+                        <button className="facebook-button sm:text-md text-base font-semibold"  onClick = {()=> window.open('https://docs.google.com/forms/d/e/1FAIpQLSfKu1cP8ttMp-_OwJSi7nS1wvM32i0HeGRtdh-g-Hrj_H_ZPw/viewform', '_blank')}>
+                            Apply
+                        </button>
+                        
                     </div>
                 </div>
             </div>
