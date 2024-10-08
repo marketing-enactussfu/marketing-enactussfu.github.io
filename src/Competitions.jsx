@@ -10,6 +10,7 @@ const awardsData = [
         year: 2024,
         awards: [
             { imgSrc: award1, title: "1st Place", subtitle: "Enactus Alumni Innovation Impact Challenge", description: "Enactus Canada Regionals" },
+            {imgSrc: award2, title: "2nd Place", subtitle: "Innovation and Impact Challenge at Nationals", description: "Enactus Canada Regionals" },
             { imgSrc: award2, title: "2nd Place", subtitle: "Canadian Tire Environmental Sustainability", description: "Enactus Canada Regionals" },
             { imgSrc: award2, title: "2nd Place", subtitle: "TD Entrepreneurship Challenge", description: "Enactus Canada Regionals" }
         ]

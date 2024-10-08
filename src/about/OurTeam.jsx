@@ -25,11 +25,11 @@ const coreOperations = [
     {name: "Christine Hui",description: "Project Manager of BeeKind Co."},
     {name: "Bhumika Kalra",description: "Co-Project Manager of Himalayan SKYES"},
     {name: "Ethan Chan",description: "Co-Project Manager of Himalayan SKYES"},
-    {name: "Lin Lin",description: "Co-Project Manager of Turbio Energy"},
-    {name: "Justin Cheung",description: "Co-Project Manager of Second Savour"},
+    {name: "Lin Lin",description: "Project Manager of Turbio Energy"},
+    {name: "Justin Cheung",description: "Project Manager of Second Savour"},
     {name: "Rami Alhanna",description: "Co-Project Manager of Unify"},
     {name: "Savar Gupta", description: "Co-Project Manager of Unify"},
-    {name: "Claudia Arana Leon",description: "Co-Project Manager of Aqua Analyzer"},
+    {name: "Claudia Arana Leon",description: "Project Manager of Aqua Analyzer"},
     {name: 'Danny Dong', description: 'Project Manager of Catalyst'}
   ];
 
