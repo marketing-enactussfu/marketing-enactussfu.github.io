@@ -10,6 +10,7 @@ import header from './images/home/header.png';
 import { useNavigate } from 'react-router-dom';
 import header_layer from   './images/home/header_layer.png';
 import GetUpdate from './components/GetUpdate';
+import { Helmet } from 'react-helmet';
 
 
 const ourGoalsContent = {
