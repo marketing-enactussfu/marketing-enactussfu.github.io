@@ -58,197 +58,210 @@ const Home = () =>{
     }
 
     const mainpage = (
-        <main className = 'space-y-5'>
-            <div className="flex flex-col md:gap-36 gap-20">
-                <div className="relative w-full h-screen w-screen">
-                    <img 
-                        src={header}
-                        alt="Enactus Team" 
-                        className="absolute inset-0 w-screen h-screen object-cover z-0"
-                    />
-                    <img src = {header_layer}
-                        alt="Enactus Team layer" 
-                        className="absolute inset-0 w-screen h-screen object-cover z-10 opacity-100"
-                    ></img>
+        <>
+            <Helmet>
+                <title>Enactus SFU | At Enactus SFU, we dare to do.</title>
+                <meta 
+                  name="description" 
+                  content="Enactus SFU is a student-led organization at Simon Fraser University, dedicated to building sustainable projects that create positive social and environmental impact. Join our team to make a difference." 
+                />
+                <meta name="keywords" content="Enactus SFU, social innovation, Simon Fraser University, student projects, sustainable projects" />
+                <link rel="canonical" href="https://enactussfu.ca" />
+            </Helmet>
 
-                    <div className="absolute inset-0 bg-black  opacity-10 z-20"></div>
-                    <div className="lg:mx-40 md:mx-28 sm:mx-16 mx-10 relative z-30 h-full flex items-center">
-                        <div className="text-white space-y-4 max-w-lg w-[300px]">
-                        <h1 className="text-3xl sm:text-4xl font-bold">At Enactus SFU, we dare to do.</h1>
-                        <p className="text-base sm:text-xl">
-                            Ignite your integrity, passion, and learn from each other in a spirit of innovation and collaboration.
-                        </p>
-                        <button className="session-button text-sm sm:text-base font-semibold"
-                                onClick={(e)=>handleClick('/career')}>
-                            Join Our Team
-                        </button>
+            <main className = 'space-y-5'>
+                <div className="flex flex-col md:gap-36 gap-20">
+                    <div className="relative w-full h-screen w-screen">
+                        <img 
+                            src={header}
+                            alt="Enactus Team" 
+                            className="absolute inset-0 w-screen h-screen object-cover z-0"
+                        />
+                        <img src = {header_layer}
+                            alt="Enactus Team layer" 
+                            className="absolute inset-0 w-screen h-screen object-cover z-10 opacity-100"
+                        ></img>
+
+                        <div className="absolute inset-0 bg-black  opacity-10 z-20"></div>
+                        <div className="lg:mx-40 md:mx-28 sm:mx-16 mx-10 relative z-30 h-full flex items-center">
+                            <div className="text-white space-y-4 max-w-lg w-[300px]">
+                            <h1 className="text-3xl sm:text-4xl font-bold">At Enactus SFU, we dare to do.</h1>
+                            <p className="text-base sm:text-xl">
+                                Ignite your integrity, passion, and learn from each other in a spirit of innovation and collaboration.
+                            </p>
+                            <button className="session-button text-sm sm:text-base font-semibold"
+                                    onClick={(e)=>handleClick('/career')}>
+                                Join Our Team
+                            </button>
+                            </div>
                         </div>
                     </div>
+                    
+                    {/*Our Goals*/}
+                    <div className='lg:mx-40 md:mx-28 sm:mx-16 mx-10 space-y-10'>
+                        {/* Our Goals Section */}
+                        <div className='sm:text-md text-base text-[#D00200] font-semibold'>Our Goals</div>
+                        <div className='flex flex-col custom-lg:flex-row justify-between space-x-0 custom-lg:gap-20 gap-10 md:space-y-0 justify-between items-start'>
+                            <div className='flex flex-col items-start md:gap-10 gap-5  w-full custom-lg:w-3/5'>
+                                <div className='font-bold text-2xl custom-lg:text-3xl'>{ourGoalsContent.title}</div>
+                                <div className='text-[#5C5C5C] sm:text-md text-base'>{ourGoalsContent.text}</div>
+                                <button 
+                                className='session-button sm:text-md text-base font-semibold'
+                                onClick={(e)=>handleClick('/about/what-we-do')}>
+                                Learn More</button>
+                            </div>
+
+                            <img 
+                            src={ourGoal} 
+                            alt="our_goals" 
+                            className='object-contain w-full custom-lg:w-2/5'
+                            />
+                        </div>
+                        {/* Goals Display */}
+                        <div className='grid custom-lg:grid-cols-3 grid-cols-1 gap-10 mt-8'>
+                            {ourGoalsSession.map((session, index) => (
+                            <div key={index} className="flex flex-col items-start gap-2">
+                                <img src={session.icon} alt={session.title}/>
+                                <div className='text-[13px] sm:text-[14px] font-semibold'>{session.title}</div>
+                                <div className='text-xs sm:text-sm text-gray-600'>{session.description}</div>
+                            </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/*Highlights*/}
+                    <div className="py-10 bg-[#FBFBFB] w-screen">
+                        <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10 space-y-10'>
+                            <div className="sm:text-md text-base text-[#D00200] font-semibold">Highlights</div>
+                            <div className="text-[28px] sm:text-[32px] font-semibold">
+                                Over the past 5 years, Enactus SFU has dedicated over{" "}
+                                <span className="text-[#D00200]">187,000+ hours</span> to improve the lives of over{" "}
+                                <span className="text-[#D00200]">15,000+ individuals.</span>
+                            </div>
+                            {/* <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mt-6"> */}
+                            <div className = 'flex flex-col md:flex-row justify-between gap-8 mt-6'>
+                                {highLightsContent.map((session, index) => (
+                                <div key={index}>
+                                    <div className="text-[28px] sm:text-[32px] font-bold">{session.title}</div>
+                                    <div className="text-[15px] sm:text-sm text-gray-600">{session.description}</div>
+                                </div>
+                                ))}
+                            </div>
+                        </div>
+                    
+                    </div>
+                
+
+                    {/* What We Do */}
+                    <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10'>
+                        <div className="py-10 space-y-10">
+                            <div className="sm:text-md  text-base text-[#D00200] font-semibold">What We Do</div>
+                            <div className="flex flex-col whatWeDo-md:flex-row justify-between whatWeDo-md:gap-20 gap-5">
+                                <div className="font-bold text-2xl md:text-3xl whatWeDo-md:w-2/5 w-full">{whatWeDoContent.title}</div>
+                                <div className="text-[#5C5C5C] md:text-md text-base whatWeDo-md:w-3/5 w-full">{whatWeDoContent.text}</div>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col bg-white">
+                            <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
+                                <div className="flex flex-nowrap ml-0">
+                                {currentProjectsContent.map((project, index) => (
+                                    <div key={index} className="inline-block px-3"   onClick={() => {
+                                        navigate(`/projects/current-projects/` + (project.title === 'BeeKind Co.' ? 'the-beekind-company' : project.title.toLowerCase().replace(/\s+/g, '-')));
+                                        window.scrollTo(0, 0);
+                                    }}>
+                                    <div
+                                        className=" learn-more-button w-60 sm:w-80 h-full max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col items-start justify-between">
+                                        <img 
+                                        src={currentProjectsContentImages[project.title.replace(/\s+/g, '_').toLowerCase() + '.png']} 
+                                        alt={project.title} 
+                                        className="w-auto object-cover h-72 p-1 rounded-lg" 
+                                        />
+                                        <div className="p-4 flex flex-col flex-grow">
+                                        <div className="font-semibold text-[12px] sm:text-[18px] mb-2">{project.title}</div>
+                                        <div className="text-[#5C5C5C] text-[11px] sm:text-[16px] mb-4 flex-grow">{project.description}</div>
+                                        <button
+                                            className="learn-more text-red-500 font-semibold inline-block text-[11px] sm:text-[12px] mt-auto text-left self-start">
+                                            Learn More
+                                        </button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <div className='md:mx-28 lg:mx-40 sm:mx-16 mx-10 space-y-10'>
+                        <div className="grid grid-cols-1 home-competitions-md:grid-cols-2 home-competitions-md:gap-20 items-center gap-16">
+                            <div className = 'space-y-10'>
+                            <div className="sm:text-md text-base text-[#D00200] font-semibold">Enactus Canada Competitions</div>
+                            <div className='font-semibold text-2xl md:text-3xl'>{competitionsContent['title']}</div>
+                            <div className='text-[#5C5C5C] sm:text-md text-base'>{competitionsContent['text']}</div>
+            
+                                <div className = 'flex flex-row gap-3'>
+                                    <button className = 'bg-[#D00200] text-white rounded-full px-3 py-2 font-semibold hover:bg-red-800 sm:text-md text-base' onClick={(e)=>handleClick('/career')}
+                                >Join Us</button>
+                                    <button className = 'bg-[#868686] text-white rounded-full px-3 py-2 font-semibold hover:bg-gray-500 sm:text-md text-base' 
+                                    onClick={(e)=>handleClick('/competitions')}
+                                >Learn More</button>
+                                </div>
+                            </div>
+                            <img src = {competitions} alt = 'competitions' className = 'w-full rounded-xl'></img>
+                        </div>
+
+                    </div>
+                
+                    {/* brands */}
+                    <div className = 'gap-10 lg:mx-40 md:mx-28 sm:mx-16 mx-10'>
+                    {/* For smaller screens (combine both into a single div) */}
+                    <div className=" flex flex-col gap-10 items-center justify-center">
+                        <div className='home-competitions-md:hidden grid md:grid-cols-4 sm:grid-cols-3 home-brand-sm:grid-cols-2  grid-cols-1 items-center justify-center'>
+                                {Object.keys(brandImages)
+                                    .sort((a, b) => {
+                                        const numA = parseInt(a.match(/\d+/)[0], 10);
+                                        const numB = parseInt(b.match(/\d+/)[0], 10);
+                                        return numA - numB;
+                                    })
+                                    .map((key, index) => (
+                                        <div key={key} className="flex justify-center p-4 w-full"> 
+                                            <img src={brandImages[key]} alt={key}/>
+                                        </div>
+                                ))}
+                        </div>
+
+                        <div className="hidden home-competitions-md:flex home-competitions-md:flex-row gap-10 items-center justify-center">
+                            {/* First 6 images */}
+                            {['brand_1.png', 'brand_2.png', 'brand_3.png', 'brand_4.png', 'brand_5.png', 'brand_6.png'].map((image, index) => (
+                                <div key={index} className="justify-center">
+                                <img src={brandImages[image]} alt={`brand ${index + 1}`} />
+                                </div>
+                            ))}
+                            </div>
+
+                        <div className="hidden home-competitions-md:flex home-competitions-md:flex-row gap-10 items-center justify-center mx-10 home-competitions-md:mx-20">
+                            {/* Next 6 images */}
+                            {['brand_7.png', 'brand_8.png', 'brand_9.png', 'brand_10.png', 'brand_11.png', 'brand_12.png'].map((image, index) => (
+                                <div key={index} className="justify-center">
+                                <img src={brandImages[image]} alt={`brand ${index + 7}`} />
+                                </div>
+                            ))}
+                        </div>
+                        </div>
+                    </div>
+
+                    {/* Get Updates */}
+                    <GetUpdate/>
+        
+
                 </div>
                 
-                {/*Our Goals*/}
-                <div className='lg:mx-40 md:mx-28 sm:mx-16 mx-10 space-y-10'>
-                    {/* Our Goals Section */}
-                    <div className='sm:text-md text-base text-[#D00200] font-semibold'>Our Goals</div>
-                    <div className='flex flex-col custom-lg:flex-row justify-between space-x-0 custom-lg:gap-20 gap-10 md:space-y-0 justify-between items-start'>
-                        <div className='flex flex-col items-start md:gap-10 gap-5  w-full custom-lg:w-3/5'>
-                            <div className='font-bold text-2xl custom-lg:text-3xl'>{ourGoalsContent.title}</div>
-                            <div className='text-[#5C5C5C] sm:text-md text-base'>{ourGoalsContent.text}</div>
-                            <button 
-                            className='session-button sm:text-md text-base font-semibold'
-                            onClick={(e)=>handleClick('/about/what-we-do')}>
-                            Learn More</button>
-                        </div>
-
-                        <img 
-                        src={ourGoal} 
-                        alt="our_goals" 
-                        className='object-contain w-full custom-lg:w-2/5'
-                        />
-                    </div>
-                    {/* Goals Display */}
-                    <div className='grid custom-lg:grid-cols-3 grid-cols-1 gap-10 mt-8'>
-                        {ourGoalsSession.map((session, index) => (
-                        <div key={index} className="flex flex-col items-start gap-2">
-                            <img src={session.icon} alt={session.title}/>
-                            <div className='text-[13px] sm:text-[14px] font-semibold'>{session.title}</div>
-                            <div className='text-xs sm:text-sm text-gray-600'>{session.description}</div>
-                        </div>
-                        ))}
-                    </div>
-                </div>
-
-                {/*Highlights*/}
-                <div className="py-10 bg-[#FBFBFB] w-screen">
-                    <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10 space-y-10'>
-                        <div className="sm:text-md text-base text-[#D00200] font-semibold">Highlights</div>
-                        <div className="text-[28px] sm:text-[32px] font-semibold">
-                            Over the past 5 years, Enactus SFU has dedicated over{" "}
-                            <span className="text-[#D00200]">187,000+ hours</span> to improve the lives of over{" "}
-                            <span className="text-[#D00200]">15,000+ individuals.</span>
-                        </div>
-                        {/* <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mt-6"> */}
-                        <div className = 'flex flex-col md:flex-row justify-between gap-8 mt-6'>
-                            {highLightsContent.map((session, index) => (
-                            <div key={index}>
-                                <div className="text-[28px] sm:text-[32px] font-bold">{session.title}</div>
-                                <div className="text-[15px] sm:text-sm text-gray-600">{session.description}</div>
-                            </div>
-                            ))}
-                        </div>
-                    </div>
-                   
-                </div>
             
-
-                {/* What We Do */}
-                <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10'>
-                    <div className="py-10 space-y-10">
-                        <div className="sm:text-md  text-base text-[#D00200] font-semibold">What We Do</div>
-                        <div className="flex flex-col whatWeDo-md:flex-row justify-between whatWeDo-md:gap-20 gap-5">
-                            <div className="font-bold text-2xl md:text-3xl whatWeDo-md:w-2/5 w-full">{whatWeDoContent.title}</div>
-                            <div className="text-[#5C5C5C] md:text-md text-base whatWeDo-md:w-3/5 w-full">{whatWeDoContent.text}</div>
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col bg-white">
-                        <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
-                            <div className="flex flex-nowrap ml-0">
-                            {currentProjectsContent.map((project, index) => (
-                                <div key={index} className="inline-block px-3"   onClick={() => {
-                                    navigate(`/projects/current-projects/` + (project.title === 'BeeKind Co.' ? 'the-beekind-company' : project.title.toLowerCase().replace(/\s+/g, '-')));
-                                    window.scrollTo(0, 0);
-                                  }}>
-                                <div
-                                    className=" learn-more-button w-60 sm:w-80 h-full max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col items-start justify-between">
-                                    <img 
-                                    src={currentProjectsContentImages[project.title.replace(/\s+/g, '_').toLowerCase() + '.png']} 
-                                    alt={project.title} 
-                                    className="w-auto object-cover h-72 p-1 rounded-lg" 
-                                    />
-                                    <div className="p-4 flex flex-col flex-grow">
-                                    <div className="font-semibold text-[12px] sm:text-[18px] mb-2">{project.title}</div>
-                                    <div className="text-[#5C5C5C] text-[11px] sm:text-[16px] mb-4 flex-grow">{project.description}</div>
-                                    <button
-                                        className="learn-more text-red-500 font-semibold inline-block text-[11px] sm:text-[12px] mt-auto text-left self-start">
-                                        Learn More
-                                    </button>
-                                    </div>
-                                </div>
-                                </div>
-                            ))}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-
-                <div className='md:mx-28 lg:mx-40 sm:mx-16 mx-10 space-y-10'>
-                    <div className="grid grid-cols-1 home-competitions-md:grid-cols-2 home-competitions-md:gap-20 items-center gap-16">
-                        <div className = 'space-y-10'>
-                        <div className="sm:text-md text-base text-[#D00200] font-semibold">Enactus Canada Competitions</div>
-                        <div className='font-semibold text-2xl md:text-3xl'>{competitionsContent['title']}</div>
-                        <div className='text-[#5C5C5C] sm:text-md text-base'>{competitionsContent['text']}</div>
+            </main>
+        </>
         
-                            <div className = 'flex flex-row gap-3'>
-                                <button className = 'bg-[#D00200] text-white rounded-full px-3 py-2 font-semibold hover:bg-red-800 sm:text-md text-base' onClick={(e)=>handleClick('/career')}
-                               >Join Us</button>
-                                <button className = 'bg-[#868686] text-white rounded-full px-3 py-2 font-semibold hover:bg-gray-500 sm:text-md text-base' 
-                                onClick={(e)=>handleClick('/competitions')}
-                              >Learn More</button>
-                            </div>
-                        </div>
-                        <img src = {competitions} alt = 'competitions' className = 'w-full rounded-xl'></img>
-                    </div>
-
-                </div>
-               
-                {/* brands */}
-                <div className = 'gap-10 lg:mx-40 md:mx-28 sm:mx-16 mx-10'>
-                {/* For smaller screens (combine both into a single div) */}
-                <div className=" flex flex-col gap-10 items-center justify-center">
-                    <div className='home-competitions-md:hidden grid md:grid-cols-4 sm:grid-cols-3 home-brand-sm:grid-cols-2  grid-cols-1 items-center justify-center'>
-                            {Object.keys(brandImages)
-                                .sort((a, b) => {
-                                    const numA = parseInt(a.match(/\d+/)[0], 10);
-                                    const numB = parseInt(b.match(/\d+/)[0], 10);
-                                    return numA - numB;
-                                })
-                                .map((key, index) => (
-                                    <div key={key} className="flex justify-center p-4 w-full"> 
-                                        <img src={brandImages[key]} alt={key}/>
-                                    </div>
-                            ))}
-                    </div>
-
-                    <div className="hidden home-competitions-md:flex home-competitions-md:flex-row gap-10 items-center justify-center">
-                        {/* First 6 images */}
-                        {['brand_1.png', 'brand_2.png', 'brand_3.png', 'brand_4.png', 'brand_5.png', 'brand_6.png'].map((image, index) => (
-                            <div key={index} className="justify-center">
-                            <img src={brandImages[image]} alt={`brand ${index + 1}`} />
-                            </div>
-                        ))}
-                        </div>
-
-                    <div className="hidden home-competitions-md:flex home-competitions-md:flex-row gap-10 items-center justify-center mx-10 home-competitions-md:mx-20">
-                        {/* Next 6 images */}
-                        {['brand_7.png', 'brand_8.png', 'brand_9.png', 'brand_10.png', 'brand_11.png', 'brand_12.png'].map((image, index) => (
-                            <div key={index} className="justify-center">
-                            <img src={brandImages[image]} alt={`brand ${index + 7}`} />
-                            </div>
-                        ))}
-                    </div>
-                    </div>
-                </div>
-
-                {/* Get Updates */}
-                <GetUpdate/>
-    
-
-            </div>
-            
-        
-        </main>
     )
 
     return(
