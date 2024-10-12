@@ -61,7 +61,7 @@ const Home = () =>{
     const mainpage = (
         <>
             <Helmet>
-                <title>Enactus SFU | At Enactus SFU, we dare to do.</title>
+                <title>Enactus SFU</title>
                 <meta 
                   name="description" 
                   content="Enactus SFU is a student-led organization at Simon Fraser University, dedicated to building sustainable projects that create positive social and environmental impact. Join our team to make a difference." 
