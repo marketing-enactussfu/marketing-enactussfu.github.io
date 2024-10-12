@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, HashRouter } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import Sponsorship from './Sponsorship';
@@ -28,40 +28,38 @@ import BeeKind from './CurrentProjects/beekind';
 
 
 
-
 export default function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL || "/"}> 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sponsorship" element={<Sponsorship/>} />
-        <Route path="/about/what-we-do" element={<WhatWeDo/>} />
-        <Route path="/about/our-team" element={<OurTeam/>} />
-        <Route path='/projects/past-projects/coast-cards' element={<CoastCards/>} />
-        <Route path="/competitions" element={<Competitions/>} />
-        <Route path='/projects/past-projects/count-on-me' element={<CountOnMe/>} />
-        <Route path='/projects/past-projects/changemaker-challenge' element={<ChangemakerChallenge/>} />
-        <Route path='/projects/past-projects/bright-ideas' element={<BrightIdeas/>} />
-        <Route path='/projects/current-projects/second-savour' element={<SecondSavour/>} />
-        <Route path="/career" element={<Careers/>} />
-        <Route path='/projects/past-projects/banner-bags' element={<BannerBags/>} />
-        <Route path='/projects/past-projects/media-minds' element={<MediaMinds/>} />
-        <Route path='/projects/past-projects/refresh' element={<ReFresh/>} />
-        <Route path='/projects/past-projects/kindred-knots' element={<KindredKnots/>} />
-        <Route path='/projects/current-projects/himalayan-skyes' element={<SKYES/>} />
-        <Route path='/projects/current-projects/unify' element={<Unify/>} />
-        <Route path='/projects/current-projects/catalyst' element={<Catalyst/>} />
-        <Route path='/projects/current-projects/turbio-energy' element={<TurbioEnergy/>} />
-        <Route path='/projects/current-projects/aqua-analyzer' element={<AA/>} />
-        <Route path='/events' element={<Events/>} />
-        <Route path='/events/pm-series' element={<PMSeries/>} />
-        <Route path='/events/forward-vision' element={<ForwardVision/>} />
-        <Route path='/projects/current-projects/the-beekind-company' element={<BeeKind/>} />
-
-
-
-      </Routes>
-    </Router>
+    // <Router basename={process.env.PUBLIC_URL || "/"}> 
+    <HashRouter>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/sponsorship" element={<Sponsorship/>} />
+            <Route path="/about/what-we-do" element={<WhatWeDo/>} />
+            <Route path="/about/our-team" element={<OurTeam/>} />
+            <Route path='/projects/past-projects/coast-cards' element={<CoastCards/>} />
+            <Route path="/competitions" element={<Competitions/>} />
+            <Route path='/projects/past-projects/count-on-me' element={<CountOnMe/>} />
+            <Route path='/projects/past-projects/changemaker-challenge' element={<ChangemakerChallenge/>} />
+            <Route path='/projects/past-projects/bright-ideas' element={<BrightIdeas/>} />
+            <Route path='/projects/current-projects/second-savour' element={<SecondSavour/>} />
+            <Route path="/career" element={<Careers/>} />
+            <Route path='/projects/past-projects/banner-bags' element={<BannerBags/>} />
+            <Route path='/projects/past-projects/media-minds' element={<MediaMinds/>} />
+            <Route path='/projects/past-projects/refresh' element={<ReFresh/>} />
+            <Route path='/projects/past-projects/kindred-knots' element={<KindredKnots/>} />
+            <Route path='/projects/current-projects/himalayan-skyes' element={<SKYES/>} />
+            <Route path='/projects/current-projects/unify' element={<Unify/>} />
+            <Route path='/projects/current-projects/catalyst' element={<Catalyst/>} />
+            <Route path='/projects/current-projects/turbio-energy' element={<TurbioEnergy/>} />
+            <Route path='/projects/current-projects/aqua-analyzer' element={<AA/>} />
+            <Route path='/events' element={<Events/>} />
+            <Route path='/events/pm-series' element={<PMSeries/>} />
+            <Route path='/events/forward-vision' element={<ForwardVision/>} />
+            <Route path='/projects/current-projects/the-beekind-company' element={<BeeKind/>} />
+          </Routes>
+    </HashRouter>
+    // </Router>
   );
 }
 
