@@ -61,13 +61,23 @@ const Home = () =>{
     const mainpage = (
         <>
             <Helmet>
+                {/* Title */}
                 <title>Enactus SFU</title>
-                <meta 
-                  name="description" 
-                  content="Enactus SFU is a student-led organization at Simon Fraser University, dedicated to building sustainable projects that create positive social and environmental impact. Join our team to make a difference." 
-                />
-                <meta name="keywords" content="Enactus SFU, social innovation, Simon Fraser University, student projects, sustainable projects" />
-                <link rel="canonical" href="https://enactussfu.ca" />
+
+                {/* Meta Description */}
+                <meta name="description" content="At Enactus SFU, we empower students to make an impact through entrepreneurship. Discover how we dare to do." />
+
+                {/* Favicon */}
+                <link rel="icon" href="images/android-chrome-512x512.png" />
+                <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+                {/* Open Graph Meta Tags for Social Media */}
+                <meta property="og:title" content="Enactus SFU" />
+                <meta property="og:description" content="At Enactus SFU, we empower students to make an impact through entrepreneurship. Discover how we dare to do." />
+                <meta property="og:image" content="images/android-chrome-512x512.png" />
+                <meta property="og:url" content="https://enactussfu.ca" />
+                <meta property="og:type" content="website" />
+
             </Helmet>
 
             <main className = 'space-y-5'>
