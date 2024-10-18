@@ -18,55 +18,61 @@ const BeeKind = () => {
   const beekindpage = (
     <main className = 'mt-4'>
       <div className = 'flex flex-col md:gap-20 gap-12'>
-          <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
+      <div className="mx-auto max-w-5xl px-4">
+  <div className="max-w-5xl flex flex-col justify-center items-center gap-8 pt-12">
+    <div className="text-center text-[#d00200] text-base md:text-lg font-semibold">Current Projects</div>
+    <div className="text-center text-[#181818] text-3xl sm:text-4xl font-semibold">The BeeKind Company</div>
 
-            <div className=" max-w-5xl flex flex-col justify-start items-center gap-8  pt-12">
-              <div className="text-center text-[#d00200] text-base md:text-lg font-semibold">Current Projects</div>
-              <div className="text-center text-[#181818] text-3xl sm:text-4xl font-semibold">The BeeKind Company</div>
+    <div className="text-center text-[#5c5c5c] text-lg md:text-xl font-normal leading-relaxed">
+      We aim to repurpose damaged honeycombs into sustainable candles, educating minds, and sowing seeds for bee pollination.
+    </div>
 
-              <div className="text-center text-[#5c5c5c] text-lg md:text-xl font-normal leading-relaxed">
-                We aim to repurpose damaged honeycombs into sustainable candles, educating minds, and sowing seeds for bee pollination.
-              </div>
+    <div className="flex justify-center items-center gap-4 md:gap-6 flex sm:flex-row flex-col">
+      <button className="session-button text-[14px] font-semibold" onClick={() => window.open('https://thebeekind.company', '_blank')}>
+        Visit Website
+      </button>
+      <button className="facebook-button text-[14px] font-semibold" onClick={() => window.open('https://www.instagram.com/thebeekind.company/', '_blank')}>
+        Our Instagram
+      </button>
+    </div>
+  </div>
+</div>
 
-              <div className="flex justify-center items-center gap-4 md:gap-6 flex sm:flex-row flex-col">
-                <button className="session-button text-[14px] font-semibold"onClick = {()=> window.open('https://thebeekind.company', '_blank')} >
-                    Visit Website
-                </button>
-                <button className="facebook-button text-[14px] font-semibold" onClick = {()=> window.open('https://www.instagram.com/thebeekind.company/', '_blank')}> 
-                  Our Instagram
-                </button>
-              </div>
-            </div>
-            </div>
 
-            <div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-25 sm:gap-10 gap-10">
-            <img className="w-full h-full object-cover" src={candle} alt="BeeKind Candle" />
-            </div>
+<div className="flex flex-col justify-center items-center md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-25 sm:gap-10 gap-10">
+  <img className="w-full max-w-5xl h-full object-cover rounded-xl mx-auto" src={candle} alt="BeeKind Candle" />
+</div>
+
+
 
             {/* <div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-25 sm:gap-10 gap-10 md:mb-32 sm:mb-20 mb-10"> */}
-            <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 flex flex-col gap-10">
-              <div className="w-full max-w-5xl flex flex-col justify-start items-start gap-6">
-                <div className="text-[#181818] text-[24px] md:text-[32px] font-semibold">
-                  We are more than just a candle company.
-                </div>
-                <div className="text-[#5c5c5c] text-lg md:text-xl font-normal leading-relaxed">
-                    BeeKind Co. is a movement dedicated to illuminating spaces while fostering environmental awareness. Founded by a passionate team of young entrepreneurs from SFU, BeeKind Co. is a social enterprise driven to repurpose waste and reshape public perceptions.
-                    <br/><br/>
-                    Our mission is to create sustainable candles using beeswax as a renewable resource, providing environmentally-friendly alternatives to conventional paraffin-based candles.
-                </div>
-              </div>
-          
-              <img className="w-full h-full object-cover rounded-xl justify-center " src={candle2} alt="BeeKind Candle" />
-     
-              <div className="w-full max-w-5xl flex flex-col justify-start items-start gap-8">
-                <div className="text-[#181818] text-[24px] md:text-[32px] font-semibold">
-                  Every candle includes pollinator seeds to promote bee habitat preservation.
-                </div>
-                <div className="text-[#5c5c5c] text-lg md:text-xl font-normal leading-relaxed">
-                  Inspired by British Columbia's wildlife, each scent captivates the senses. Experience the pure elegance of our hand-poured candles made from a sustainable blend of 100% Canadian beeswax and coconut oil. Encased in recyclable glass jars, these candles offer a clean burn with a wooden wick, surpassing traditional cotton alternatives. Illuminate your space with our 9 oz candles, providing 40 hours of environmentally conscious bliss.
-                </div>
-              </div>
-            </div>
+            <div className="mx-auto max-w-10xl px-1">
+            <div className="mx-auto max-w-5xl sm:mx-40 md:mx-56 lg:mx-80 flex flex-col gap-10">
+  <div className="w-full max-w-5xl flex flex-col justify-start items-start gap-6">
+    <div className="text-[#181818] text-[24px] md:text-[32px] font-semibold">
+      We are more than just a candle company.
+    </div>
+    <div className="text-[#5c5c5c] text-lg md:text-xl font-normal leading-relaxed">
+      BeeKind Co. is a movement dedicated to illuminating spaces while fostering environmental awareness. Founded by a passionate team of young entrepreneurs from SFU, BeeKind Co. is a social enterprise driven to repurpose waste and reshape public perceptions.
+      <br/><br/>
+      Our mission is to create sustainable candles using beeswax as a renewable resource, providing environmentally-friendly alternatives to conventional paraffin-based candles.
+    </div>
+  </div>
+
+  <img className="w-full h-auto object-cover rounded-xl mx-auto" src={candle2} alt="BeeKind Candle" />
+
+  <div className="w-full max-w-5xl flex flex-col justify-start items-start gap-8">
+    <div className="text-[#181818] text-[24px] md:text-[32px] font-semibold">
+      Every candle includes pollinator seeds to promote bee habitat preservation.
+    </div>
+    <div className="text-[#5c5c5c] text-lg md:text-xl font-normal leading-relaxed">
+      Inspired by British Columbia's wildlife, each scent captivates the senses. Experience the pure elegance of our hand-poured candles made from a sustainable blend of 100% Canadian beeswax and coconut oil. Encased in recyclable glass jars, these candles offer a clean burn with a wooden wick, surpassing traditional cotton alternatives. Illuminate your space with our 9 oz candles, providing 40 hours of environmentally conscious bliss.
+    </div>
+  </div>
+</div>
+</div>
+
+
 
 
 
@@ -110,8 +116,9 @@ const BeeKind = () => {
               </div>
             </div>
             </div>
+            <div className="mx-auto max-w-10xl px-1">
+            <div className="mx-auto max-w-5xl sm:mx-40 md:mx-56 lg:mx-80 flex flex-col gap-10">
 
-            <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
             {/* <div className="w-full h-auto px-4 md:px-12 lg:px-24 py-12 lg:py-24 bg-white flex flex-col justify-start items-center gap-12 lg:gap-24 mx-auto"> */}
             <div className="w-full max-w-5xl flex flex-col justify-start items-start gap-10">
             <div className="flex justify-between items-center w-full">
@@ -176,9 +183,14 @@ const BeeKind = () => {
             </div>
             </div>
             </div>
+            </div>
+
+
 
             <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex flex-col gap-8'>
-              <div className="text-[#181818] sm:text-3xl text-2xl font-semibold">Our Process</div>
+              <div className="text-[#181818] sm:text-3xl text-2xl item-start font-semibold">Our Process</div>
+         
+
               <div className="flex flex-col bg-white">
                                   <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
                                       <div className="flex flex-nowrap ml-0">
@@ -203,6 +215,8 @@ const BeeKind = () => {
 
             </div>
             {/* <div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-32 sm:gap-20 gap-10 md:mb-32 sm:mb-20 mb-10"> */}
+            <div className="mx-auto max-w-10xl px-1">
+
             <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 mb-20 flex-col flex item-center">
 
             <div className="w-full max-w-4xl flex flex-col justify-start items-center gap-6 text-center">
@@ -216,6 +230,8 @@ const BeeKind = () => {
            
             </div>
             </div>
+            </div>
+
 
 
       </div>
