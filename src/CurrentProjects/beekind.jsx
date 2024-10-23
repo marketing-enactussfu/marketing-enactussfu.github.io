@@ -18,7 +18,7 @@ const BeeKind = () => {
   const beekindpage = (
     <main className = 'mt-4'>
       <div className = 'flex flex-col md:gap-20 gap-12'>
-          <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
+          <div className="lg:mx-auto lg:max-w-5xl currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
 
             <div className=" max-w-5xl flex flex-col justify-start items-center gap-8  pt-12">
               <div className="text-center text-[#d00200] text-base md:text-lg font-semibold">Current Projects</div>
@@ -39,12 +39,12 @@ const BeeKind = () => {
             </div>
             </div>
 
-            <div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-25 sm:gap-10 gap-10">
-            <img className="w-full h-full object-cover" src={candle} alt="BeeKind Candle" />
+            <div className="lg:mx-auto lg:max-w-5xl flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-25 sm:gap-10 gap-10">
+            <img className="w-full h-full object-cover rounded-xl" src={candle} alt="BeeKind Candle" />
             </div>
 
             {/* <div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-25 sm:gap-10 gap-10 md:mb-32 sm:mb-20 mb-10"> */}
-            <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 flex flex-col gap-10">
+            <div className="lg:mx-auto lg:max-w-5xl currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 flex flex-col gap-10">
               <div className="w-full max-w-5xl flex flex-col justify-start items-start gap-6">
                 <div className="text-[#181818] text-[24px] md:text-[32px] font-semibold">
                   We are more than just a candle company.
@@ -71,7 +71,7 @@ const BeeKind = () => {
 
 
             <div className = 'bg-[#fbfbfb] py-10'>
-            <div className="md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex flex-col items-center gap-8">
+            <div className="lg:mx-auto lg:max-w-5xl md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex flex-col items-center gap-8">
             {/* <div className="w-full h-auto px-4 md:px-12 lg:px-24 py-12 lg:py-24 bg-[#fbfbfb] flex flex-col justify-start items-center gap-12 lg:gap-24 mx-auto"> */}
               <div className="w-full max-w-5xl flex flex-col justify-start items-center gap-8">
                 <div className="text-center text-[#d00200] text-sm font-semibold">Our Pillars</div>
@@ -111,7 +111,7 @@ const BeeKind = () => {
             </div>
             </div>
 
-            <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
+            <div className="lg:mx-auto lg:max-w-5xl navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10">
             {/* <div className="w-full h-auto px-4 md:px-12 lg:px-24 py-12 lg:py-24 bg-white flex flex-col justify-start items-center gap-12 lg:gap-24 mx-auto"> */}
             <div className="w-full max-w-5xl flex flex-col justify-start items-start gap-10">
             <div className="flex justify-between items-center w-full">
@@ -177,7 +177,7 @@ const BeeKind = () => {
             </div>
             </div>
 
-            <div className = 'md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex flex-col gap-8'>
+            <div className = 'lg:mx-auto lg:max-w-5xl md:mx-28 lg:mx-40 sm:mx-16 mx-10 flex flex-col gap-8'>
               <div className="text-[#181818] sm:text-3xl text-2xl font-semibold">Our Process</div>
               <div className="flex flex-col bg-white">
                                   <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
@@ -203,7 +203,7 @@ const BeeKind = () => {
 
             </div>
             {/* <div className="flex flex-col md:mx-28 lg:mx-40 sm:mx-16 mx-10 md:gap-32 sm:gap-20 gap-10 md:mb-32 sm:mb-20 mb-10"> */}
-            <div className="currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 mb-20 flex-col flex item-center">
+            <div className="lg:mx-auto lg:max-w-5xl currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 mb-20 flex-col flex item-center">
 
             <div className="w-full max-w-4xl flex flex-col justify-start items-center gap-6 text-center">
             <div className="text-[#181818] sm:text-4xl text-3xl font-semibold">Shop with Purpose</div>
