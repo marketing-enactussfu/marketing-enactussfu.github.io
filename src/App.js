@@ -48,7 +48,7 @@ export default function App() {
             <Route path='/projects/past-projects/media-minds' element={<MediaMinds/>} />
             <Route path='/projects/past-projects/refresh' element={<ReFresh/>} />
             <Route path='/projects/past-projects/kindred-knots' element={<KindredKnots/>} />
-            <Route path='/projects/current-projects/himalayan-skyes' element={<SKYES/>} />
+            <Route path='/projects/current-projects/skyes' element={<SKYES/>} />
             <Route path='/projects/current-projects/unify' element={<Unify/>} />
             <Route path='/projects/current-projects/catalyst' element={<Catalyst/>} />
             <Route path='/projects/current-projects/turbio-energy' element={<TurbioEnergy/>} />

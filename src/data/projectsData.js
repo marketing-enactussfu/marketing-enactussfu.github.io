@@ -17,7 +17,7 @@ import refresh from '../icons/navbar/refresh.png';
 export const currentProjects = [
     { name: "The beekind Company", description: "Scented Candies", icon: beeking },
     { name: "Second Savour", description: "Delicious Candied Peels", icon: second_savour },
-    { name: "Himalayan Skyes", description: "Empowering Youth", icon: himalayan_skyes},
+    { name: "Skyes", description: "Empowering Youth", icon: himalayan_skyes},
     { name: "Aqua Analyzer", description: "Testing Water Qualities", icon: aqua_analyzer },
     { name: "Unify", description: "Social Media Platform", icon: community },
     { name: "Turbio Energy", description: "Sustainable Energy", icon: turbio_energy },

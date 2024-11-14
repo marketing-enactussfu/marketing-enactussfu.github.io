@@ -44,7 +44,7 @@ const competitionsContent = {
 const currentProjectsContent = [
     {title: 'The BeeKind Company',description: 'Working to turn the candle industry into a sustainable practice, while spreading mental health resources and awareness throughout our community.'},
     {title: 'Second Savour',description: 'A social enterprise that aims to combat food waste originating from excess surplus produce into delicious candied peels.'},
-    {title: 'Himalayan Skyes',description: 'Our mission is to empower the youth in Nepal, with essential business skills to help them thrive in their local communities.'},
+    {title: 'Skyes',description: 'Our mission is to empower the youth in Nepal, with essential business skills to help them thrive in their local communities.'},
     {title: 'Aqua Analyzer', description: 'The Aqua Analyzer tests water quality for indigenous communities.'},
 ]
 

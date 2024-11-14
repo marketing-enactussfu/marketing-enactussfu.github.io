@@ -11,7 +11,7 @@ function Navbar() {
     const currentProjects = [
         { name: 'The beekind Company', slug: 'current-projects/the-beekind-company' },
         { name: 'Second Savour', slug: 'current-projects/second-savour' },
-        { name: 'Himalayan Skyes', slug: 'current-projects/himalayan-skyes' },
+        { name: 'Skyes', slug: 'current-projects/skyes' },
         { name: 'Aqua Analyzer', slug: 'current-projects/aqua-analyzer' },
         { name: 'Unify', slug: 'current-projects/unify' },
         { name: 'Turbio Energy', slug: 'current-projects/turbio-energy' },
