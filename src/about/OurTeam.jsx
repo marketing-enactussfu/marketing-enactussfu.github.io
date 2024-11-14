@@ -22,7 +22,7 @@ const coreOperations = [
   
 
   const projectManagers = [
-    {name: "Christine Hui",description: "Project Manager of BeeKind Co."},
+    {name: "Christine Hui",description: "Project Manager of The BeeKind Company"},
     {name: "Bhumika Kalra",description: "Co-Project Manager of Himalayan SKYES"},
     {name: "Ethan Chan",description: "Co-Project Manager of Himalayan SKYES"},
     {name: "Lin Lin",description: "Project Manager of Turbio Energy"},

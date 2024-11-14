@@ -10,7 +10,7 @@ export const history = [
           "external": "Peehu Gupta, Ruchi Sharma"
         },
         "projects": [
-          "Beekind Co",
+          "The BeeKind Company",
           "Second Savour",
           "Himalyan Skyes",
           "Aqua Analyzer",
@@ -38,7 +38,7 @@ export const history = [
           "external": "Chloe Bui, Brandon Sun"
         },
         "projects": [
-          "Beekind Co",
+          "The BeeKind Company",
           "Second Savour",
           "Himalyan Skyes",
           "Aqua Analyzer",
@@ -62,7 +62,7 @@ export const history = [
         "projects": [
           "The Amazing Case Chair: Sandra Chen",
           "Director of Bright Ideas: Adelyne Heng",
-          "Beekind Co"
+          "The BeeKind Company"
         ],
         "regional_wins": [
           "Enactus Canada Regionals TD Entrepreneurship Challenge 3rd Place",

@@ -15,7 +15,7 @@ function Navbar() {
         { name: 'Aqua Analyzer', slug: 'current-projects/aqua-analyzer' },
         { name: 'Unify', slug: 'current-projects/unify' },
         { name: 'Turbio Energy', slug: 'current-projects/turbio-energy' },
-        { name: 'Entrepreneurship Challenges', slug: 'current-projects/entrepreneurship-challenges' },
+        { name: 'Catalyst', slug: 'current-projects/catalysts' },
     ];
 
     const pastProjects = [

@@ -42,7 +42,7 @@ const competitionsContent = {
 }
 
 const currentProjectsContent = [
-    {title: 'BeeKind Co.',description: 'Working to turn the candle industry into a sustainable practice, while spreading mental health resources and awareness throughout our community.'},
+    {title: 'The BeeKind Company',description: 'Working to turn the candle industry into a sustainable practice, while spreading mental health resources and awareness throughout our community.'},
     {title: 'Second Savour',description: 'A social enterprise that aims to combat food waste originating from excess surplus produce into delicious candied peels.'},
     {title: 'Himalayan Skyes',description: 'Our mission is to empower the youth in Nepal, with essential business skills to help them thrive in their local communities.'},
     {title: 'Aqua Analyzer', description: 'The Aqua Analyzer tests water quality for indigenous communities.'},
@@ -178,7 +178,7 @@ const Home = () =>{
                                 <div className="flex flex-nowrap ml-0">
                                 {currentProjectsContent.map((project, index) => (
                                     <div key={index} className="inline-block px-3"   onClick={() => {
-                                        navigate(`/projects/current-projects/` + (project.title === 'BeeKind Co.' ? 'the-beekind-company' : project.title.toLowerCase().replace(/\s+/g, '-')));
+                                        navigate(`/projects/current-projects/` + (project.title === 'The BeeKind Company' ? 'the-beekind-company' : project.title.toLowerCase().replace(/\s+/g, '-')));
                                         window.scrollTo(0, 0);
                                     }}>
                                     <div

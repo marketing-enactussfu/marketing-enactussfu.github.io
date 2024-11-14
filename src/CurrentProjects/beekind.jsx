@@ -51,7 +51,7 @@ const BeeKind = () => {
                   We are more than just a candle company.
                 </div>
                 <div className="text-[#5c5c5c] text-lg md:text-xl font-normal leading-relaxed">
-                    BeeKind Co. is a movement dedicated to illuminating spaces while fostering environmental awareness. Founded by a passionate team of young entrepreneurs from SFU, BeeKind Co. is a social enterprise driven to repurpose waste and reshape public perceptions.
+                    The BeeKind Company is a movement dedicated to illuminating spaces while fostering environmental awareness. Founded by a passionate team of young entrepreneurs from SFU, The BeeKind Company is a social enterprise driven to repurpose waste and reshape public perceptions.
                     <br/><br/>
                     Our mission is to create sustainable candles using beeswax as a renewable resource, providing environmentally-friendly alternatives to conventional paraffin-based candles.
                 </div>
@@ -104,7 +104,7 @@ const BeeKind = () => {
               </div>
               <div className="text-[#181818] text-sm font-semibold">Pollination with a Purpose</div>
               <div className="text-[#5c5c5c] text-sm leading-relaxed">
-                For every candle sold, BeeKind Co. plants one pollinator seed. These seeds contribute to bee-friendly habitats, supporting the conservation of pollinators.
+                For every candle sold, The BeeKind Company plants one pollinator seed. These seeds contribute to bee-friendly habitats, supporting the conservation of pollinators.
               </div>
             </div>
 
