@@ -45,7 +45,9 @@ export const history = [
           "Kindred Knots"
         ],
         "regional_wins": [
-          "Enactus Canada Regionals TD Entrepreneurship Challenge 3rd place",
+          "Enactus Canada Regionals Enactus Alumni Innovation Impact Challenge 1st Place",
+          "Enactus Canada Regionals TD Entrepreneurship Challenge 2nd Place",
+          "Enactus Canada Regionals Canadian Tire Environmental Sustainability 2nd Place",
           "Enactus Canada Regionals Scotiabank Climate Action Challenge 3rd Place",
         ]
       },

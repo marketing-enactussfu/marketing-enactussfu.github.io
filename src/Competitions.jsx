@@ -21,7 +21,9 @@ const awardsData = [
     {
         year: 2023,
         awards: [
-            { imgSrc: award3, title: "3rd Place", subtitle: "TD Entrepreneurship Challenge", description: "Enactus Canada Regionals" },
+            { imgSrc: award1, title: "1st Place", subtitle: "Enactus Alumni Innovation Impact Challenge", description: "Enactus Canada Regionals" },
+            { imgSrc: award2, title: "2st Place", subtitle: "TD Entrepreneurship Challenge", description: "Enactus Canada Regionals" },
+            { imgSrc: award2, title: "2st Place", subtitle: "Canadian Tire Environmental Sustainability", description: "Enactus Canada Regionals" },
             { imgSrc: award3, title: "3rd Place", subtitle: "Scotiabank Climate Action Challenge", description: "Enactus Canada Regionals" }
         ]
     },
