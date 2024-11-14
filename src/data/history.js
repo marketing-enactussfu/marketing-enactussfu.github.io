@@ -20,9 +20,10 @@ export const history = [
 
         ],
         "regional_wins": [
-          "Innovation and Impact Challenge 1st place",
-          "Canadian Tire Environmental Sustainability Challenge 2nd place",
-          "TD Entrepreneurship Challenge 2nd place",
+          "Enactus Canada Regionals Innovation and Impact Challenge 1st place",
+          "Enactus Alumni Innovation Impact Challenge 1st place",
+          "Enactus Canada Regionals Canadian Tire Environmental Sustainability 2nd place",
+          "Enactus Canada Regionals TD Entrepreneurship Challenge 2nd place",
         ]
       },
 
@@ -44,12 +45,8 @@ export const history = [
           "Kindred Knots"
         ],
         "regional_wins": [
-          "Enactus Canada Regionals Enactus Alumni Innovation Impact Challenge 1st Place",
-          "Enactus Canada Regionals TD Entrepreneurship Challenge 2nd Place",
-          "Enactus Canada Regionals Canadian Tire Environmental Sustainability 2nd Place",
-          "TD Entrepreneurship Challenge 3rd place",
-          "Scotia-bank Climate Action Challenge 3rd place",
-
+          "Enactus Canada Regionals TD Entrepreneurship Challenge 3rd place",
+          "Enactus Canada Regionals Scotiabank Climate Action Challenge 3rd Place",
         ]
       },
       {

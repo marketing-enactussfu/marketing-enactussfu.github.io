@@ -9,9 +9,10 @@ const awardsData = [
     {
         year: 2024,
         awards: [
+            { imgSrc: award1, title: "Semi-Finalist", subtitle: "Nationals Exposition", description: "Enactus Canada Nationals" },
+            { imgSrc: award1, title: "1st Place", subtitle: "Innovation and Impact Challenge", description: "Enactus Canada Nationals" },
             { imgSrc: award1, title: "1st Place", subtitle: "Enactus Alumni Innovation Impact Challenge", description: "Enactus Canada Regionals" },
-            { imgSrc: award1, title: "1st Place", subtitle: "Innovation and Impact Challenge at Nationals", description: "Enactus Canada Regionals" },
-            { imgSrc: award1, title: "Semi Finalist", subtitle: "Nationals Exposition", description: "Enactus Canada Regionals" },
+            { imgSrc: award1, title: "1st Place", subtitle: "Innovation and Impact Challenge", description: "Enactus Canada Regionals" },
             { imgSrc: award2, title: "2nd Place", subtitle: "Canadian Tire Environmental Sustainability", description: "Enactus Canada Regionals" },
             { imgSrc: award2, title: "2nd Place", subtitle: "TD Entrepreneurship Challenge", description: "Enactus Canada Regionals" },
             
@@ -42,15 +43,15 @@ const awardsData = [
     {
         year: 2018,
         awards: [
-            { imgSrc: award1, title: "Semi-Finalist", subtitle: "Nationals Exposition", description: "Enactus Canada Regionals" },
+            { imgSrc: award1, title: "Semi-Finalist", subtitle: "Nationals Exposition", description: "Enactus Canada Nationals" },
             { imgSrc: award1, title: "1st Place", subtitle: "Scotiabank Youth Empowerment Challenge", description: "Enactus Canada Regionals" }
         ]
     },
     {
         year: 2017,
         awards: [
-            { imgSrc: award1, title: "1st Place", subtitle: "Capital One Financial Education Challenge", description: "Enactus Canada Regionals" },
-            { imgSrc: award1, title: "Semi-Finalist", subtitle: "Nationals Exposition", description: "Enactus Canada Regionals" },
+            { imgSrc: award1, title: "1st Place", subtitle: "Capital One Financial Education Challenge", description: "Enactus Canada Nationals" },
+            { imgSrc: award1, title: "Semi-Finalist", subtitle: "Nationals Exposition", description: "Enactus Canada Nationals" },
             { imgSrc: award1, title: "1st Place", subtitle: "EcoLiving Challenge", description: "Enactus Canada Regionals" },
             { imgSrc: award1, title: "1st Place", subtitle: "Scotiabank Youth Empowerment Challenge", description: "Enactus Canada Regionals" },
             { imgSrc: award1, title: "1st Place", subtitle: "TD Entrepreneurship Challenge", description: "Enactus Canada Regionals" }
