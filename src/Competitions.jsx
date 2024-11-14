@@ -10,23 +10,26 @@ const awardsData = [
         year: 2024,
         awards: [
             { imgSrc: award1, title: "1st Place", subtitle: "Enactus Alumni Innovation Impact Challenge", description: "Enactus Canada Regionals" },
-            {imgSrc: award2, title: "2nd Place", subtitle: "Innovation and Impact Challenge at Nationals", description: "Enactus Canada Regionals" },
+            { imgSrc: award1, title: "1st Place", subtitle: "Innovation and Impact Challenge at Nationals", description: "Enactus Canada Regionals" },
+            { imgSrc: award1, title: "Semi Finalist", subtitle: "Nationals Exposition", description: "Enactus Canada Regionals" },
             { imgSrc: award2, title: "2nd Place", subtitle: "Canadian Tire Environmental Sustainability", description: "Enactus Canada Regionals" },
-            { imgSrc: award2, title: "2nd Place", subtitle: "TD Entrepreneurship Challenge", description: "Enactus Canada Regionals" }
+            { imgSrc: award2, title: "2nd Place", subtitle: "TD Entrepreneurship Challenge", description: "Enactus Canada Regionals" },
+            
         ]
     },
     {
         year: 2023,
         awards: [
             { imgSrc: award3, title: "3rd Place", subtitle: "TD Entrepreneurship Challenge", description: "Enactus Canada Regionals" },
-            { imgSrc: award3, title: "3rd Place", subtitle: "Scotiabank Climate Action Project Idea Pitch", description: "Enactus Canada Regionals" }
+            { imgSrc: award3, title: "3rd Place", subtitle: "Scotiabank Climate Action Challenge", description: "Enactus Canada Regionals" }
         ]
     },
     {
         year: 2021,
         awards: [
             { imgSrc: award3, title: "3rd Place", subtitle: "TD Entrepreneurship Challenge", description: "Enactus Canada Regionals" },
-            { imgSrc: award3, title: "1st Place", subtitle: "Scotiabank Climate Action Project Idea Pitch", description: "Enactus Canada Regionals" }
+            { imgSrc: award1, title: "1st Place", subtitle: "Scotiabank Climate Action Project Idea Pitch", description: "Enactus Canada Regionals" },
+            
         ]
     },
     {
