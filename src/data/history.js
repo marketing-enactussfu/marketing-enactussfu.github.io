@@ -12,7 +12,7 @@ export const history = [
         "projects": [
           "The BeeKind Company",
           "Second Savour",
-          "Himalyan Skyes",
+          "Skyes",
           "Aqua Analyzer",
           "Unify",
           "Tubio Energy",
@@ -34,13 +34,13 @@ export const history = [
           "events": "Bryan Chan, Eva Yueng",
           "finance": "Justin Brower",
           "internal_strategy": "Vinay Aery",
-          "media_and_marketing": "Juliana Malano",
+          "media_and_marketing": "Juliana Manalo",
           "external": "Chloe Bui, Brandon Sun"
         },
         "projects": [
           "The BeeKind Company",
           "Second Savour",
-          "Himalyan Skyes",
+          "Skyes",
           "Aqua Analyzer",
           "Kindred Knots"
         ],
@@ -186,7 +186,7 @@ export const history = [
       },
       {
         "year": "2016",
-        "president": "Raiin Shokar",
+        "president": "Rajin Shokar",
         "vice_presidents": {
           "internal_operations": "Jean Zhai",
           "member_engagement": "Anjali Kauldher",

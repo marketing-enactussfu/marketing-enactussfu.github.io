@@ -35,9 +35,6 @@ module.exports = {
         'form-sm': '363px',
         'footer-md': '985px',
 
-
-      
-        
         
 
       },
