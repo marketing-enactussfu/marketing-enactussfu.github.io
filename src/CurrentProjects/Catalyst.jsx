@@ -57,8 +57,8 @@ const Catalyst = () => {
                    
                     <div className="flex flex-col justify-start items-start gap-4 currentProject-md:mx-96 navbar-transition:mx-80 currentProjectText-mx:mx-56 sm:mx-40 currentProjectText-ms:mx-32 currentProjectText-mss:mx-24 mx-10 ">
                                 <Title title="Join Us At Catalyst 2025" />
-                                <Text text = "The competition spans over 8 weeks where students are given full creative freedom to create a business solution(product or application) to a problem presented by a community partner with mentorship assistance. "/>
-                                <Text text = "The structure of this program includes an opening ceremony, in-person and online workshops, pitch off, and closing ceremony. Refreshments will be provided in each event to keep participants energized."/>
+                                <Text text = "The competition spans over 8 weeks where students are given full creative freedom to create a business solution(product or application) to a problem presented by a community partner with mentorship assistance."></Text>
+                                <Text text = "The structure of this program includes an opening ceremony, two in-person workshops, fireside chat, and closing ceremony. Refreshments will be provided in each event to keep participants energized."/>
                             <div className="flex flex-wrap justify-center items-center gap-4 mt-4">
                                 <button className="session-button sm:text-[14px] text-[12px] font-semifold"
                                     onClick = {()=> window.open('https://www.eventbrite.ca/e/catalyst-entrepreneurship-challenge-tickets-1221315139459?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile&fbclid=PAZXh0bgNhZW0CMTEAAaa1UaIOHFeth-yVEb4Go_tC9Jbm4LUsmGklJ13igaKOU-eiZU_M6A44d3Q_aem_42lIR0C9keIqhvPNpxp3HQ', '_blank')}>
