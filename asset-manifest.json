@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.59fa4f9a.css",
-    "main.js": "/static/js/main.3a774037.js",
+    "main.css": "/static/css/main.5101af1d.css",
+    "main.js": "/static/js/main.518b6337.js",
     "static/js/453.6952da46.chunk.js": "/static/js/453.6952da46.chunk.js",
     "static/media/header.png": "/static/media/header.f0c9470966181f64123d.png",
     "static/media/general_3.png": "/static/media/general_3.24720059cba0648f362c.png",
@@ -20,6 +20,7 @@
     "static/media/oranges.png": "/static/media/oranges.6b0cd340817a9fff8b7f.png",
     "static/media/competitions.png": "/static/media/competitions.ac37a0de988cc8a88af5.png",
     "static/media/about_3.png": "/static/media/about_3.dea333c332b3c4bc6ae0.png",
+    "static/media/catalyst.png": "/static/media/catalyst.8d11453fefacd8d2052e.png",
     "static/media/deskppic.png": "/static/media/deskppic.b6337a44326db680c770.png",
     "static/media/about_2.png": "/static/media/about_2.49c396c34a71fdf817d6.png",
     "static/media/candle2.png": "/static/media/candle2.819a4af36df78699da06.png",
@@ -43,7 +44,6 @@
     "static/media/general_7.png": "/static/media/general_7.3d4e86c12511713dfbd5.png",
     "static/media/general_9.png": "/static/media/general_9.329304c0fbd93a5d7d8d.png",
     "static/media/general_6.png": "/static/media/general_6.e0e3555ea8deff23389c.png",
-    "static/media/challenges.png": "/static/media/challenges.f56f2b3417cf47e1f18a.png",
     "static/media/Brianna.png": "/static/media/Brianna.cf2acee7d611dc4a5186.png",
     "static/media/Van.png": "/static/media/Van.69f191dd6fbc90bba18e.png",
     "static/media/general_4.png": "/static/media/general_4.ffd7260655c8d08c5929.png",
@@ -83,7 +83,7 @@
     "static/media/process_2.png": "/static/media/process_2.972253a843a9dfe7ade0.png",
     "static/media/bottonLine_1.png": "/static/media/bottonLine_1.bd8918ad40f33b6b3ebe.png",
     "static/media/beekind_co..png": "/static/media/beekind_co..7b5e903fcf539ba902cf.png",
-    "static/media/logo.png": "/static/media/logo.c9df65da3b3207ce70db.png",
+    "static/media/logo.png": "/static/media/logo.d23cd0ce0ed867abd623.png",
     "static/media/goal_9.png": "/static/media/goal_9.a4fbc0d67c0367526e60.png",
     "static/media/PM6.png": "/static/media/PM6.3303564ae9467db45e11.png",
     "static/media/brand_6.png": "/static/media/brand_6.5ee0fff1f5627ffbd48d.png",
@@ -109,12 +109,12 @@
     "static/media/sponsor_3.png": "/static/media/sponsor_3.b1ffa5a5e9c1c90dc6da.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.59fa4f9a.css.map": "/static/css/main.59fa4f9a.css.map",
-    "main.3a774037.js.map": "/static/js/main.3a774037.js.map",
+    "main.5101af1d.css.map": "/static/css/main.5101af1d.css.map",
+    "main.518b6337.js.map": "/static/js/main.518b6337.js.map",
     "453.6952da46.chunk.js.map": "/static/js/453.6952da46.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59fa4f9a.css",
-    "static/js/main.3a774037.js"
+    "static/css/main.5101af1d.css",
+    "static/js/main.518b6337.js"
   ]
 }
