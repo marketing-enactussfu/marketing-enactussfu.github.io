@@ -32,17 +32,17 @@ const Catalyst = () => {
                             <Subtitle text="Current Projects" />
                             <Title title="Catalyst" />
                             <div className="text-center text-[#5c5c5c] text-md sm:text-xl font-[400] currentProject-md:mx-20 currentProjectText-md:mx-10">
-                                A 8-10 week collaborative program with the Charles Chang Institute of Entrepreneurship to enable students across British Columbia to unleash their entrepreneurial mindset.
+                                An 8 week collaborative program with the Charles Chang Institute of Entrepreneurship to enable students across British Columbia to unleash their entrepreneurial mindset.
                             </div>
                             {/* accepting registration 
                             <div className="text-center text-[#5c5c5c] text-md sm:text-xl font-bold currentProject-md:mx-20 currentProjectText-md:mx-10">
                                 We are now accepting registration for Catalyst 2025
                             </div>*/}
                             <div className="flex flex-wrap justify-center items-center gap-4">
-                                <button className="session-button sm:text-[14px] text-[12px] font-semifold"
+                                {/*<button className="session-button sm:text-[14px] text-[12px] font-semifold"
                                     onClick = {()=> window.open('https://www.eventbrite.ca/e/catalyst-entrepreneurship-challenge-tickets-1221315139459?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile&fbclid=PAZXh0bgNhZW0CMTEAAaa1UaIOHFeth-yVEb4Go_tC9Jbm4LUsmGklJ13igaKOU-eiZU_M6A44d3Q_aem_42lIR0C9keIqhvPNpxp3HQ', '_blank')}>
                                     Register Here
-                                </button>
+                                </button>*/}
                                 <button className="facebook-button sm:text-[14px] text-[12px] font-semifold"
                                 onClick = {()=> window.open('https://www.instagram.com/catalystsfu', '_blank')}>
                                     Our Instagram
@@ -61,10 +61,10 @@ const Catalyst = () => {
                                 <Text text = "The competition spans over 8 weeks where students are given full creative freedom to create a business solution(product or application) to a problem presented by a community partner with mentorship assistance."></Text>
                                 <Text text = "The structure of this program includes an opening ceremony, two in-person workshops, fireside chat, and closing ceremony. Refreshments will be provided in each event to keep participants energized."/>
                             <div className="flex flex-wrap justify-center items-center gap-4 mt-4 ">
-                                <button className="session-button sm:text-[14px] text-[12px] font-semifold"
+                                {/*<button className="session-button sm:text-[14px] text-[12px] font-semifold"
                                     onClick = {()=> window.open('https://www.eventbrite.ca/e/catalyst-entrepreneurship-challenge-tickets-1221315139459?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile&fbclid=PAZXh0bgNhZW0CMTEAAaa1UaIOHFeth-yVEb4Go_tC9Jbm4LUsmGklJ13igaKOU-eiZU_M6A44d3Q_aem_42lIR0C9keIqhvPNpxp3HQ', '_blank')}>
                                     Register Here
-                                </button>
+                                </button>*/}
                                 <button className="facebook-button sm:text-[14px] text-[12px] font-semifold"
                                 onClick = {()=> window.open('https://drive.google.com/file/d/1Z8aT2Y7hsmi-SKiJQEIeDqEhIORQtiJL/view?usp=drive_link', '_blank')}>
                                     Information Package
@@ -135,7 +135,7 @@ const Catalyst = () => {
                                 {
                                     title: "Workshop #1: Problem Identification - February 22nd, 2025",
                                     details: [
-                                        "At Workshop 1, a representative from the Chang Institute will guide participants through various brainstorming methods and business models to strengthen their problem-solving and innovation skills. This session will equip participants with the essential tools to effectively analyze and identify opportunities and challenges for impactful solutions. "
+                                        "At Workshop 1, a representative from the Chang Institute will guide participants through various brainstorming methods and business models to strengthen their problem-solving and innovation skills, providing tools to effectively analyze and identify opportunities for impactful solutions. The second half of the workshop will be hosted by another facilitator, teaching participants how to transform their ideas into tangible interactive wireframes to visualize their solutions. "
                                     ],
                                 },
                                 {
