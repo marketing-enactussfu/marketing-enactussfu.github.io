@@ -34,9 +34,10 @@ const Catalyst = () => {
                             <div className="text-center text-[#5c5c5c] text-md sm:text-xl font-[400] currentProject-md:mx-20 currentProjectText-md:mx-10">
                                 A 8-10 week collaborative program with the Charles Chang Institute of Entrepreneurship to enable students across British Columbia to unleash their entrepreneurial mindset.
                             </div>
+                            {/* accepting registration 
                             <div className="text-center text-[#5c5c5c] text-md sm:text-xl font-bold currentProject-md:mx-20 currentProjectText-md:mx-10">
                                 We are now accepting registration for Catalyst 2025
-                            </div>
+                            </div>*/}
                             <div className="flex flex-wrap justify-center items-center gap-4">
                                 <button className="session-button sm:text-[14px] text-[12px] font-semifold"
                                     onClick = {()=> window.open('https://www.eventbrite.ca/e/catalyst-entrepreneurship-challenge-tickets-1221315139459?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile&fbclid=PAZXh0bgNhZW0CMTEAAaa1UaIOHFeth-yVEb4Go_tC9Jbm4LUsmGklJ13igaKOU-eiZU_M6A44d3Q_aem_42lIR0C9keIqhvPNpxp3HQ', '_blank')}>
@@ -144,7 +145,7 @@ const Catalyst = () => {
                                     ],
                                 },
                                 {
-                                    title: "Workshop #2: Pitch - March 22nd, 2025",
+                                    title: "Workshop #2: Pitch - March 2nd, 2025",
                                     details: [
                                         "At Workshop 2, we will collaborate with industry professionals to host a pitch workshop designed to teach participants how to organize and structure their product or idea for presentation to TransLink and the judges. "
                                     ],
