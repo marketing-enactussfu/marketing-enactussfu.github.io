@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5101af1d.css",
-    "main.js": "/static/js/main.d142fd62.js",
+    "main.js": "/static/js/main.b069982b.js",
     "static/js/453.6952da46.chunk.js": "/static/js/453.6952da46.chunk.js",
     "static/media/header.png": "/static/media/header.f0c9470966181f64123d.png",
     "static/media/general_3.png": "/static/media/general_3.24720059cba0648f362c.png",
@@ -38,7 +38,7 @@
     "static/media/whatWeDo_1.png": "/static/media/whatWeDo_1.f2ee191e0422242ec0a3.png",
     "static/media/whatWeDo_3.png": "/static/media/whatWeDo_3.0cfe1ce1c06f693d2a46.png",
     "static/media/whatWeDo_2.png": "/static/media/whatWeDo_2.cb94012f16a19b72365b.png",
-    "static/media/himalayan_skyes.png": "/static/media/himalayan_skyes.93836205de6c0d6c2da4.png",
+    "static/media/skyes.png": "/static/media/skyes.93836205de6c0d6c2da4.png",
     "static/media/ourGoal.png": "/static/media/ourGoal.a41c9b36f71bb7e82407.png",
     "static/media/Render.png": "/static/media/Render.75b08105b41d05f84600.png",
     "static/media/general_7.png": "/static/media/general_7.3d4e86c12511713dfbd5.png",
@@ -82,7 +82,7 @@
     "static/media/bottonLine_2.png": "/static/media/bottonLine_2.107b8b1367c45bf7b785.png",
     "static/media/process_2.png": "/static/media/process_2.972253a843a9dfe7ade0.png",
     "static/media/bottonLine_1.png": "/static/media/bottonLine_1.bd8918ad40f33b6b3ebe.png",
-    "static/media/beekind_co..png": "/static/media/beekind_co..7b5e903fcf539ba902cf.png",
+    "static/media/the_beekind_company.png": "/static/media/the_beekind_company.7b5e903fcf539ba902cf.png",
     "static/media/logo.png": "/static/media/logo.d23cd0ce0ed867abd623.png",
     "static/media/goal_9.png": "/static/media/goal_9.a4fbc0d67c0367526e60.png",
     "static/media/PM6.png": "/static/media/PM6.3303564ae9467db45e11.png",
@@ -107,14 +107,13 @@
     "static/media/brand_8.png": "/static/media/brand_8.848f04c8a9855870e37d.png",
     "static/media/sponsor_1.png": "/static/media/sponsor_1.c17114cc3e9a355375f7.png",
     "static/media/sponsor_3.png": "/static/media/sponsor_3.b1ffa5a5e9c1c90dc6da.png",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.5101af1d.css.map": "/static/css/main.5101af1d.css.map",
-    "main.d142fd62.js.map": "/static/js/main.d142fd62.js.map",
+    "main.b069982b.js.map": "/static/js/main.b069982b.js.map",
     "453.6952da46.chunk.js.map": "/static/js/453.6952da46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5101af1d.css",
-    "static/js/main.d142fd62.js"
+    "static/js/main.b069982b.js"
   ]
 }
