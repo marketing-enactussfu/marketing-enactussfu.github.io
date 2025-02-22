@@ -24,7 +24,7 @@ const coreOperations = [
   const projectManagers = [
     {name: "Christine Hui",description: "Project Manager of The BeeKind Company"},
     {name: "Bhumika Kalra",description: "Co-Project Manager of SKYES"},
-    {name: "Ethan Chan",description: "Co-Project Manager of Himalayan SKYES"},
+    {name: "Ethan Chan",description: "Co-Project Manager of Skyes"},
     {name: "Lin Lin",description: "Project Manager of Turbio Energy"},
     {name: "Justin Cheung",description: "Project Manager of Second Savour"},
     {name: "Rami Alhanna",description: "Co-Project Manager of Unify"},

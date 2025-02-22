@@ -2,7 +2,6 @@ import React from "react";
 import PageTemplate from '../components/PageTemplate';
 import catalyst from '../images/currentprojects/catalyst.png'; 
 import logo from '../images/currentprojects/logo.png'; 
-import paperbags from '../images/currentprojects/paperbags.png'; 
 import Subtitle from "../components/Subtitle";
 
 const Catalyst = () => {

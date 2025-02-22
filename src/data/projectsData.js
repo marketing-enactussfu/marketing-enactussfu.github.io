@@ -1,6 +1,6 @@
 import beeking from '../icons/navbar/beeking.png';
 import second_savour from '../icons/navbar/second_savour.png'; 
-import himalayan_skyes from '../icons/navbar/himalayan_skyes.png'; 
+import skyes from '../icons/navbar/skyes.png'; 
 import aqua_analyzer from '../icons/navbar/aqua_analyzer.png'; 
 import community from '../icons/navbar/community.png';  
 import turbio_energy from '../icons/navbar/turbio_energy.png';  
@@ -17,7 +17,7 @@ import refresh from '../icons/navbar/refresh.png';
 export const currentProjects = [
     { name: "The beekind Company", description: "Scented Candies", icon: beeking },
     { name: "Second Savour", description: "Delicious Candied Peels", icon: second_savour },
-    { name: "Skyes", description: "Empowering Youth", icon: himalayan_skyes},
+    { name: "Skyes", description: "Empowering Youth", icon: skyes},
     { name: "Aqua Analyzer", description: "Testing Water Qualities", icon: aqua_analyzer },
     { name: "Unify", description: "Social Media Platform", icon: community },
     { name: "Turbio Energy", description: "Sustainable Energy", icon: turbio_energy },

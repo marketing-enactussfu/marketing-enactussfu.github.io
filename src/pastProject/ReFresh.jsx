@@ -1,7 +1,6 @@
 import React from 'react';
 import PageTemplate from '../components/PageTemplate';
 import { importAll } from '../utilities/importImages'; 
-import { history } from '../data/history';
 import { PastProjectIntro } from '../components/PastProjectIntro';
 import Subtitle from '../components/Subtitle';
 
